@@ -1,8 +1,18 @@
 import React from 'react'
+import image from './media/dael.png'
 
 class AlfabetoDaedra extends React.Component{
   render(){
-      return(
+      return(<React.Fragment>
+          <div className='headerAlfabeto mx-auto'>
+          <div>
+            <img src={image} alt='daedra'/>
+          </div>
+          <h1>Daedra</h1>
+          <div className='espejo'>
+            <img src={image} alt='daedra' />
+          </div>
+        </div>
         <div className="alfabeto">
             <div>
             <p>A</p><img src={require("./daedra/a.svg")} alt="a" />
@@ -80,6 +90,7 @@ class AlfabetoDaedra extends React.Component{
             <p>Z</p><img src={require("./daedra/z.svg")} alt="" />
             </div>
         </div>
+        </React.Fragment>
       )
   }  
 }

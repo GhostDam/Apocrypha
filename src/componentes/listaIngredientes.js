@@ -8,7 +8,7 @@ class ListaIngredientes extends React.Component{
                 <h1>Lista de ingredientes</h1>
                 <div className='row'>
                     {this.ingredientes.map((ingrediente)=>(
-                    <div className='col-md-3'>
+                    <div key={ingrediente.id} className='col-md-3'>
                     {ingrediente.id}
                     <p>{ingrediente.efecto1} <br/>
                        {ingrediente.efecto2} <br/>

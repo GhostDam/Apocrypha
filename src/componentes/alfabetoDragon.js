@@ -1,8 +1,18 @@
 import React from 'react'
+import image from './media/dagl.png'
 
 class AlfabetoDragon extends React.Component{
   render(){
-      return(
+      return(<React.Fragment>
+        <div className='headerAlfabeto'>
+          <div>
+            <img src={image} alt='dragon'/>
+          </div>
+          <h1>Dragon</h1>
+          <div className='espejo'>
+            <img src={image} alt='dragon'/>
+          </div>
+        </div>
         <div className="alfabeto">
             <div>
             <p>A</p><img src={require("./ldg/a.svg")} alt="a" />
@@ -107,6 +117,7 @@ class AlfabetoDragon extends React.Component{
             <p>Z</p><img src={require("./ldg/z.svg")} alt="" />
             </div>
         </div>
+        </React.Fragment>
       )
   }  
 }

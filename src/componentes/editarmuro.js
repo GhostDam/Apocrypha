@@ -1,8 +1,10 @@
 import React from 'react'
 import Muro from './muro'
-import AlfabetoDragon from './alfabetoDragon'
 import api from '../api'
-class NewWall extends React.Component{
+
+import LenguajeDragon from './Dragon'
+
+class EditWall extends React.Component{
     state={
         form:{
             nombre:'',
@@ -16,7 +18,7 @@ class NewWall extends React.Component{
             l4dovah:'',
             l4español:'',
         }
-    }
+}
 
     onChange = (e) =>{
         this.setState({
@@ -27,14 +29,38 @@ class NewWall extends React.Component{
         })
     }
 
+    componentDidMount(){
+        this.fetchData();
+    }
+
+    fetchData = async () => {
+        try {
+        const data = await api.walls.read(this.props.match.params.id)
+            console.log(data)
+            console.log(this.state.form)
+            this.setState({
+                form:{
+                        nombre:data.nombre,
+                        grito:data.grito,
+                        l1dovah:data.linea1.dovah,
+                        l1español:data.linea1.español,
+                        l2dovah:data.linea2.dovah,
+                        l2español:data.linea2.español,
+                        l3dovah:data.linea3.dovah,
+                        l3español:data.linea3.español,
+                        l4dovah:data.linea4.dovah,
+                        l4español:data.linea4.español,           
+                    }
+            })
+        } catch (error) {
+            console.log(error) 
+        }        
+    }
     handleClick = async (e) =>{
       e.preventDefault()
          try {
-            await api.walls.create(this.state.form)
-            console.log(this.state.form)
-            alert('success')
-            // this.props.history.push('/badges')
-   
+            await api.walls.update(this.props.match.params.id, this.state.form)
+            alert('Edited')   
          } catch (error) {
             console.log(error)
             alert(error)
@@ -44,7 +70,6 @@ class NewWall extends React.Component{
     render(){
         return(
             <div className='row'>
-            <AlfabetoDragon />
             <form className='col-sm-6' autoComplete='off'>
             <div className='form-group'>
                   <label>Nombre</label>
@@ -87,9 +112,11 @@ class NewWall extends React.Component{
                   <label>L4 Español</label>
                   <input onChange={this.onChange} className='form-control' type='text' name='l4español'value={this.state.form.l4español}/>
                </div>
-               <button  onClick={this.handleClick} className='btn btn-primary'>Guardar</button>
+               <button  onClick={this.handleClick} className='btn btn-primary'>Editar</button>
         </form>
         <div className='col-sm-6'>
+            <LenguajeDragon />
+        </div>
             <Muro 
                nombre={this.state.form.nombre || "Nombre del muro"}
                grito={this.state.form.grito || "Grito"}
@@ -103,9 +130,8 @@ class NewWall extends React.Component{
                dovah4={this.state.form.l4dovah}
           />
         </div>
-        </div>
         )
     }
 }
 
-export default NewWall
+export default EditWall

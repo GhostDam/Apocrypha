@@ -13,8 +13,9 @@
     "react-scripts": "3.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "server": "json-server --port 3001 watch server/db.json",
+    "start": "npm-run-all -p client server",
+    "client": "react-scripts start",
+    "server": "json-server --host 192.168.0.7 --port 3001 --watch server/db.json",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -33,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }

@@ -5,14 +5,19 @@
 body{
   background-image: url('../media/skyrim.jpg');
   /* Full height */
-  height: 100%; 
-
   /* Center and scale the image nicely */
   background-repeat: no-repeat;
   background-size: cover;
+  /*  */
+}
+@media (min-width :600px){
+  body{
+    background-attachment: fixed;
+  }
 }
 /* NavBbar */
 .nav{
+  z-index: 2;
   background: black;
   display: flex;
   position: fixed;
@@ -26,6 +31,10 @@ body{
 .dropdown{
   cursor: pointer;
   color: white;
+}
+.dropdown div{
+  vertical-align: middle;
+  margin: auto;
 }
 .ddcontent{
   display: none;
@@ -46,15 +55,45 @@ body{
 .container{
   padding-top: 44px;
 }
-.muro{
-  max-width: 100%;
-  background-color: grey;
-  text-align: center;
-}
-.muro img{
-  max-width: 75%;
+@media (max-width :600px){
+  .container{
+    padding-top: 64px;
+  }
 }
 
+/* muros */
+.muro{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.muro img{
+  max-width: 100%;
+}
+/* .muro:hover img{
+  filter: none;
+  transform: scale(1.1);
+} */
+.muro .info{
+  background: rgba(0, 0, 0, 0.9);
+  transition: .5s;
+}
+.info{
+  background: rgba(0, 0, 0, 0.9);
+}
+.info p{
+  color: white;
+  margin: 0;
+}
+
+
+/* .muro:hover .info{
+  position: relative;
+  bottom: -80px;
+  opacity: 0;
+} */
+.muro h1, h2{
+  color: cornsilk;
+}
 .dovah{
   margin: 0;
   font-size: 1.5rem;
@@ -64,14 +103,45 @@ body{
 .lengua{
   margin: 0;
   font-size: 24px;
-  color: black;
+  color: white;
 }
 .español{
   margin: 0 0 1.5rem;
   font-size: 18px;
   color: gainsboro;
 }
+/* muros */
+/*Alfabeto*/
+.headerAlfabeto{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  background-color: black;
+  background-position: center;
+}
+.headerAlfabeto h1{
+  text-align: center;
+  color: white; 
+  margin: 0px;
+}
+.headerAlfabeto img{
+  width: 100%;
+}
 
+.espejo img{
+  -moz-transform: scaleX(-1); /* Firefox */
+  -o-transform: scaleX(-1); /* Opera */
+  -webkit-transform: scaleX(-1); /* Chrome y Safari */
+  transform: scaleX(-1); /* w3org */
+  filter: FlipH; /* Internet Explorer */
+  }
+@media (min-width :600px){
+  header h1{
+    text-align: center;
+    color: red;
+    height: 70px;
+  }
+}
 .alfabeto{
   background-color: black;
   width: 100%;
@@ -97,7 +167,6 @@ body{
 .alfabeto > div{
   border: 1px solid #8e8383;
 }
-/*  */
 .textfinder{
   height: 100vh;
   overflow: hidden;

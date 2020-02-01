@@ -11,30 +11,36 @@ class Muro extends React.Component {
     }
     render(){
         return <div className='muro' style={{backgroundImage: this.props.ubicacion}}>
-                <h1>{this.props.nombre}</h1>
-                <h1>{this.props.grito}</h1>
-                <img src={this.props.ubicacion} alt='ubicacion' />
-                <div className='linea1'>
-                    <p className='dovah'>{this.setter(this.props.dovah1)}</p>    
-                    <p className='lengua'>{this.props.dovah1}</p>
-                    <p className='español'>{this.props.español1}</p>
-                </div>
-                <div className='linea2'>
-                    <p className='dovah'>{this.setter(this.props.dovah2)}</p>
-                    <p className='lengua'>{this.props.dovah2}</p>
-                    <p className='español'>{this.props.español2}</p>
-                </div>
-                <div className='linea3'>
-                    <p className='dovah'>{this.setter(this.props.dovah3)}</p>    
-                    <p className='lengua'>{this.props.dovah3}</p>
-                    <p className='español'>{this.props.español3}</p>
-                </div>
-                <div className='linea4'>
-                    <p className='dovah'>{this.setter(this.props.dovah4)}</p>    
-                    <p className='lengua'>{this.props.dovah4}</p>
-                    <p className='español'>{this.props.español4}</p>
-                </div>
+                <img src={this.props.ubicacion} alt='ubicacion' />  
+                <div className='info'>
+                    <h1>{this.props.nombre}</h1>
+                    <h2>{this.props.grito}</h2>
+                    <hr/>
+                    <div className='linea1'>
+                        <p className='dovah'>{this.setter(this.props.dovah1)}</p>    
+                        <p className='lengua'>{this.props.dovah1}</p>
+                        <p className='español'>{this.props.español1}</p>
+                    </div>
+                    <hr/>
+                    <div className='linea2'>
+                        <p className='dovah'>{this.setter(this.props.dovah2)}</p>
+                        <p className='lengua'>{this.props.dovah2}</p>
+                        <p className='español'>{this.props.español2}</p>
+                    </div>
+                    <hr/>
+                    <div className='linea3'>
+                        <p className='dovah'>{this.setter(this.props.dovah3)}</p>    
+                        <p className='lengua'>{this.props.dovah3}</p>
+                        <p className='español'>{this.props.español3}</p>
+                    </div>
+                    <hr/>
+                    <div className='linea4'>
+                        <p className='dovah'>{this.setter(this.props.dovah4)}</p>    
+                        <p className='lengua'>{this.props.dovah4}</p>
+                        <p className='español'>{this.props.español4}</p>
+                    </div>
               </div>
+                </div>
     }
 }
 

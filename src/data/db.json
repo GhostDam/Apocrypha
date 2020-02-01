@@ -23,9 +23,10 @@
       }
     },
     {
+      "id": 2,
       "nombre": "Guarida de marea Argentea",
       "grito": "Desarmar",
-      "ubicacion": "placeholder",
+      "ubicacion": "https://vignette.wikia.nocookie.net/elderscrolls/images/9/9c/Guarida_marea_argentea.jpg/revision/latest?cb=20140308193722&path-prefix=es",
       "linea1": {
         "dovah": "Qethsegol Vahrukiv",
         "español": ""
@@ -39,10 +40,9 @@
         "español": ""
       },
       "linea4": {
-        "dovah": "Laat naal ufiik do korvag kol",
+        "dovah": "Laat naal ufiik do korvag kol.",
         "español": ""
-      },
-      "id": 2
+      }
     },
     {
       "id": 3,
@@ -87,28 +87,6 @@
         "español": ""
       },
       "id": 4
-    },
-    {
-      "nombre": "Punta de Arcwind",
-      "grito": "Absorción de vitalidad (salud)",
-      "ubicacion": "https://vignette.wikia.nocookie.net/elderscrolls/images/9/97/Punta_Arcwind_Map.jpg/revision/latest?cb=20151019195003&path-prefix=es",
-      "linea1": {
-        "dovah": "Het mah arnvid faal",
-        "español": "Aquí yace Arnvid, el"
-      },
-      "linea2": {
-        "dovah": "Staadnau wen haas denos",
-        "español": "Desatado, cuya salud empeoro,"
-      },
-      "linea3": {
-        "dovah": "Mindin kein do galik kolos",
-        "español": "despues de la guerra del pino donde"
-      },
-      "linea4": {
-        "dovah": "Rok ofaal dilos ahraan",
-        "español": "él recibió una herida mortal"
-      },
-      "id": 5
     }
   ],
   "ingredients": [
@@ -3229,11 +3207,6 @@
       "id": 426,
       "dovah": "Zun Haal Viik",
       "español": "Grito: Desarmar"
-    },
-    {
-      "id": 427,
-      "dovah": "Sosaal",
-      "español": "Sangrar, sufrir"
     }
   ],
   "potions": [

@@ -4,6 +4,8 @@ import {BrowserRouter, Route} from 'react-router-dom'
 import Muros from './Muros'
 import Navbar from './Navbar'
 import NewWall from './nuevomuro'
+import EditWall from './editarmuro'
+
 import LenguajeDragon from './Dragon'
 import AlfabetoDaedra from './alfabetoDaedra'
 import AlfabetoDragon from './alfabetoDragon'
@@ -13,9 +15,10 @@ import ListaPociones from './listaPociones'
 const App =() => (
   <BrowserRouter>
     <Navbar />
-    <div className='container'>
+    <div className='container overflow-auto'>
       <Route exact path ='/' component={LenguajeDragon} />
       <Route exact path ='/muros' component={Muros} />
+      <Route exact path ='/muros/:id/editar' component={EditWall} />
       <Route exact path ='/nuevo_muro' component={NewWall} />
       <Route exact path ='/alfabeto/daedra' component={AlfabetoDaedra} />
       <Route exact path ='/alfabeto/dragon' component={AlfabetoDragon} />

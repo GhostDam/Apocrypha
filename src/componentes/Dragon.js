@@ -24,7 +24,6 @@ function useSearchWords(words){
 }
 
 function LenguajeDragon(props){
-
     const [value, setValue, palabrasBuscadas] = useSearchWords(words)
 
     // //funcional pero pesado
@@ -35,7 +34,6 @@ function LenguajeDragon(props){
 
     return (
         <div className='textfinder'>
-            <h1>Lenguaje Dragon</h1>
             <AlfabetoDragon />
             <div><label>Busqueda</label>
             <input 
@@ -47,10 +45,9 @@ function LenguajeDragon(props){
                 }/>
             </div>
             {palabrasBuscadas.map((palabra, index) => (
-
-                <div key={index} className='d-flex justify-content-around'>
-                <label>{palabra.dovah}</label>
-                <label> {palabra.español}</label>
+                <div key={index} className='d-flex justify-content-around info'>
+                <p>{palabra.dovah}</p>
+                <p> {palabra.español}</p>
                 </div>
                 ))}
         </div>
