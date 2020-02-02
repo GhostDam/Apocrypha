@@ -8,14 +8,14 @@ class ListaIngredientes extends React.Component{
                 <h1>Lista de ingredientes</h1>
                 <div className='row'>
                     {this.ingredientes.map((ingrediente)=>(
-                    <div key={ingrediente.id} className='col-md-3'>
-                    {ingrediente.id}
-                    <p>{ingrediente.efecto1} <br/>
+                    <div key={ingrediente.id} className='col-md-3 pb-2 info'>
+                     <p>{ingrediente.id} <br/>
+                       {ingrediente.efecto1} <br/>
                        {ingrediente.efecto2} <br/>
                        {ingrediente.efecto3} <br/>
                        {ingrediente.efecto4} <br/>
-                       {ingrediente.valor} <br/>    
-                       {ingrediente.peso}</p>
+                        Valor: {ingrediente.valor} <br/>    
+                        Peso: {ingrediente.peso}</p>
                     </div>
                     ))}
                 </div>

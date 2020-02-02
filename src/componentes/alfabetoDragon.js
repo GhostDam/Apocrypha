@@ -4,6 +4,7 @@ import image from './media/dagl.png'
 class AlfabetoDragon extends React.Component{
   render(){
       return(<React.Fragment>
+       <div>
         <div className='headerAlfabeto'>
           <div>
             <img src={image} alt='dragon'/>
@@ -117,6 +118,8 @@ class AlfabetoDragon extends React.Component{
             <p>Z</p><img src={require("./ldg/z.svg")} alt="" />
             </div>
         </div>
+        </div> 
+ 
         </React.Fragment>
       )
   }  

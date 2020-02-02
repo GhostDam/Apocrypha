@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import Muro from './muro'
 import api from '../api'
 
+
 class Muros extends React.Component {
     constructor(props){
         super(props)
@@ -21,6 +22,10 @@ class Muros extends React.Component {
         this.setState({muros:data})
      } catch(error){
         console.log(error)
+        if(error){
+            var data = require('../data/walls.json')
+            this.setState({muros:data})
+        }
     }
   } 
 

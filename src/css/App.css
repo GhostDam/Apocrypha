@@ -15,51 +15,6 @@ body{
     background-attachment: fixed;
   }
 }
-/* NavBbar */
-.nav{
-  z-index: 2;
-  background: black;
-  display: flex;
-  position: fixed;
-  width: 100%;
-}
-.nav a{
-  margin: 10px;
-  color: white;
-  text-decoration:none;
-}
-.dropdown{
-  cursor: pointer;
-  color: white;
-}
-.dropdown div{
-  vertical-align: middle;
-  margin: auto;
-}
-.ddcontent{
-  display: none;
-  min-width: 160px;
-}
-.ddcontent a{
-  display: block;
-}
-.dropdown:hover .ddcontent{
-  position: absolute;
-  display: block;
-  background-color: black;
-}
-.ddcontent a:hover{
-  background-color: burlywood;
-}
-/* NavBbar */
-.container{
-  padding-top: 44px;
-}
-@media (max-width :600px){
-  .container{
-    padding-top: 64px;
-  }
-}
 
 /* muros */
 .muro{
@@ -80,7 +35,7 @@ body{
 .info{
   background: rgba(0, 0, 0, 0.9);
 }
-.info p{
+.info p, label{
   color: white;
   margin: 0;
 }
@@ -114,6 +69,8 @@ body{
 /*Alfabeto*/
 .headerAlfabeto{
   display: flex;
+  max-width: 80%;
+  margin: 0 auto;
   text-align: center;
   justify-content: space-between;
   background-color: black;

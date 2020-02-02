@@ -1,7 +1,8 @@
 import React from 'react'
-import AlfabetoDragon from './alfabetoDragon'
+import api from '../api'
 
 const  words= require('../data/languaje.json')
+
 
 function useSearchWords(words){
     //tomar valor de input usando hooks
@@ -34,7 +35,6 @@ function LenguajeDragon(props){
 
     return (
         <div className='textfinder'>
-            <AlfabetoDragon />
             <div><label>Busqueda</label>
             <input 
                 className='form-control'
@@ -56,11 +56,23 @@ function LenguajeDragon(props){
 
 export default LenguajeDragon
 
-// class Dragon extends React.Component{
+// class LenguajeDragon extends React.Component{
 //     constructor(){
 //         super();
 //         this.state = {
-//             words: require('../data/languaje.json')
+//             words: []
+//         }
+//     }
+//     componentDidMount(){
+//     this.fetchData()
+//     }
+//     fetchData = async () =>{
+//         try {
+//            const data = await api.words.list()
+//             this.setState({words:data})
+//            console.log(data)
+//         } catch (error) {
+//             console.log(error)
 //         }
 //     }
 //     //tomar valor de input usando hooks
@@ -70,22 +82,38 @@ export default LenguajeDragon
 
 //     mapeado = () =>(
 //         this.state.words.map((palabra, index) => (
-//             <div key={index}><label>{index} </label><label>{palabra.dovah}</label><label> {palabra.español}</label></div>
+//                   <div key={index} className='d-flex justify-content-around info'>
+//                     <p>{palabra.dovah}</p>
+//                     <p> {palabra.español}</p>
+//                   </div>
 //         ))
 //     )    
 //     handleChange(e){
-//         console.log(e.target.value)
+//             var updatedList = this.state.words;
+//                 updatedList = updatedList.filter(function(item){
+//                 return item.toLowerCase().search(
+//                     e.target.value.toLowerCase()) !== -1;
+//                 });
+//                 this.setState({words: updatedList});
+            
+//         // console.log(e.target.value)
 //     }
 
 //     render(){
 //         return (
 //             <div>
 //                 <h1>Dragon</h1>
-//                 <div><label>Busqueda</label><input onChange={this.handleChange}></input></div>
+//                 <div className='form-group'>
+//                     <label>Busqueda</label>
+//                     <input onChange={(e)=>{
+//                                         setValue(e.target.value)
+//                                         }} className='form-control'>
+//                     </input>
+//                 </div>
 //                 {this.mapeado()}            
 //             </div>
 //         )    
 //     }
 // }
 
-// export default Dragon
+// export default LenguajeDragon

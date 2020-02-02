@@ -25,8 +25,8 @@ class ListaPociones extends React.Component{
     return(
             potion.map((pocion)=>(
                 <div key={pocion.id} className='col-md-3 info '>
-            {pocion.pocion}
-            <p>{pocion.ingrediente1} <br/>
+            <p>{pocion.pocion}
+               {pocion.ingrediente1} <br/>
                {pocion.ingrediente2} <br/>
                {pocion.ingrediente3} <br/>
                {pocion.efecto4} <br/>

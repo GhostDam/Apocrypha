@@ -108,7 +108,7 @@
  {"id":106, "dovah": "Fo", "español": "Escarcha"},
  {"id":107, "dovah": "Fo Krah Diin", "español": "Grito: Aliento de Escarcha"},
  {"id":108, "dovah": "Fod", "español": "Cuando"},
- {"id":109, "dovah": "Fodiiz", "español": "El color grisáceo que se adquiere con la edad"},
+ {"id":109, "dovah": "Fodiiz", "español": "Honorable, El color grisáceo que se adquiere con la edad"},
  {"id":110, "dovah": "Folaas", "español": "Mal / error"},
  {"id":111, "dovah": "Folook", "español": "Guarida / embrujar / perseguir"},
  {"id":112, "dovah": "Fonaar", "español": "Carga / cargar"},
@@ -425,5 +425,18 @@
  {"id":423, "dovah": "Zul", "español": "Voz"},
  {"id":424, "dovah": "Zul Mey Gut", "español": "Grito: Proyectar Voz"},
  {"id":425, "dovah": "Zun", "español": "Arma"},
- {"id":426, "dovah": "Zun Haal Viik", "español": "Grito: Desarmar"}
+ {"id":426, "dovah": "Zun Haal Viik", "español": "Grito: Desarmar"},
+
+ {"dovah": "Sosaal", "español": "Sangrar, sufrir"},
+ {"dovah": "Staadnau", "español": "sin consolidar"},
+ {"dovah": "Denos", "español": "declinar, empeorar"},
+ {"dovah": "Mindin", "español": "Despues"},
+ {"dovah": "Galik", "español": "Pino"},
+ {"dovah": "Kolos", "español": "Durante, donde"},
+ {"dovah": "Rok", "español": "El (él)"},
+ {"dovah": "Ofaal", "español": "Recibir, adquirir"},
+ {"dovah": "Dilos", "español": "Mortal"},
+ {"dovah": "Ahraan", "español": "Herir"},
+ {"dovah": "Arnvid", "español": "Nombre propio"}
+
 ]

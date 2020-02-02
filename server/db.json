@@ -109,6 +109,28 @@
         "español": "él recibió una herida mortal"
       },
       "id": 5
+    },
+    {
+      "nombre": "Torre de vista del otoño",
+      "grito": "Marca de la muerte (matar)",
+      "ubicacion": "placeholder",
+      "linea1": {
+        "dovah": "Nonvul bron dahmaan daar rot do",
+        "español": "Nobles nordicos recordaran estas palabra de"
+      },
+      "linea2": {
+        "dovah": "Fin fodiis bormah Wah krii ko",
+        "español": "el honorable padre, al matar en"
+      },
+      "linea3": {
+        "dovah": "morokei kein los Wah zin geinmaar Wah dir",
+        "español": "una gloriosa guerra es honrarse a uno mismo, al morir"
+      },
+      "linea4": {
+        "dovah": "ko Morokei kein los wah zin pah do keizaal",
+        "español": "en una Gloriosa guerra es honrar a todo Skyrim"
+      },
+      "id": 6
     }
   ],
   "ingredients": [

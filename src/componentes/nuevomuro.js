@@ -44,8 +44,10 @@ class NewWall extends React.Component{
     render(){
         return(
             <div className='row'>
+             <div className='col-sm-12'>
             <AlfabetoDragon />
-            <form className='col-sm-6' autoComplete='off'>
+               </div>  
+            <form className='col-sm-6 info' autoComplete='off'>
             <div className='form-group'>
                   <label>Nombre</label>
                   <input onChange={this.onChange} className='form-control' type='text' name='nombre' value={this.state.form.nombre}/> 

@@ -1,7 +1,9 @@
 import React from 'react'
 import image from './media/dael.png'
 
+
 class AlfabetoDaedra extends React.Component{
+
   render(){
       return(<React.Fragment>
           <div className='headerAlfabeto mx-auto'>
