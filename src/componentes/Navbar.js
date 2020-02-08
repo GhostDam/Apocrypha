@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-var f = new Date;
+var f = new Date();
 var messk = ["Estrella del Alba", "Amanecer", "primera semilla", "mano de lluvia", "segunda semilla", "mitad del año", "culminacion solar", "ultima semilla", "fuego del hogar", "helada", "ocaso", "Estrella vespertina "];
 var diassk = ["Sundas", "Morndas", "Tirdas", "Middas", "Turdas", "Fredas", "Loredas"]
 
@@ -14,16 +14,11 @@ var dia = ["Domingo", "Lune", "Martes", "Miercoles", "Jueves", "Viernes", "Sabad
 const dayn = dia[f.getDay()]
 const mntn = mes[f.getMonth()]
 
-
-
 const num = f.getDate()
 
 
-var today = new Date();
-
-
 const Navbar = () => (
-<nav className='navbar navbar-expand-sm navbar-dark bg-dark'>
+<nav className='navbar sticky-top navbar-expand-sm navbar-dark bg-dark'>
 
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -65,8 +60,10 @@ const Navbar = () => (
             Artesanias
         </button>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <Link className='dropdown-item' to='/artesania/fraduadelatronach'>Fragua del atronach</Link>
-            <Link className='dropdown-item' to='/artesania/aranas'>Arañas (Dragonbron DLC)</Link>
+            <Link className='dropdown-item' to='/artesanias/fraduadelatronach'>Fragua del atronach</Link>
+            <Link className='dropdown-item' to='/artesanias/aranas'>Arañas (Dragonbron DLC)</Link>
+            <Link className='dropdown-item' to='/artesanias/modelos'>modelos</Link>
+
             </div>        
         </li>
 

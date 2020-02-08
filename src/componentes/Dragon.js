@@ -1,7 +1,20 @@
 import React from 'react'
-import api from '../api'
+// import api from '../api'
 
-const  words= require('../data/languaje.json')
+const  words= require('../data/languaje.json')   
+// useEffect
+// var words = []
+// const fetchWords= async () =>{
+// try {
+//         const data = await api.words.list()
+//         words = data
+//         //    const words:data
+//         console.log(data)
+//         // setPalabrasBuscadas(data)
+//     } catch (error) {
+//         console.log(error)
+//         }
+// }
 
 
 function useSearchWords(words){
@@ -24,7 +37,12 @@ function useSearchWords(words){
     return [value, setValue, palabrasBuscadas]
 }
 
-function LenguajeDragon(props){
+function LenguajeDragon(props){    
+    //react useEffect replaces DidMount
+    // useEffect(()=> {
+    //     fetchWords();
+    // }, [])
+
     const [value, setValue, palabrasBuscadas] = useSearchWords(words)
 
     // //funcional pero pesado
@@ -34,7 +52,7 @@ function LenguajeDragon(props){
     // //funcional pero pesado
 
     return (
-        <div className='textfinder'>
+        <div className=''>
             <div><label>Busqueda</label>
             <input 
                 className='form-control'

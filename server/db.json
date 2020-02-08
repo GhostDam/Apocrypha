@@ -131,6 +131,50 @@
         "español": "en una Gloriosa guerra es honrar a todo Skyrim"
       },
       "id": 6
+    },
+    {
+      "nombre": "Cráter del diente de dragón",
+      "grito": "Furia elemental (gracia)",
+      "ubicacion": "placeholder",
+      "linea1": {
+        "dovah": "Qethsegol vahrukiv paas",
+        "español": ""
+      },
+      "linea2": {
+        "dovah": "Kulaas yrsa wah ensosin",
+        "español": ""
+      },
+      "linea3": {
+        "dovah": "Pah do taazonaan voth",
+        "español": ""
+      },
+      "linea4": {
+        "dovah": "Ek dun ahrk brii",
+        "español": ""
+      },
+      "id": 7
+    },
+    {
+      "nombre": "nuevo muro otra vez",
+      "grito": "kjhjhjjh",
+      "ubicacion": "placeholder",
+      "linea1": {
+        "dovah": "hjkhjkhjk",
+        "español": "876"
+      },
+      "linea2": {
+        "dovah": "876",
+        "español": "876"
+      },
+      "linea3": {
+        "dovah": "876",
+        "español": "876"
+      },
+      "linea4": {
+        "dovah": "786",
+        "español": "kjh"
+      },
+      "id": 8
     }
   ],
   "ingredients": [

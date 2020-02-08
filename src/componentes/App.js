@@ -12,10 +12,13 @@ import AlfabetoDragon from './alfabetoDragon'
 import ListaIngredientes from './listaIngredientes'
 import ListaPociones from './listaPociones'
 
+import Modelos from './modelos'
+
+import Aranhas from './aranhas'
 const App =() => (
   <BrowserRouter>
     <Navbar />
-    <div className='container overflow-auto'>
+    <div className='container overflow-auto '>
       <Route exact path ='/' component={LenguajeDragon} />
       <Route exact path ='/muros' component={Muros} />
       <Route exact path ='/muros/:id/editar' component={EditWall} />
@@ -24,6 +27,9 @@ const App =() => (
       <Route exact path ='/alfabeto/dragon' component={AlfabetoDragon} />
       <Route exact path ='/alquimia' component={ListaIngredientes} />
       <Route exact path ='/pociones' component={ListaPociones} />
+      <Route exact path ='/artesanias/aranas' component={Aranhas} />
+      <Route exact path ='/artesanias/modelos' component={Modelos} />
+
     </div>
   </BrowserRouter>
 )
