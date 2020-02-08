@@ -1,18 +1,17 @@
 import React from 'react'
-
-import mtlfile from './models/spriggan.mtl'
-import objfile from './models/spriggan.obj' 
-import pngfile from './models/spriggan.png'
-
-
+import {Link} from 'react-router-dom'
 import Model from './modelador'
 
 class Modelos extends React.Component{
     render(){
+        console.log(this.props.match.params.model)
         return(
             <div>
-                <h1>spriggan</h1>
-                <Model mtlfile={mtlfile} objfile={objfile} pngfile={pngfile}/>
+                    <Model 
+                    mtlfile={require(`./models/${this.props.match.params.model}.mtl`)} 
+                    objfile={require(`./models/${this.props.match.params.model}.obj`)} 
+                    pngfile={require(`./models/${this.props.match.params.model}.png`)}
+                    />
             </div>
         )
     }

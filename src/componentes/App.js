@@ -13,6 +13,7 @@ import ListaIngredientes from './listaIngredientes'
 import ListaPociones from './listaPociones'
 
 import Modelos from './modelos'
+import Selector from './selector'
 
 import Aranhas from './aranhas'
 const App =() => (
@@ -28,7 +29,8 @@ const App =() => (
       <Route exact path ='/alquimia' component={ListaIngredientes} />
       <Route exact path ='/pociones' component={ListaPociones} />
       <Route exact path ='/artesanias/aranas' component={Aranhas} />
-      <Route exact path ='/artesanias/modelos' component={Modelos} />
+      <Route exact path ='/artesanias/modelos/' component={Selector} />
+      <Route exact path ='/artesanias/modelos/:model' component={Modelos} />
 
     </div>
   </BrowserRouter>
