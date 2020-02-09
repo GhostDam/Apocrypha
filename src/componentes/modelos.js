@@ -1,10 +1,8 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import Model from './modelador'
 
 class Modelos extends React.Component{
     render(){
-        console.log(this.props.match.params.model)
         return(
             <div>
                     <Model 

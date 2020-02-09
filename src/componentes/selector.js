@@ -1,16 +1,19 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import Model from './modelador'
 
 class Selector extends React.Component{
     render(){
-        console.log(this.props.match.params.model)
         return(
             <div>
-                <nav>
-                    <Link to={'./modelos/bear'}>Oso de cueva</Link>
-                    <Link to={'./modelos/esfera'}>esfera enana</Link>
-                    <Link to={'./modelos/spriggan'}>spriggan</Link>
+                <nav className='navbar'>
+                    <Link className='btn btn-secondary' to={'./modelos/bear'}>Oso de cueva</Link>
+                    <Link className='btn btn-secondary' to={'./modelos/esfera'}>esfera enana</Link>
+                    <Link className='btn btn-secondary' to={'./modelos/spriggan'}>spriggan</Link>
+                    <Link className='btn btn-secondary' to={'./modelos/aranaenana'}>Araña enana</Link>
+                    <Link className='btn btn-secondary' to={'./modelos/cauro'}>cauro</Link>
+                    <Link className='btn btn-secondary' to={'./modelos/centurion'}>Centurion</Link>
+                    <Link className='btn btn-secondary' to={'./modelos/valleysaber'}>Gato sable del Valle</Link>
+                    <Link className='btn btn-secondary' to={'./modelos/vaca'}>Vaca</Link>
                 </nav>
             </div>
         )

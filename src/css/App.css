@@ -153,3 +153,7 @@ body{
 .hide img{
   max-width: 30%;
 }
+/* renderer */
+.renderer{
+  margin: 0 auto;
+}

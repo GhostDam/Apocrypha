@@ -1,12 +1,13 @@
 import React from 'react';
 //import three
 import * as THREE from 'three'  //npm three
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import {MTLLoader, OBJLoader} from 'three-obj-mtl-loader' //npm mtl-obj
 
 const style = {
-  height: 1000 // we can control scene size by setting container dimensions
+  height: 600, // we can control scene size by setting container dimensions
+  width: 600,
 };
 
 //function component
@@ -17,6 +18,12 @@ class Model extends React.Component {
       this.viewerAnimate()
       window.addEventListener('resize', this.windowResizer)
       window.addEventListener('keydown', this.onKeyDown)
+    }
+
+    componentWillUnmount() {
+      window.removeEventListener("resize", this.windowResizer);
+      window.cancelAnimationFrame(this.requestID);
+      this.controls.dispose();
     }
 
   setup = () =>{
@@ -98,6 +105,9 @@ class Model extends React.Component {
         case 'ArrowUp':
             this.parent.position.y += .5;
         break;
+        default:
+          break;
+
     }
   }
   //render function
@@ -119,7 +129,7 @@ class Model extends React.Component {
 
 render(){
   return(
-    <div style={style} ref={ref => (this.el = ref)}/>
+    <div className='renderer' style={style} ref={ref => (this.el = ref)}/>
   )
 }
 }

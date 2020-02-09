@@ -155,24 +155,24 @@
       "id": 7
     },
     {
-      "nombre": "nuevo muro otra vez",
-      "grito": "kjhjhjjh",
+      "nombre": "Baluarte del viento aullante ",
+      "grito": "(Bugueado)",
       "ubicacion": "placeholder",
       "linea1": {
-        "dovah": "hjkhjkhjk",
-        "español": "876"
+        "dovah": "",
+        "español": "Hay 2 textos sobreescritos"
       },
       "linea2": {
-        "dovah": "876",
-        "español": "876"
+        "dovah": "",
+        "español": ""
       },
       "linea3": {
-        "dovah": "876",
-        "español": "876"
+        "dovah": "",
+        "español": ""
       },
       "linea4": {
-        "dovah": "786",
-        "español": "kjh"
+        "dovah": "",
+        "español": ""
       },
       "id": 8
     }
