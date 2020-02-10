@@ -7,7 +7,7 @@ class AlfabetoDragon extends React.Component{
        <div>
         <div className='headerAlfabeto'>
           <div>
-            <img src={image} alt='dragon'/>
+            <img src={image} alt='dragon'/> 
           </div>
           <h1>Dragon</h1>
           <div className='espejo'>
@@ -119,7 +119,6 @@ class AlfabetoDragon extends React.Component{
             </div>
         </div>
         </div> 
- 
         </React.Fragment>
       )
   }  

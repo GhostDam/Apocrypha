@@ -1,8 +1,69 @@
 import React from 'react'
 import image from './media/dael.png'
+import {Link} from 'react-router-dom'
 
+import Fauna from './faunadb'
+import Muro from './muro'
 
 class AlfabetoDaedra extends React.Component{
+  // constructor(props){
+  //   super(props);
+  //   this.state = {
+  //     muros: []
+  //   }
+  // }
+
+  // componentDidMount(){
+  //   this.fetchData();
+  // }
+
+  // fetchData = async () =>{
+  //   try {
+  //     const res = await Fauna.data.get();
+  //     this.setState({muros: res.data})
+  //     console.log(res.data)
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  // }
+
+  // borrar = (ref) =>{
+  //   if (window.confirm('borrar?')) {
+  //     try {
+  //     const conf = Fauna.data.delete(ref)
+  //       console.log(conf)
+  //   } catch (error) {
+  //     console.log(error)
+  //     }
+  //   }else{
+  //     console.log('cancelos')
+  //   }
+  // }
+
+  // enlistador = () =>{
+  //   return(
+  //     this.state.muros.map((muro)=>(
+  //       <div key={muro.ts}>
+  //       {console.log(muro.ts)}
+  //         <Muro nombre={muro.data.nombre}
+  //               grito={muro.data.grito}
+  //               ubicacion={muro.data.ubicacion}
+  //               español1={muro.data.linea1.español}
+  //               dovah1={muro.data.linea1.dovah}
+  //               español2={muro.data.linea2.español}
+  //               dovah2={muro.data.linea2.dovah}
+  //               español3={muro.data.linea3.español}
+  //               dovah3={muro.data.linea3.dovah}
+  //               español4={muro.data.linea4.español}
+  //               dovah4={muro.data.linea4.dovah}
+  //       />
+  //       <button className='deleter' onClick={()=>this.borrar(muro.ref.id)}>Borrar ref {muro.ref.id}</button>
+  //       <Link to={`/muros/${muro.ref.id}/editar`}>Editar ref {muro.ref.id}</Link>
+
+  //     </div>
+  //     ))
+  //     )
+  //   }
 
   render(){
       return(<React.Fragment>
@@ -91,7 +152,8 @@ class AlfabetoDaedra extends React.Component{
             <div>
             <p>Z</p><img src={require("./daedra/z.svg")} alt="" />
             </div>
-        </div>
+          </div>
+        {/* {this.enlistador()} */}
         </React.Fragment>
       )
   }  

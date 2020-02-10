@@ -7,7 +7,6 @@ import {MTLLoader, OBJLoader} from 'three-obj-mtl-loader' //npm mtl-obj
 
 const style = {
   height: 600, // we can control scene size by setting container dimensions
-  width: 600,
 };
 
 //function component

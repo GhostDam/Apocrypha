@@ -2,6 +2,7 @@ import React from 'react'
 import Muro from './muro'
 import api from '../api'
 
+import Fauna from './faunadb'
 import LenguajeDragon from './Dragon'
 
 class EditWall extends React.Component{
@@ -35,11 +36,12 @@ class EditWall extends React.Component{
 
     fetchData = async () => {
         try {
+        //json server
         const data = await api.walls.read(this.props.match.params.id)
             console.log(data)
             console.log(this.state.form)
             this.setState({
-                form:{
+                form:{  
                         nombre:data.nombre,
                         grito:data.grito,
                         l1dovah:data.linea1.dovah,
@@ -52,6 +54,26 @@ class EditWall extends React.Component{
                         l4español:data.linea4.español,           
                     }
             })
+        //json server
+        // //fauna
+        // const data = await Fauna.data.read(this.props.match.params.id)
+        // console.log(data)
+        //     this.setState({
+        //         form:{  
+        //                 nombre:data.data.nombre,
+        //                 grito:data.data.grito,
+        //                 l1dovah:data.data.linea1.dovah,
+        //                 l1español:data.data.linea1.español,
+        //                 l2dovah:data.data.linea2.dovah,
+        //                 l2español:data.data.linea2.español,
+        //                 l3dovah:data.data.linea3.dovah,
+        //                 l3español:data.data.linea3.español,
+        //                 l4dovah:data.data.linea4.dovah,
+        //                 l4español:data.data.linea4.español,           
+        //             }
+        //     })
+        // //fauna
+
         } catch (error) {
             console.log(error) 
         }        
@@ -59,8 +81,14 @@ class EditWall extends React.Component{
     handleClick = async (e) =>{
       e.preventDefault()
          try {
+            // //json server 
             await api.walls.update(this.props.match.params.id, this.state.form)
-            alert('Edited')   
+            // //json server 
+            // //Fauna
+            // await Fauna.data.update(this.props.match.params.id, this.state.form)
+            // //Fauna
+
+            alert('Edited')
          } catch (error) {
             console.log(error)
             alert(error)

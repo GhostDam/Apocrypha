@@ -1,7 +1,9 @@
 import React from 'react'
 import Muro from './muro'
 import AlfabetoDragon from './alfabetoDragon'
-import api from '../api'
+import api from '../api' //json server
+import Fauna from './faunadb'
+
 class NewWall extends React.Component{
     state={
         form:{
@@ -29,16 +31,29 @@ class NewWall extends React.Component{
 
     handleClick = async (e) =>{
       e.preventDefault()
+   //json server
          try {
             await api.walls.create(this.state.form)
             console.log(this.state.form)
-            alert('success')
-            // this.props.history.push('/badges')
-   
+            alert('success')   
          } catch (error) {
             console.log(error)
             alert(error)
          }
+      //json server
+      
+      // //fauna
+      // try {
+      //   const res = await Fauna.data.save(this.state.form)
+      //    console.log(res)
+      //    if (res) {
+      //      alert('Guardado correctamente') 
+      //    }
+      // } catch (error) {
+      //    console.log(error)
+      // }
+      // //fauna
+
    } 
 
     render(){
@@ -47,7 +62,7 @@ class NewWall extends React.Component{
              <div className='col-sm-12'>
             <AlfabetoDragon />
                </div>  
-            <form className='col-sm-6 info' autoComplete='off'>
+            <form id='agregar_muro' className='col-sm-6 info' autoComplete='off'>
             <div className='form-group'>
                   <label>Nombre</label>
                   <input onChange={this.onChange} className='form-control' type='text' name='nombre' value={this.state.form.nombre}/> 
