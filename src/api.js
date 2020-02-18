@@ -91,7 +91,14 @@ const api = {
   words: {
     list(){
       return callApi('/words')
+    },
+    write(word){
+      return callApi('/words' , {
+        method: 'POST',
+        body: JSON.stringify(word),
+      })
     }
+
   },
   potions:{
     list() {

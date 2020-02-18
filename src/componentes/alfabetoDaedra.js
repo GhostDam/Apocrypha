@@ -1,9 +1,9 @@
 import React from 'react'
 import image from './media/dael.png'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 
-import Fauna from './faunadb'
-import Muro from './muro'
+// import Fauna from './faunadb'
+// import Muro from './muro'
 
 class AlfabetoDaedra extends React.Component{
   // constructor(props){

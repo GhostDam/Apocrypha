@@ -11,6 +11,7 @@ import AlfabetoDaedra from './alfabetoDaedra'
 import AlfabetoDragon from './alfabetoDragon'
 import ListaIngredientes from './listaIngredientes'
 import ListaPociones from './listaPociones'
+import AddWord from './addword'
 
 import Modelos from './modelos'
 import Selector from './selector'
@@ -31,6 +32,7 @@ const App =() => (
       <Route exact path ='/artesanias/aranas' component={Aranhas} />
       <Route exact path ='/artesanias/modelos/' component={Selector} />
       <Route exact path ='/artesanias/modelos/:model' component={Modelos} />
+      <Route exact path ='/lenguaje' component={AddWord} />
 
     </div>
   </BrowserRouter>

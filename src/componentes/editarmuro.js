@@ -2,7 +2,7 @@ import React from 'react'
 import Muro from './muro'
 import api from '../api'
 
-import Fauna from './faunadb'
+// import Fauna from './faunadb'
 import LenguajeDragon from './Dragon'
 
 class EditWall extends React.Component{

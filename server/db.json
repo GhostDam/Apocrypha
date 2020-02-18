@@ -175,6 +175,50 @@
         "español": ""
       },
       "id": 8
+    },
+    {
+      "nombre": "Cueva abandonada ",
+      "grito": "Marca de la muerte (Sangría) --bug, matar y sangría aprendidas en el mismo muro",
+      "ubicacion": "placeholder",
+      "linea1": {
+        "dovah": "Het mah tahrodiis tafiir",
+        "español": ""
+      },
+      "linea2": {
+        "dovah": "Skorji lun-sinak wen klov",
+        "español": ""
+      },
+      "linea3": {
+        "dovah": "Govey naal rinik hahkun rok",
+        "español": ""
+      },
+      "linea4": {
+        "dovah": "Togaat wah gahrot",
+        "español": ""
+      },
+      "id": 9
+    },
+    {
+      "nombre": "Sanctasanctórum del templo de Miraak",
+      "grito": "Aspecto de Dragón",
+      "ubicacion": "placeholder",
+      "linea1": {
+        "dovah": "Het ont kriist miraak wo ahtiid",
+        "español": "Aquí una vez estuvo Miraak, quien vistió"
+      },
+      "linea2": {
+        "dovah": "Ok sahvot ol qah spaan naal",
+        "español": "su fe como armadura para protegerse a través de un"
+      },
+      "linea3": {
+        "dovah": "Deyra fah ok unslaad midun",
+        "español": "Daedra en cambio de su interminable lealtad"
+      },
+      "linea4": {
+        "dovah": "",
+        "español": ""
+      },
+      "id": 10
     }
   ],
   "ingredients": [
@@ -3300,6 +3344,51 @@
       "id": 427,
       "dovah": "Sosaal",
       "español": "Sangrar, sufrir"
+    },
+    {
+      "dovah": "Ont",
+      "español": "una vez",
+      "id": 428
+    },
+    {
+      "dovah": "Kriist",
+      "español": "Estar",
+      "id": 429
+    },
+    {
+      "dovah": "Ahtiid",
+      "español": "vestir",
+      "id": 430
+    },
+    {
+      "dovah": "Ok",
+      "español": "su (propiedad)",
+      "id": 431
+    },
+    {
+      "dovah": "Sahvot",
+      "español": "Fé",
+      "id": 432
+    },
+    {
+      "dovah": "Spaan",
+      "español": "Proteger (to protect)",
+      "id": 433
+    },
+    {
+      "dovah": "Naal",
+      "español": "por, de acuerdo con, a través de",
+      "id": 434
+    },
+    {
+      "dovah": "Deyra",
+      "español": "Daedra",
+      "id": 435
+    },
+    {
+      "dovah": "Midun",
+      "español": "Lealtad",
+      "id": 436
     }
   ],
   "potions": [

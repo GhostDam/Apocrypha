@@ -1,20 +1,19 @@
 import React from 'react'
-// import api from '../api'
+import api from '../api'
 
-const  words= require('../data/languaje.json')   
-// useEffect
-// var words = []
-// const fetchWords= async () =>{
-// try {
-//         const data = await api.words.list()
-//         words = data
-//         //    const words:data
-//         console.log(data)
-//         // setPalabrasBuscadas(data)
-//     } catch (error) {
-//         console.log(error)
-//         }
-// }
+import Modal from './modal'
+
+// const  words= require('../data/languaje.json')   
+//useEffect
+var owords = []
+const fetchWords= async () =>{
+try {
+        const data = await api.words.list()
+        owords = await data
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 
 function useSearchWords(words){
@@ -23,51 +22,31 @@ function useSearchWords(words){
     //React useMemo
     const [palabrasBuscadas, setPalabrasBuscadas] = React.useState(words)
 
-
-    //lo mismo pero mas complejo
     React.useMemo(() => {
-    const resultado = words.filter(word =>{
-            return `${word.dovah}${word.español}`.toLowerCase().includes(value.toLowerCase())
-        })
+        const resultado = words.filter(word =>{
+                                return `${word.dovah}${word.español}`.toLowerCase().includes(value.toLowerCase())
+                                        })
         setPalabrasBuscadas(resultado)
-    },[words, value]
+        },[words, value]
     )
-    //lo mismo pero mas complejo
-
     return [value, setValue, palabrasBuscadas]
 }
 
+fetchWords()
 function LenguajeDragon(props){    
-    //react useEffect replaces DidMount
-    // useEffect(()=> {
-    //     fetchWords();
-    // }, [])
-
-    const [value, setValue, palabrasBuscadas] = useSearchWords(words)
-
-    // //funcional pero pesado
-    // const palabrasBuscadas = words.filter(word =>{
-    //     return `${word.dovah}${word.español}`.toLowerCase().includes(value.toLowerCase())
-    // })
-    // //funcional pero pesado
-
+    const [value, setValue, palabrasBuscadas] = useSearchWords(owords)
     return (
-        <div className=''>
-            <div><label>Busqueda</label>
-            <input 
-                className='form-control'
-                value={value}
-                onChange={(e)=>{
-                    setValue(e.target.value)
-                }
-                }/>
-            </div>
+        <div>
+            <div className='d-flex justify-content-between'>
+                <label>Busqueda</label> <Modal />
+            </div> 
+                <input className='form-control' value={value}  onChange={(e)=>{setValue(e.target.value)}}/>
             {palabrasBuscadas.map((palabra, index) => (
                 <div key={index} className='d-flex justify-content-around info'>
-                <p>{palabra.dovah}</p>
-                <p> {palabra.español}</p>
+                    <p>{palabra.dovah}</p>
+                    <p>{palabra.español}</p>
                 </div>
-                ))}
+            ))}
         </div>
     )    
 }
