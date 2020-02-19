@@ -3,17 +3,17 @@ import api from '../api'
 
 import Modal from './modal'
 
-// const  words= require('../data/languaje.json')   
+const  words= require('../data/languaje.json')   
 //useEffect
-var owords = []
-const fetchWords= async () =>{
-try {
-        const data = await api.words.list()
-        owords = await data
-    } catch (error) {
-        console.log(error)
-    }
-}
+// var owords = []
+// const fetchWords= async () =>{
+// try {
+//         const data = await api.words.list()
+//         owords = await data
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
 
 
 function useSearchWords(words){
@@ -32,16 +32,16 @@ function useSearchWords(words){
     return [value, setValue, palabrasBuscadas]
 }
 
-fetchWords()
+// fetchWords()
 function LenguajeDragon(props){    
-    const [value, setValue, palabrasBuscadas] = useSearchWords(owords)
+    const [value, setValue, palabrasBuscadas] = useSearchWords(words)
     return (
         <div>
             <div className='d-flex justify-content-between'>
                 <label>Busqueda</label> <Modal />
             </div> 
                 <input className='form-control' value={value}  onChange={(e)=>{setValue(e.target.value)}}/>
-            {palabrasBuscadas.map((palabra, index) => (
+                {palabrasBuscadas.map((palabra, index) => (
                 <div key={index} className='d-flex justify-content-around info'>
                     <p>{palabra.dovah}</p>
                     <p>{palabra.español}</p>
