@@ -31,7 +31,7 @@ const send = async ()=>{
             </button>
           </div>
           <div className="modal-body">
-            <form autocomplete='off'>
+            <form autoComplete='off'>
               <div className="form-group">
                 <label htmlFor="recipient-name" className="col-form-label">Dovah:</label>
                 <input type="text" className="form-control" id="recipient-name" onChange={(e)=>(setDov(e.target.value))} />

@@ -23,10 +23,9 @@
       }
     },
     {
-      "id": 2,
       "nombre": "Guarida de marea Argentea",
       "grito": "Desarmar",
-      "ubicacion": "https://vignette.wikia.nocookie.net/elderscrolls/images/9/9c/Guarida_marea_argentea.jpg/revision/latest?cb=20140308193722&path-prefix=es",
+      "ubicacion": "placeholder",
       "linea1": {
         "dovah": "Qethsegol Vahrukiv",
         "español": ""
@@ -40,9 +39,10 @@
         "español": ""
       },
       "linea4": {
-        "dovah": "Laat naal ufiik do korvag kol.",
+        "dovah": "Laat naal ufiik do korvag kol",
         "español": ""
-      }
+      },
+      "id": 2
     },
     {
       "id": 3,
@@ -87,6 +87,160 @@
         "español": ""
       },
       "id": 4
+    },
+    {
+      "nombre": "Punta de Arcwind",
+      "grito": "Absorción de vitalidad (salud)",
+      "ubicacion": "https://vignette.wikia.nocookie.net/elderscrolls/images/9/97/Punta_Arcwind_Map.jpg/revision/latest?cb=20151019195003&path-prefix=es",
+      "linea1": {
+        "dovah": "Het mah arnvid faal",
+        "español": "Aquí yace Arnvid, el"
+      },
+      "linea2": {
+        "dovah": "Staadnau wen haas denos",
+        "español": "Desatado, cuya salud empeoro,"
+      },
+      "linea3": {
+        "dovah": "Mindin kein do galik kolos",
+        "español": "despues de la guerra del pino donde"
+      },
+      "linea4": {
+        "dovah": "Rok ofaal dilos ahraan",
+        "español": "él recibió una herida mortal"
+      },
+      "id": 5
+    },
+    {
+      "nombre": "Torre de vista del otoño",
+      "grito": "Marca de la muerte (matar)",
+      "ubicacion": "placeholder",
+      "linea1": {
+        "dovah": "Nonvul bron dahmaan daar rot do",
+        "español": "Nobles nordicos recordaran estas palabra de"
+      },
+      "linea2": {
+        "dovah": "Fin fodiis bormah Wah krii ko",
+        "español": "el honorable padre, al matar en"
+      },
+      "linea3": {
+        "dovah": "morokei kein los Wah zin geinmaar Wah dir",
+        "español": "una gloriosa guerra es honrarse a uno mismo, al morir"
+      },
+      "linea4": {
+        "dovah": "ko Morokei kein los wah zin pah do keizaal",
+        "español": "en una Gloriosa guerra es honrar a todo Skyrim"
+      },
+      "id": 6
+    },
+    {
+      "nombre": "Cráter del diente de dragón",
+      "grito": "Furia elemental (gracia)",
+      "ubicacion": "placeholder",
+      "linea1": {
+        "dovah": "Qethsegol vahrukiv paas",
+        "español": ""
+      },
+      "linea2": {
+        "dovah": "Kulaas yrsa wah ensosin",
+        "español": ""
+      },
+      "linea3": {
+        "dovah": "Pah do taazonaan voth",
+        "español": ""
+      },
+      "linea4": {
+        "dovah": "Ek dun ahrk brii",
+        "español": ""
+      },
+      "id": 7
+    },
+    {
+      "nombre": "Baluarte del viento aullante ",
+      "grito": "(Bugueado)",
+      "ubicacion": "placeholder",
+      "linea1": {
+        "dovah": "",
+        "español": "Hay 2 textos sobreescritos"
+      },
+      "linea2": {
+        "dovah": "",
+        "español": ""
+      },
+      "linea3": {
+        "dovah": "",
+        "español": ""
+      },
+      "linea4": {
+        "dovah": "",
+        "español": ""
+      },
+      "id": 8
+    },
+    {
+      "nombre": "Cueva abandonada ",
+      "grito": "Marca de la muerte (Sangría) --bug, matar y sangría aprendidas en el mismo muro",
+      "ubicacion": "placeholder",
+      "linea1": {
+        "dovah": "Het mah tahrodiis tafiir",
+        "español": ""
+      },
+      "linea2": {
+        "dovah": "Skorji lun-sinak wen klov",
+        "español": ""
+      },
+      "linea3": {
+        "dovah": "Govey naal rinik hahkun rok",
+        "español": ""
+      },
+      "linea4": {
+        "dovah": "Togaat wah gahrot",
+        "español": ""
+      },
+      "id": 9
+    },
+    {
+      "nombre": "Sanctasanctórum del templo de Miraak",
+      "grito": "Aspecto de Dragón",
+      "ubicacion": "placeholder",
+      "linea1": {
+        "dovah": "Het ont kriist miraak wo ahtiid",
+        "español": "Aquí una vez estuvo Miraak, quien vistió"
+      },
+      "linea2": {
+        "dovah": "Ok sahvot ol qah spaan naal",
+        "español": "su fe como armadura para protegerse a través de un"
+      },
+      "linea3": {
+        "dovah": "Deyra fah ok unslaad midun",
+        "español": "Daedra en cambio de su interminable lealtad"
+      },
+      "linea4": {
+        "dovah": "",
+        "español": ""
+      },
+      "id": 10
+    },
+    {
+      "nombre": "Ruinas de puerta alta",
+      "grito": "Invocación de tormenta (tormenta)",
+      "ubicacion": "placeholder",
+      "linea1": {
+        "dovah": "ahrk ond drey sahrot",
+        "español": ""
+      },
+      "linea2": {
+        "dovah": "heimverlund meyz nol hevno",
+        "español": ""
+      },
+      "linea3": {
+        "dovah": "brom med strun do uznahgaar",
+        "español": ""
+      },
+      "linea4": {
+        "dovah": "nahkriin nol sovngarde nimaar",
+        "español": ""
+      },
+      "id": 11
     }
   ],
   "ingredients": [
@@ -1151,7 +1305,7 @@
     {
       "id": 15,
       "dovah": "Ahraan",
-      "español": "Herida "
+      "español": "Herir, Herida"
     },
     {
       "id": 16,
@@ -3207,6 +3361,111 @@
       "id": 426,
       "dovah": "Zun Haal Viik",
       "español": "Grito: Desarmar"
+    },
+    {
+      "id": 427,
+      "dovah": "Sosaal",
+      "español": "Sangrar, sufrir"
+    },
+    {
+      "dovah": "Ont",
+      "español": "una vez",
+      "id": 428
+    },
+    {
+      "dovah": "Kriist",
+      "español": "Estar",
+      "id": 429
+    },
+    {
+      "dovah": "Ahtiid",
+      "español": "vestir",
+      "id": 430
+    },
+    {
+      "dovah": "Ok",
+      "español": "su (propiedad)",
+      "id": 431
+    },
+    {
+      "dovah": "Sahvot",
+      "español": "Fé",
+      "id": 432
+    },
+    {
+      "dovah": "Spaan",
+      "español": "Proteger (to protect)",
+      "id": 433
+    },
+    {
+      "dovah": "Naal",
+      "español": "por, de acuerdo con, a través de",
+      "id": 434
+    },
+    {
+      "dovah": "Deyra",
+      "español": "Daedra",
+      "id": 435
+    },
+    {
+      "dovah": "Midun",
+      "español": "Lealtad",
+      "id": 436
+    },
+    {
+      "dovah": "Dilos",
+      "español": "Mortal",
+      "id": 437
+    },
+    {
+      "dovah": "Ofaal",
+      "español": "Recibir, adquirir",
+      "id": 438
+    },
+    {
+      "dovah": "Staadnau",
+      "español": "sin consolidar",
+      "id": 439
+    },
+    {
+      "dovah": "Denos",
+      "español": "declinar, empeorar",
+      "id": 440
+    },
+    {
+      "dovah": "Mindin",
+      "español": "Despues",
+      "id": 441
+    },
+    {
+      "dovah": "Galik",
+      "español": "Pino",
+      "id": 442
+    },
+    {
+      "dovah": "Kolos",
+      "español": "Durante, donde",
+      "id": 443
+    },
+    {
+      "dovah": "Rok",
+      "español": "El (él)",
+      "id": 444
+    },
+    {
+      "dovah": "Arnvid",
+      "español": "Nombre propio",
+      "id": 445
+    },
+    {
+      "dovah": "Ond",
+      "español": "Mira, escucha",
+      "id": 446
+    },
+    {
+      "dovah": "Heimverlund",
+      "español": "Nombre propio",
+      "id": 447
     }
   ],
   "potions": [

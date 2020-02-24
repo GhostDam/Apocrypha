@@ -23,8 +23,8 @@ class Muros extends React.Component {
      } catch(error){
         console.log(error)
         if(error){
-            var data = require('../data/walls.json')
-            this.setState({muros:data})
+            var data = require('../data/db.json')
+            this.setState({muros:data.walls})
         }
     }
   } 

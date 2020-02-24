@@ -12,8 +12,9 @@ import AlfabetoDragon from './alfabetoDragon'
 import ListaIngredientes from './listaIngredientes'
 import ListaPociones from './listaPociones'
 
-import Modelos from './modelos'
 import Selector from './selector'
+import SelectorAr from './selectorAr'
+
 
 import Aranhas from './aranhas'
 const App =() => (
@@ -30,7 +31,7 @@ const App =() => (
       <Route exact path ='/pociones' component={ListaPociones} />
       <Route exact path ='/artesanias/aranas' component={Aranhas} />
       <Route exact path ='/artesanias/modelos/' component={Selector} />
-      <Route exact path ='/artesanias/modelos/:model' component={Modelos} />
+      <Route exact path ='/artesanias/modelosar/' component={SelectorAr} />
     </div>
   </BrowserRouter>
 )

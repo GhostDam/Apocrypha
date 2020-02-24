@@ -3,17 +3,21 @@ import api from '../api'
 
 import Modal from './modal'
 
-const  words= require('../data/languaje.json')   
+// const  words= require('../data/languaje.json')   
 //useEffect
-// var owords = []
-// const fetchWords= async () =>{
-// try {
-//         const data = await api.words.list()
-//         owords = await data
-//     } catch (error) {
-//         console.log(error)
-//     }
-// }
+var words = []
+const fetchWords= async () =>{
+try {
+        const data = await api.words.list()
+        words = await data
+    } catch (error) {
+        if(error){
+            const data = require('../data/db.json')
+            words = data.words
+        }
+
+    }
+}
 
 
 function useSearchWords(words){
@@ -32,7 +36,7 @@ function useSearchWords(words){
     return [value, setValue, palabrasBuscadas]
 }
 
-// fetchWords()
+fetchWords()
 function LenguajeDragon(props){    
     const [value, setValue, palabrasBuscadas] = useSearchWords(words)
     return (
