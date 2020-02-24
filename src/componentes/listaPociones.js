@@ -1,5 +1,7 @@
 import React from 'react'
 import api from '../api'
+
+
 class ListaPociones extends React.Component{
     constructor(props){
         super(props);
@@ -24,14 +26,20 @@ class ListaPociones extends React.Component{
     const    potion =this.state.pociones.sort((a,b)=> a.size > b.size )
     return(
             potion.map((pocion)=>(
-                <div key={pocion.id} className='col-md-3 info '>
-            <p>{pocion.pocion}
-               {pocion.ingrediente1} <br/>
-               {pocion.ingrediente2} <br/>
-               {pocion.ingrediente3} <br/>
-               {pocion.efecto4} <br/>
-               {pocion.valor}</p>
-            </div>
+                <div key={pocion.id} className='row col-md-6'>
+                    <div className='col-md-6'>
+                        <p> Descripcion de pocion <br/>
+                        {pocion.pocion}</p>
+                    </div>
+                    <div className='col-md-6'>
+                        <p>ingredientes usados <br/>
+                        {pocion.ingrediente1} <br/>
+                        {pocion.ingrediente2} <br/>
+                        {pocion.ingrediente3} <br/>
+                        {pocion.efecto4} <br/>
+                        {pocion.valor}</p>
+                    </div>
+                </div>
             ))
         )
     }
@@ -40,7 +48,7 @@ class ListaPociones extends React.Component{
         return(
             <div>
                 <h1>Lista de Pociones</h1>
-                <div className='row'>
+                <div className='row info'>
                 {this.mapPotions()}
                 </div>
             </div>
