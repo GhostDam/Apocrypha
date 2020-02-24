@@ -63,6 +63,7 @@ const Navbar = () => (
             <Link className='dropdown-item' to='/artesanias/fraduadelatronach'>Fragua del atronach</Link>
             <Link className='dropdown-item' to='/artesanias/aranas'>Arañas (Dragonbron DLC)</Link>
             <Link className='dropdown-item' to='/artesanias/modelos'>modelos</Link>
+            <Link className='dropdown-item' to='/artesanias/modelosar'>modelos Ar</Link>
 
             </div>        
         </li>
