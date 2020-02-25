@@ -1082,7 +1082,7 @@
       "valor": 3
     },
     {
-      "ingrediente": "Ceniza de engendro",
+      "ingrediente": "Ceniza de engendro (DLC Dragonborn)",
       "efecto1": "Dañar Aguante",
       "efecto2": "Resistencia al Fuego",
       "efecto3": "Reforzar Encantamiento",
@@ -1091,7 +1091,7 @@
       "valor": 20
     },
     {
-      "ingrediente": "Colmillo de jabalí",
+      "ingrediente": "Colmillo de jabalí (DLC Dragonborn)",
       "efecto1": "Reforzar Aguante",
       "efecto2": "Reforzar Salud",
       "efecto3": "Reforzar Bloqueo",
@@ -1100,7 +1100,7 @@
       "valor": 20
     },
     {
-      "ingrediente": "Jalea de netch",
+      "ingrediente": "Jalea de netch (DLC Dragonborn)",
       "efecto1": "Paralisis",
       "efecto2": "Reforzar Capacidad de Carga",
       "efecto3": "Restaurar Aguante",
@@ -1109,7 +1109,7 @@
       "valor": 20
     },
     {
-      "ingrediente": "Jalea de saltador de cenizas",
+      "ingrediente": "Jalea de saltador de cenizas (DLC Dragonborn)",
       "efecto1": "Regenerar Salud",
       "efecto2": "Reforzar Armadura Ligera",
       "efecto3": "Resistencia a la Descarga",
@@ -1118,7 +1118,7 @@
       "valor": 20
     },
     {
-      "ingrediente": "Madera de spriggan quemado",
+      "ingrediente": "Madera de spriggan quemado (DLC Dragonborn)",
       "efecto1": "Debilidad al fuego",
       "efecto2": "Reforzar alteración",
       "efecto3": "Dañar Regeneración Magica",
@@ -1127,7 +1127,7 @@
       "valor": 20
     },
     {
-      "ingrediente": "Musgo de parasol de emperador",
+      "ingrediente": "Musgo de parasol de emperador (DLC Dragonborn)",
       "efecto1": "Dañar salud",
       "efecto2": "Reforzar magia",
       "efecto3": "Regenerar Salud",
@@ -1136,7 +1136,7 @@
       "valor": 1
     },
     {
-      "ingrediente": "Plumas de golondrina marina de Felsaad",
+      "ingrediente": "Plumas de golondrina marina de Felsaad (DLC Dragonborn)",
       "efecto1": "Restaurar salud",
       "efecto2": "Reforzar Armadura Ligera",
       "efecto3": "Curar enfermedad",
@@ -1145,7 +1145,7 @@
       "valor": 15
     },
     {
-      "ingrediente": "Raíz de trama",
+      "ingrediente": "Raíz de trama (DLC Dragonborn)",
       "efecto1": "Debilidad a la descarga",
       "efecto2": "Reforzar Capacidad de Carga",
       "efecto3": "Dañar Magia",
@@ -1154,7 +1154,7 @@
       "valor": 1
     },
     {
-      "ingrediente": "Raíz trepadora cenicienta",
+      "ingrediente": "Raíz trepadora cenicienta (DLC Dragonborn)",
       "efecto1": "Dañar Aguante",
       "efecto2": "Invisibilidad",
       "efecto3": "Resistencia al Fuego",
@@ -1163,7 +1163,7 @@
       "valor": 20
     },
     {
-      "ingrediente": "Rascabuches",
+      "ingrediente": "Rascabuches (DLC Dragonborn)",
       "efecto1": "Dañar salud",
       "efecto2": "Dañar Aguante",
       "efecto3": "Dañar Magia",
@@ -1172,7 +1172,7 @@
       "valor": 1
     },
     {
-      "ingrediente": "Semilla de hierba cenicienta",
+      "ingrediente": "Semilla de hierba cenicienta (DLC Dragonborn)",
       "efecto1": "Resistencia al Fuego",
       "efecto2": "Debilidad a la descarga",
       "efecto3": "Reforzar abrir cerraduras",
@@ -1181,7 +1181,7 @@
       "valor": 1
     },
     {
-      "ingrediente": "Ala de polilla ancestral",
+      "ingrediente": "Ala de polilla ancestral (DlC Dawnguard)",
       "efecto1": "Dañar Aguante",
       "efecto2": "Reforzar conjuración",
       "efecto3": "dañar regeneración magica",
@@ -1190,7 +1190,7 @@
       "valor": 2
     },
     {
-      "ingrediente": "Antena de cauro cazador",
+      "ingrediente": "Antena de cauro cazador (DlC Dawnguard)",
       "efecto1": "Dañar Aguante",
       "efecto2": "Reforzar conjuración",
       "efecto3": "dañar regeneración magica",
@@ -1199,7 +1199,7 @@
       "valor": 2
     },
     {
-      "ingrediente": "Flor brillante",
+      "ingrediente": "Flor brillante (DlC Dawnguard)",
       "efecto1": "Resistencia a la magia",
       "efecto2": "Miedo",
       "efecto3": "Regenerar Salud",
@@ -1208,7 +1208,7 @@
       "valor": 5
     },
     {
-      "ingrediente": "Flor venenosa",
+      "ingrediente": "Flor venenosa (DlC Dawnguard)",
       "efecto1": "Dañar salud",
       "efecto2": "Ralentizar",
       "efecto3": "Reforzar cargar peso",
@@ -1217,7 +1217,7 @@
       "valor": 5
     },
     {
-      "ingrediente": "Flor amarilla de montaña",
+      "ingrediente": "Flor amarilla de montaña (DlC Dawnguard)",
       "efecto1": "Resistencia al veneno",
       "efecto2": "Reforzar restauración",
       "efecto3": "Reforzar Salud",
@@ -1225,6 +1225,17 @@
       "peso": ".1",
       "valor": 2
     }
+  ],
+  "efectos" :[
+    {"idf": "curar enfermedad", "costo": ".5", "magnitud":5, "duracion":0, "valor":21},
+    {"idf": "Paralisis", "costo": "500", "magnitud":0, "duracion":1, "valor":285},
+    {"idf": "Invisibilidad", "costo": "100", "magnitud":0, "duracion":4, "valor":261},
+    {"idf": "Dañar Salud", "costo": "3", "magnitud":2, "duracion":1, "valor":3},
+    {"idf": "Dañar magia", "costo": "22", "magnitud":3, "duracion":0, "valor":52},
+    {"idf": "Ralentizar", "costo": "1", "magnitud":50, "duracion":5, "valor":247},
+    {"idf": "Dañar Regeneración Magica", "costo": "0.5", "magnitud":100, "duracion":5, "valor":265},
+    {"idf": "Dañar Regeneración de aguante", "costo": "0.3", "magnitud":100, "duracion":5, "valor":159}
+
   ],
   "words": [
     {
