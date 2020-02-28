@@ -62,6 +62,13 @@ class Selector extends React.Component{
                         Atronach de la tormenta
                     </button>
 
+                    <button className='btn btn-secondary' onClick={()=> this.getModel('bruja')}>
+                        Bruja Cuervo
+                    </button>
+
+                    <button className='btn btn-secondary' onClick={()=> this.getModel('aldwall')}>
+                        Muro de alduin
+                    </button>
 
                 </div>
                 <div className='col-md-8'>

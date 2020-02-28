@@ -251,7 +251,8 @@
       "efecto3": "Regenerar Aguante",
       "efecto4": "Debilidad a la Descarga",
       "peso": ".1",
-      "valor": 3
+      "valor": 3,
+      "detalles":"invernadero"
     },
     {
       "ingrediente": "Aceite Enano",
@@ -305,7 +306,8 @@
       "efecto3": "Daño Persistente al Aguante",
       "efecto4": "Dañar Magia",
       "peso": ".1",
-      "valor": 3
+      "valor": 3,
+      "detalles":"invernadero"
     },
     {
       "ingrediente": "Ala de Mariposa Azul",
@@ -314,7 +316,8 @@
       "efecto3": "Dañar Regeneración Magica",
       "efecto4": "Reforzar Encantamiento",
       "peso": ".1",
-      "valor": 2
+      "valor": 2,
+      "detalles":"invernadero"
     },
     {
       "ingrediente": "Aleta Larga Abacea",
@@ -323,7 +326,8 @@
       "efecto3": "Debilidad al Veneno",
       "efecto4": "Reforzar Restauración",
       "peso": ".5",
-      "valor": 15
+      "valor": 15,
+      "detalles":"vivero"
     },
     {
       "ingrediente": "Amanita Muscaria",
@@ -332,7 +336,8 @@
       "efecto3": "Frenesí",
       "efecto4": "Regenerar Aguante",
       "peso": ".1",
-      "valor": 2
+      "valor": 2,
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Azúcar Lunar",
@@ -350,7 +355,8 @@
       "efecto3": "Daño Persistente al Aguante",
       "efecto4": "Reforzar Destrucción",
       "peso": ".1",
-      "valor": 8
+      "valor": 8,
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Betty de río",
@@ -359,7 +365,8 @@
       "efecto3": "Ralentizar",
       "efecto4": "Reforzar Capacidad de Carga",
       "peso": ".3",
-      "valor": 15
+      "valor": 15,
+      "detalles":"vivero"
     },
     {
       "ingrediente": "Campanilla de Muerte",
@@ -368,7 +375,8 @@
       "efecto3": "Ralentizar",
       "efecto4": "Debilidad al Veneno",
       "peso": ".1",
-      "valor": 4
+      "valor": 4,
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Cardo Lanudo",
@@ -377,7 +385,8 @@
       "efecto3": "Reforzar Bloqueo",
       "efecto4": "Reforzar Elocuencia",
       "peso": ".1",
-      "valor": 1
+      "valor": 1,
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Carne humana",
@@ -395,7 +404,8 @@
       "efecto3": "Dañar Regeneración de Aguante",
       "efecto4": "Respiración Acuatica",
       "peso": ".3",
-      "valor": 6
+      "valor": 6,
+      "detalles":"vivero"
     },
     {
       "ingrediente": "Cenizas de Berit (Mission)",
@@ -413,7 +423,8 @@
       "efecto3": "Restaurar Magia",
       "efecto4": "Disminuir Magia",
       "peso": ".3",
-      "valor": 0
+      "valor": 0,
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Cola de Espada Cyrodílica",
@@ -422,7 +433,8 @@
       "efecto3": "Miedo",
       "efecto4": "Disminuir Salud",
       "peso": ".3",
-      "valor": 15
+      "valor": 15,
+      "detalles":"vivero"
     },
     {
       "ingrediente": "Cola de Skeever",
@@ -494,7 +506,8 @@
       "efecto3": "Debilidad al Veneno",
       "efecto4": "Resistencia a la Magia",
       "peso": ".3",
-      "valor": 10
+      "valor": 10,
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Dedo de Gigante",
@@ -548,7 +561,8 @@
       "efecto3": "Reforzar Discreción",
       "efecto4": "Reforzar Destrucción",
       "peso": 1,
-      "valor": 5
+      "valor": 5,
+      "detalles":"invernadero"
     },
     {
       "ingrediente": "Escamas de Pez Asesino",
@@ -566,7 +580,8 @@
       "efecto3": "Fotalecer Salud",
       "efecto4": "Dañar Regeneración Magica",
       "peso": ".1",
-      "valor": 2
+      "valor": 2,
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Flor púrpura de montaña",
@@ -575,7 +590,8 @@
       "efecto3": "Daño Persistente a la Magia",
       "efecto4": "Resistencia a la Escarcha",
       "peso": ".1",
-      "valor": 2
+      "valor": 2,
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Flor roja de montaña",
@@ -584,7 +600,8 @@
       "efecto3": "Reforzar Magia",
       "efecto4": "Dañar Salud",
       "peso": ".1",
-      "valor": 2
+      "valor": 2,
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Foliota escamosa",
@@ -593,7 +610,8 @@
       "efecto3": "Regenerar Aguante",
       "efecto4": "Reforzar Capacidad de Carga",
       "peso": ".3",
-      "valor": 4
+      "valor": 4,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Frutos de enebro",
@@ -602,7 +620,8 @@
       "efecto3": "Regenerar Salud",
       "efecto4": "Dañar Regeneración de Aguante",
       "peso": ".1",
-      "valor": 1
+      "valor": 1,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Garra de Bruja Cuervo",
@@ -638,7 +657,8 @@
       "efecto3": "Paralisis",
       "efecto4": "Restaurar Salud",
       "peso": ".3",
-      "valor": 0
+      "valor": 0,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Huevo de acantiza minero",
@@ -674,7 +694,8 @@
       "efecto3": "Daño Persistente a la Salud",
       "efecto4": "Reforzar Aguante",
       "peso": ".2",
-      "valor": 3
+      "valor": 3,
+      "detalles":"vivero"
     },
     {
       "ingrediente": "Huevo de zorzal",
@@ -683,7 +704,8 @@
       "efecto3": "Debilidad al Veneno",
       "efecto4": "Resistencia a la Descarga",
       "peso": ".5",
-      "valor": 2
+      "valor": 2,
+      "detalles":"invernadero"
     },
     {
       "ingrediente": "Huevos de Cauro",
@@ -701,7 +723,8 @@
       "efecto3": "Disminuir Magia",
       "efecto4": "Reforzar Conjuración",
       "peso": ".1",
-      "valor": 1
+      "valor": 1,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Lengua de Dragón",
@@ -710,7 +733,8 @@
       "efecto3": "Reforzar Ilusión",
       "efecto4": "Reforzar Dos Manos",
       "peso": ".1",
-      "valor": 5
+      "valor": 5,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Liquen Gigante",
@@ -719,7 +743,8 @@
       "efecto3": "Debilidad al Veneno",
       "efecto4": "Restaurar Magia",
       "peso": ".3",
-      "valor": 5
+      "valor": 5,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Mirriam de escarcha",
@@ -746,7 +771,8 @@
       "efecto3": "Regenerar Aguante",
       "efecto4": "Reforzar Ilusión",
       "peso": ".3",
-      "valor": 4
+      "valor": 4,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Musgo Colgante",
@@ -755,7 +781,8 @@
       "efecto3": "Dañar Regeneración Magica",
       "efecto4": "Reforzar a una Mano",
       "peso": ".3",
-      "valor": 1
+      "valor": 1,
+      "detalles":"invernadero"
     },
     {
       "ingrediente": "Ojo de Gato Sable",
@@ -791,7 +818,8 @@
       "efecto3": "Reforzar Armadura Ligera",
       "efecto4": "Disminuir Aguante",
       "peso": 1,
-      "valor": 5
+      "valor": 5,
+      "detalles":"invernadero"
     },
     {
       "ingrediente": "Perca de Lomo Plateado",
@@ -800,7 +828,8 @@
       "efecto3": "Disminuir Salud",
       "efecto4": "Resistencia a la Escarcha",
       "peso": ".3",
-      "valor": 15
+      "valor": 15,
+      "detalles":"vivero"
     },
     {
       "ingrediente": "Percebe Nórdico",
@@ -899,7 +928,8 @@
       "efecto3": "Miedo",
       "efecto4": "Regenerar Salud",
       "peso": ".3",
-      "valor": 0
+      "valor": 0,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Quitina de cangrejo del barro",
@@ -917,7 +947,8 @@
       "efecto3": "Resistencia al Veneno",
       "efecto4": "Reforzar Armadura Pesada",
       "peso": ".1",
-      "valor": 1
+      "valor": 1,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Ranúnculo Encorvado",
@@ -926,7 +957,8 @@
       "efecto3": "Restaurar Salud",
       "efecto4": "Reforzar Herrería",
       "peso": ".2",
-      "valor": 12
+      "valor": 12,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Raíz canina",
@@ -935,7 +967,8 @@
       "efecto3": "Reforzar Arquería",
       "efecto4": "Paralisis",
       "peso": ".1",
-      "valor": 5
+      "valor": 5,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Raíz de Jarrin(mision)",
@@ -980,7 +1013,8 @@
       "efecto3": "Reforzar Capacidad de Carga",
       "efecto4": "Debilidad a la Magia",
       "peso": ".2",
-      "valor": 1
+      "valor": 1,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Sales de escarcha",
@@ -1025,7 +1059,8 @@
       "efecto3": "Reforzar Alteración",
       "efecto4": "Restaurar Magia",
       "peso": ".1",
-      "valor": 1
+      "valor": 1,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Seta Brillante",
@@ -1034,7 +1069,8 @@
       "efecto3": "Reforzar Herrería",
       "efecto4": "Reforzar Salud",
       "peso": ".2",
-      "valor": 5
+      "valor": 5,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Sinforicarpos",
@@ -1043,7 +1079,8 @@
       "efecto3": "Resistencia a la Escarcha",
       "efecto4": "Resistencia a la Descarga",
       "peso": ".1",
-      "valor": 4
+      "valor": 4,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Trigo",
@@ -1052,7 +1089,8 @@
       "efecto3": "Dañar Regeneración de Aguante",
       "efecto4": "Daño Persistente a la Magia",
       "peso": ".1",
-      "valor": 5
+      "valor": 5,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Tórax de Luciérnaga",
@@ -1061,7 +1099,8 @@
       "efecto3": "Debilidad a la Magia",
       "efecto4": "Reforzar Aguante",
       "peso": ".1",
-      "valor": 1
+      "valor": 1,
+      "detalles":"invernadero"
     },
     {
       "ingrediente": "Uvas de Jazbay",
@@ -1070,7 +1109,8 @@
       "efecto3": "Regenerar Magia",
       "efecto4": "Disminuir Salud",
       "peso": ".1",
-      "valor": 1
+      "valor": 1,
+      "detalles":"cultivable"
     },
     {
       "ingrediente": "Vaina Fúngica del Pantano",
@@ -1079,7 +1119,18 @@
       "efecto3": "Paralisis",
       "efecto4": "Restaurar Salud",
       "peso": ".5",
-      "valor": 3
+      "valor": 3,
+      "detalles":"cultivable"
+    },
+    {
+      "ingrediente": "Hueva de salmón (DLC Hearthfire)",
+      "efecto1": "Restaurar Aguante",
+      "efecto2": "Respiración Acuatica",
+      "efecto3": "Reforzar Magia",
+      "efecto4": "Regenerar Magia",
+      "peso": ".2",
+      "valor": 5,
+      "detalles":"vivero"
     },
     {
       "ingrediente": "Ceniza de engendro (DLC Dragonborn)",
@@ -1226,16 +1277,63 @@
       "valor": 2
     }
   ],
-  "efectos" :[
-    {"idf": "curar enfermedad", "costo": ".5", "magnitud":5, "duracion":0, "valor":21},
-    {"idf": "Paralisis", "costo": "500", "magnitud":0, "duracion":1, "valor":285},
-    {"idf": "Invisibilidad", "costo": "100", "magnitud":0, "duracion":4, "valor":261},
-    {"idf": "Dañar Salud", "costo": "3", "magnitud":2, "duracion":1, "valor":3},
-    {"idf": "Dañar magia", "costo": "22", "magnitud":3, "duracion":0, "valor":52},
-    {"idf": "Ralentizar", "costo": "1", "magnitud":50, "duracion":5, "valor":247},
-    {"idf": "Dañar Regeneración Magica", "costo": "0.5", "magnitud":100, "duracion":5, "valor":265},
-    {"idf": "Dañar Regeneración de aguante", "costo": "0.3", "magnitud":100, "duracion":5, "valor":159}
-
+  "efectos": [
+    {
+      "idf": "curar enfermedad",
+      "costo": ".5",
+      "magnitud": 5,
+      "duracion": 0,
+      "valor": 21
+    },
+    {
+      "idf": "Paralisis",
+      "costo": "500",
+      "magnitud": 0,
+      "duracion": 1,
+      "valor": 285
+    },
+    {
+      "idf": "Invisibilidad",
+      "costo": "100",
+      "magnitud": 0,
+      "duracion": 4,
+      "valor": 261
+    },
+    {
+      "idf": "Dañar Salud",
+      "costo": "3",
+      "magnitud": 2,
+      "duracion": 1,
+      "valor": 3
+    },
+    {
+      "idf": "Dañar magia",
+      "costo": "22",
+      "magnitud": 3,
+      "duracion": 0,
+      "valor": 52
+    },
+    {
+      "idf": "Ralentizar",
+      "costo": "1",
+      "magnitud": 50,
+      "duracion": 5,
+      "valor": 247
+    },
+    {
+      "idf": "Dañar Regeneración Magica",
+      "costo": "0.5",
+      "magnitud": 100,
+      "duracion": 5,
+      "valor": 265
+    },
+    {
+      "idf": "Dañar Regeneración de aguante",
+      "costo": "0.3",
+      "magnitud": 100,
+      "duracion": 5,
+      "valor": 159
+    }
   ],
   "words": [
     {
@@ -3486,7 +3584,7 @@
       "ingrediente1": "Colmillo",
       "ingrediente2": "Trigo",
       "ingrediente3": "Torax",
-      "valor": "2947"
+      "valor": 2947
     },
     {
       "id": 2,
@@ -3494,7 +3592,7 @@
       "ingrediente1": "Dedo gigante",
       "ingrediente2": "Trigo",
       "ingrediente3": "Raíz trepadora",
-      "valor": "2245"
+      "valor": 2245
     },
     {
       "id": 3,
@@ -3502,7 +3600,7 @@
       "ingrediente1": "Colmillo",
       "ingrediente2": "Huevo cauro",
       "ingrediente3": "Musgo",
-      "valor": "2907"
+      "valor": 2907
     },
     {
       "id": 4,
@@ -3510,7 +3608,7 @@
       "ingrediente1": "Dedo gigante",
       "ingrediente2": "Trigo",
       "ingrediente3": "Foliota",
-      "valor": "2245"
+      "valor": 2245
     },
     {
       "id": 5,
@@ -3518,7 +3616,7 @@
       "ingrediente1": "Betty de rio",
       "ingrediente2": "Heces diablillo",
       "ingrediente3": "Cualquiera de daño prolongado",
-      "valor": "582"
+      "valor": 582
     },
     {
       "id": 6,
@@ -3526,31 +3624,7 @@
       "ingrediente1": "Betty de rio",
       "ingrediente2": "Heces diablillo",
       "ingrediente3": "Raíz canina",
-      "valor": "1127"
-    },
-    {
-      "id": 7,
-      "pocion": "Frenesí, miedo",
-      "ingrediente1": "Frenesí y miedo",
-      "ingrediente2": "Afectan en nivel 100 ",
-      "ingrediente3": "Con perks hasta el lvl 12",
-      "valor": "Na"
-    },
-    {
-      "id": 8,
-      "pocion": "Correciones",
-      "ingrediente1": "Dañar",
-      "ingrediente2": "Disminuir",
-      "ingrediente3": "Conjuracion",
-      "valor": "Salud"
-    },
-    {
-      "id": 9,
-      "pocion": "Correciones",
-      "ingrediente1": "Dañar",
-      "ingrediente2": "Ralentizar",
-      "ingrediente3": "Armaura",
-      "valor": "50"
+      "valor": 1127
     },
     {
       "id": 10,
@@ -3558,7 +3632,7 @@
       "ingrediente1": "Huevos de salmon",
       "ingrediente2": "Percebe Nordico",
       "ingrediente3": "Ajo",
-      "valor": "5208"
+      "valor": 5208
     },
     {
       "id": 11,
@@ -3566,7 +3640,7 @@
       "ingrediente1": "Huevos de salmon",
       "ingrediente2": "Colmillo jabalí",
       "ingrediente3": "Uvas ",
-      "valor": "690"
+      "valor": 690
     },
     {
       "id": 12,
@@ -3574,7 +3648,7 @@
       "ingrediente1": "Huevos de salmon",
       "ingrediente2": "Carpa de hist",
       "ingrediente3": "",
-      "valor": "4526"
+      "valor": 4526
     },
     {
       "id": 13,
@@ -3582,7 +3656,7 @@
       "ingrediente1": "Foliota",
       "ingrediente2": "Mora tapinela",
       "ingrediente3": "Raíz trepadora",
-      "valor": "1516"
+      "valor": 1516
     },
     {
       "id": 14,
@@ -3590,7 +3664,7 @@
       "ingrediente1": "Garras oso",
       "ingrediente2": "Dedo gigante",
       "ingrediente3": "Raíz trepadora",
-      "valor": "2245"
+      "valor": 2245
     },
     {
       "id": 15,
@@ -3598,7 +3672,7 @@
       "ingrediente1": "Colmillo",
       "ingrediente2": "Trigo",
       "ingrediente3": "Ajo",
-      "valor": "2793"
+      "valor": 2793
     },
     {
       "id": 16,
@@ -3606,7 +3680,7 @@
       "ingrediente1": "Flor roja montaña",
       "ingrediente2": "Sales de fuego",
       "ingrediente3": "Uvas de jazbay",
-      "valor": "770"
+      "valor": 770
     },
     {
       "id": 17,
@@ -3614,7 +3688,7 @@
       "ingrediente1": "Foliota",
       "ingrediente2": "Lengua de dragón",
       "ingrediente3": "Mora tapinela",
-      "valor": "746"
+      "valor": 746
     },
     {
       "id": 18,
@@ -3622,7 +3696,23 @@
       "ingrediente1": "Huevos de salmon",
       "ingrediente2": "Colmillo jabalí",
       "ingrediente3": "Sales vacío",
-      "valor": "203"
+      "valor": 203
+    },
+    {
+      "pocion": "Respiración acuática por 900 segundos, magia aumenta 750 puntos, efecto variable",
+      "ingrediente1": "Carpa de Hist",
+      "ingrediente2": "Huevas de salmón",
+      "ingrediente3": "Cualquiera con efecto regenerar magia",
+      "valor": "5013",
+      "id": 19
+    },
+    {
+      "pocion": "ralentizar 50% durante 75 segundos, 75 de daño por veneno, 30% de debilidad por veneno al objetivo",
+      "ingrediente1": "campanilla de la muerte",
+      "ingrediente2": "cornamenta pequeña",
+      "ingrediente3": "betty de rio",
+      "valor": "1165",
+      "id": 20
     }
   ]
 }

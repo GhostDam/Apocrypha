@@ -1,8 +1,9 @@
 import React from 'react'
 import api from '../api'
 
-// const data = require('../data/db.json')
-// const potions = data.potions;
+import Modalpotions from './modalPotion'
+import ModalPotions from './modalPotion'
+
 var potions = []
 const getPotions = async () =>{
     try {
@@ -38,31 +39,31 @@ function ListaPociones () {
             <div>
                 <h1>Lista de Pociones</h1>
                 <div className='form-group'>
-                    <label>Busqueda de pociones</label>
+                    <div className='d-flex justify-content-between'>
+                        <label>Busqueda</label> <ModalPotions />
+                    </div> 
                     <input className='form-control'
                     value={query}
                     onChange={(e)=>{setQuery(e.target.value)}}
                     />
                 </div>
-                <div className='row info'>
-                {pocionFiltrada.map(pocion =>(
-                    <div key={pocion.id} className='row col-md-6'>
+                <div className='row'>
+                    
+                {pocionFiltrada.sort((a,b)=>a.valor-b.valor).map(pocion =>(
+                    <div key={pocion.id} className='row col-md-6 border border-secondary info'>
                         <div className='col-md-6'>
-                            <p> Descripcion de pocion <br/>
-                            {pocion.pocion} <br/>
-                            valor: {pocion.valor}
-                            </p>
+                            <p><strong>Descripcion de pocion</strong></p>
+                            <p>{pocion.pocion} </p>
+                            <p><strong>valor: {pocion.valor}</strong></p>
                         </div>
                         <div className='col-md-6'>
-                            <p>ingredientes usados <br/>
-                            {pocion.ingrediente1} <br/>
-                            {pocion.ingrediente2} <br/>
-                            {pocion.ingrediente3} <br/>
-                            {pocion.efecto4} <br/>
-                            </p>
+                            <p><strong>ingredientes usados</strong></p>
+                            <p>{pocion.ingrediente1}</p>
+                            <p>{pocion.ingrediente2}</p>
+                            <p>{pocion.ingrediente3}</p>
                         </div>
                     </div>
-    ))}
+                ))}
                 </div>
             </div>
         )

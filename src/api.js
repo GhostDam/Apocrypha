@@ -105,22 +105,22 @@ const api = {
       return callApi('/potions');
     },
     create(potion) {
-      return callApi(`/walls`, {
+      return callApi(`/potions`, {
         method: 'POST',
         body: JSON.stringify(potion),
     });
     },
     read(potion) {
-      return callApi(`/walls/${potion}`);
+      return callApi(`/potions/${potion}`);
     },
     update(potion, updates) {
-      return callApi(`/walls/${potion}`, {
+      return callApi(`/potions/${potion}`, {
         method: 'PUT',
         body: JSON.stringify(updates),
       });
     },
     remove(potion) {
-      return callApi(`/walls/${potion}`, {
+      return callApi(`/potions/${potion}`, {
         method: 'DELETE',
       });
     },

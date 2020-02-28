@@ -1,8 +1,6 @@
 import React from 'react'
 
-
 class Muro extends React.Component {
-    // p.dovah find("ah",replace('1'))
     setter = (text) =>{
         return ( text.toLowerCase().replace(/aa/g, "1").replace(/ah/g, "2").replace(/ei/g, "3").replace(/ey/g, "4")
                 .replace(/ii/g, "5").replace(/ir/g, "6").replace(/oo/g, "7").replace(/ur/g, "9")
