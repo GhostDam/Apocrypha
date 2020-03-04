@@ -10,6 +10,8 @@ import EditWall from './editarmuro'
 import LenguajeDragon from './Dragon'
 import AlfabetoDaedra from './alfabetoDaedra'
 import AlfabetoDragon from './alfabetoDragon'
+
+import Info from './alquimiaInfo'
 import ListaIngredientes from './listaIngredientes'
 import ListaPociones from './listaPociones'
 
@@ -28,8 +30,11 @@ const App =() => (
       <Route exact path ='/nuevo_muro' component={NewWall} />
       <Route exact path ='/alfabeto/daedra' component={AlfabetoDaedra} />
       <Route exact path ='/alfabeto/dragon' component={AlfabetoDragon} />
-      <Route exact path ='/alquimia' component={ListaIngredientes} />
+
+      <Route exact path ='/alquimia' component={Info} />
+      <Route exact path ='/ingredientes' component={ListaIngredientes} />
       <Route exact path ='/pociones' component={ListaPociones} />
+
       <Route exact path ='/artesanias/aranas' component={Aranhas} />
       <Route exact path ='/artesanias/modelos/' component={Selector} />
       <Route exact path ='/artesanias/modelosar/' component={SelectorAr} />

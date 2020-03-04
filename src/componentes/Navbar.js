@@ -79,7 +79,7 @@ function Navbar(){
     </div>
 </nav> */}
     <nav className='menu sticky-top'>
-        <button type="button" class="tgl btn btn-primary" onClick={()=>{setVisible(!visible)}}>
+        <button type="button" className="tgl btn btn-primary" onClick={()=>{setVisible(!visible)}}>
             x
         </button>
         <div className={visible ? "content visible": "content"}>
@@ -91,27 +91,28 @@ function Navbar(){
                     <Link className='' to='/muros'>Muros</Link>                    
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">Alfabetos</button>
-                        <div class="dropdown-content">
+                    <div className="dropdown">
+                        <button className="dropbtn">Alfabetos</button>
+                        <div className="dropdown-content">
                             <Link className='' to='/alfabeto/dragon'>Dragon</Link>
                             <Link className='' to='/alfabeto/daedra'>Daedra</Link>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">Alquimia</button>
-                        <div class="dropdown-content">
-                            <Link className='' to='/alquimia'>Ingredientes</Link>
+                    <div className="dropdown">
+                        <button className="dropbtn">Alquimia</button>
+                        <div className="dropdown-content">
+                            <Link className='' to='/alquimia'>Información</Link>
+                            <Link className='' to='/ingredientes'>Ingredientes</Link>
                             <Link className='' to='/pociones'>Pociones</Link>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">Varios</button>
-                        <div class="dropdown-content">
+                    <div className="dropdown">
+                        <button className="dropbtn">Varios</button>
+                        <div className="dropdown-content">
                             <Link className='' to='/artesanias/fraduadelatronach'>Fragua del atronach</Link>
                             <Link className='' to='/artesanias/aranas'>Arañas "Dragonbron DLC"</Link>
                             <Link className='' to='/artesanias/modelos'>modelos</Link>

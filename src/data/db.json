@@ -25,7 +25,7 @@
     {
       "nombre": "Guarida de marea Argentea",
       "grito": "Desarmar",
-      "ubicacion": "placeholder",
+      "ubicacion": "https://vignette.wikia.nocookie.net/elderscrolls/images/9/9c/Guarida_marea_argentea.jpg/revision/latest?cb=20140308193722&path-prefix=es",
       "linea1": {
         "dovah": "Qethsegol Vahrukiv",
         "español": ""
@@ -69,7 +69,7 @@
     {
       "nombre": "Túmulo de la cuaderna del hierro",
       "grito": "Volverse etéreo (desvanecer)",
-      "ubicacion": "placeholder",
+      "ubicacion": "https://vignette.wikia.nocookie.net/elderscrolls/images/d/d0/T%C3%BAmulo_Cuaderna_Map.jpg/revision/latest?cb=20160113194254&path-prefix=es",
       "linea1": {
         "dovah": "Het nok bein nahgahdinok",
         "español": ""
@@ -113,7 +113,7 @@
     {
       "nombre": "Torre de vista del otoño",
       "grito": "Marca de la muerte (matar)",
-      "ubicacion": "placeholder",
+      "ubicacion": "https://vignette.wikia.nocookie.net/elderscrolls/images/2/24/Torre_Vista_Oto%C3%B1o_Map.png/revision/latest?cb=20150124183921&path-prefix=es",
       "linea1": {
         "dovah": "Nonvul bron dahmaan daar rot do",
         "español": "Nobles nordicos recordaran estas palabra de"
@@ -135,7 +135,7 @@
     {
       "nombre": "Cráter del diente de dragón",
       "grito": "Furia elemental (gracia)",
-      "ubicacion": "placeholder",
+      "ubicacion": "https://vignette.wikia.nocookie.net/elderscrolls/images/4/41/Cr%C3%A1ter_Diente_Drag%C3%B3n_Mapa.jpg/revision/latest?cb=20161107214025&path-prefix=es",
       "linea1": {
         "dovah": "Qethsegol vahrukiv paas",
         "español": ""
@@ -179,7 +179,7 @@
     {
       "nombre": "Cueva abandonada ",
       "grito": "Marca de la muerte (Sangría) --bug, matar y sangría aprendidas en el mismo muro",
-      "ubicacion": "placeholder",
+      "ubicacion": "https://vignette.wikia.nocookie.net/elderscrolls/images/e/e5/Cueva_abandonada_Map.jpg/revision/latest?cb=20151230074546&path-prefix=es",
       "linea1": {
         "dovah": "Het mah tahrodiis tafiir",
         "español": ""
@@ -201,7 +201,7 @@
     {
       "nombre": "Sanctasanctórum del templo de Miraak",
       "grito": "Aspecto de Dragón",
-      "ubicacion": "placeholder",
+      "ubicacion": "https://vignette.wikia.nocookie.net/elderscrolls/images/5/53/Mapa_Templo_de_Miraak.jpg/revision/latest?cb=20160206111700&path-prefix=es",
       "linea1": {
         "dovah": "Het ont kriist miraak wo ahtiid",
         "español": "Aquí una vez estuvo Miraak, quien vistió"
@@ -223,7 +223,7 @@
     {
       "nombre": "Ruinas de puerta alta",
       "grito": "Invocación de tormenta (tormenta)",
-      "ubicacion": "placeholder",
+      "ubicacion": "https://vignette.wikia.nocookie.net/elderscrolls/images/8/88/Ruinas_Puerta_Alta_Map.jpg/revision/latest?cb=20151208110955&path-prefix=es",
       "linea1": {
         "dovah": "ahrk ond drey sahrot",
         "español": "y he aqui que"
@@ -252,7 +252,7 @@
       "efecto4": "Debilidad a la Descarga",
       "peso": ".1",
       "valor": 3,
-      "detalles":"invernadero"
+      "detalles": "invernadero"
     },
     {
       "ingrediente": "Aceite Enano",
@@ -307,7 +307,7 @@
       "efecto4": "Dañar Magia",
       "peso": ".1",
       "valor": 3,
-      "detalles":"invernadero"
+      "detalles": "invernadero"
     },
     {
       "ingrediente": "Ala de Mariposa Azul",
@@ -317,7 +317,7 @@
       "efecto4": "Reforzar Encantamiento",
       "peso": ".1",
       "valor": 2,
-      "detalles":"invernadero"
+      "detalles": "invernadero"
     },
     {
       "ingrediente": "Aleta Larga Abacea",
@@ -327,7 +327,7 @@
       "efecto4": "Reforzar Restauración",
       "peso": ".5",
       "valor": 15,
-      "detalles":"vivero"
+      "detalles": "vivero"
     },
     {
       "ingrediente": "Amanita Muscaria",
@@ -366,7 +366,7 @@
       "efecto4": "Reforzar Capacidad de Carga",
       "peso": ".3",
       "valor": 15,
-      "detalles":"vivero"
+      "detalles": "vivero"
     },
     {
       "ingrediente": "Campanilla de Muerte",
@@ -405,7 +405,7 @@
       "efecto4": "Respiración Acuatica",
       "peso": ".3",
       "valor": 6,
-      "detalles":"vivero"
+      "detalles": "vivero"
     },
     {
       "ingrediente": "Cenizas de Berit (Mission)",
@@ -434,7 +434,7 @@
       "efecto4": "Disminuir Salud",
       "peso": ".3",
       "valor": 15,
-      "detalles":"vivero"
+      "detalles": "vivero"
     },
     {
       "ingrediente": "Cola de Skeever",
@@ -562,7 +562,7 @@
       "efecto4": "Reforzar Destrucción",
       "peso": 1,
       "valor": 5,
-      "detalles":"invernadero"
+      "detalles": "invernadero"
     },
     {
       "ingrediente": "Escamas de Pez Asesino",
@@ -611,7 +611,7 @@
       "efecto4": "Reforzar Capacidad de Carga",
       "peso": ".3",
       "valor": 4,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Frutos de enebro",
@@ -621,7 +621,7 @@
       "efecto4": "Dañar Regeneración de Aguante",
       "peso": ".1",
       "valor": 1,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Garra de Bruja Cuervo",
@@ -658,7 +658,7 @@
       "efecto4": "Restaurar Salud",
       "peso": ".3",
       "valor": 0,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Huevo de acantiza minero",
@@ -695,7 +695,7 @@
       "efecto4": "Reforzar Aguante",
       "peso": ".2",
       "valor": 3,
-      "detalles":"vivero"
+      "detalles": "vivero"
     },
     {
       "ingrediente": "Huevo de zorzal",
@@ -705,7 +705,7 @@
       "efecto4": "Resistencia a la Descarga",
       "peso": ".5",
       "valor": 2,
-      "detalles":"invernadero"
+      "detalles": "invernadero"
     },
     {
       "ingrediente": "Huevos de Cauro",
@@ -724,7 +724,7 @@
       "efecto4": "Reforzar Conjuración",
       "peso": ".1",
       "valor": 1,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Lengua de Dragón",
@@ -734,7 +734,7 @@
       "efecto4": "Reforzar Dos Manos",
       "peso": ".1",
       "valor": 5,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Liquen Gigante",
@@ -744,7 +744,7 @@
       "efecto4": "Restaurar Magia",
       "peso": ".3",
       "valor": 5,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Mirriam de escarcha",
@@ -772,7 +772,7 @@
       "efecto4": "Reforzar Ilusión",
       "peso": ".3",
       "valor": 4,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Musgo Colgante",
@@ -782,7 +782,7 @@
       "efecto4": "Reforzar a una Mano",
       "peso": ".3",
       "valor": 1,
-      "detalles":"invernadero"
+      "detalles": "invernadero"
     },
     {
       "ingrediente": "Ojo de Gato Sable",
@@ -819,7 +819,7 @@
       "efecto4": "Disminuir Aguante",
       "peso": 1,
       "valor": 5,
-      "detalles":"invernadero"
+      "detalles": "invernadero"
     },
     {
       "ingrediente": "Perca de Lomo Plateado",
@@ -829,7 +829,7 @@
       "efecto4": "Resistencia a la Escarcha",
       "peso": ".3",
       "valor": 15,
-      "detalles":"vivero"
+      "detalles": "vivero"
     },
     {
       "ingrediente": "Percebe Nórdico",
@@ -929,7 +929,7 @@
       "efecto4": "Regenerar Salud",
       "peso": ".3",
       "valor": 0,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Quitina de cangrejo del barro",
@@ -948,7 +948,7 @@
       "efecto4": "Reforzar Armadura Pesada",
       "peso": ".1",
       "valor": 1,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Ranúnculo Encorvado",
@@ -958,7 +958,7 @@
       "efecto4": "Reforzar Herrería",
       "peso": ".2",
       "valor": 12,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Raíz canina",
@@ -968,7 +968,7 @@
       "efecto4": "Paralisis",
       "peso": ".1",
       "valor": 5,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Raíz de Jarrin(mision)",
@@ -1014,7 +1014,7 @@
       "efecto4": "Debilidad a la Magia",
       "peso": ".2",
       "valor": 1,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Sales de escarcha",
@@ -1060,7 +1060,7 @@
       "efecto4": "Restaurar Magia",
       "peso": ".1",
       "valor": 1,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Seta Brillante",
@@ -1070,7 +1070,7 @@
       "efecto4": "Reforzar Salud",
       "peso": ".2",
       "valor": 5,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Sinforicarpos",
@@ -1080,7 +1080,7 @@
       "efecto4": "Resistencia a la Descarga",
       "peso": ".1",
       "valor": 4,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Trigo",
@@ -1090,7 +1090,7 @@
       "efecto4": "Daño Persistente a la Magia",
       "peso": ".1",
       "valor": 5,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Tórax de Luciérnaga",
@@ -1100,7 +1100,7 @@
       "efecto4": "Reforzar Aguante",
       "peso": ".1",
       "valor": 1,
-      "detalles":"invernadero"
+      "detalles": "invernadero"
     },
     {
       "ingrediente": "Uvas de Jazbay",
@@ -1110,7 +1110,7 @@
       "efecto4": "Disminuir Salud",
       "peso": ".1",
       "valor": 1,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Vaina Fúngica del Pantano",
@@ -1120,7 +1120,7 @@
       "efecto4": "Restaurar Salud",
       "peso": ".5",
       "valor": 3,
-      "detalles":"cultivable"
+      "detalles": "cultivable"
     },
     {
       "ingrediente": "Hueva de salmón (DLC Hearthfire)",
@@ -1130,7 +1130,7 @@
       "efecto4": "Regenerar Magia",
       "peso": ".2",
       "valor": 5,
-      "detalles":"vivero"
+      "detalles": "vivero"
     },
     {
       "ingrediente": "Ceniza de engendro (DLC Dragonborn)",

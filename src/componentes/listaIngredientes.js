@@ -32,7 +32,7 @@ function ListaIngredientes (){
                     </div>
                 </div>
                 <div className='ingredientes text-center'>
-                    {respuestaFiltrada.map((ingrediente)=>(
+                    {value !== "" ? respuestaFiltrada.map((ingrediente)=>(
                        <div key={ingrediente.ingrediente} className="row bg-secondary mb-2"> 
                         <div className="col-4">
                             {ingrediente.ingrediente}<br/>
@@ -49,7 +49,7 @@ function ListaIngredientes (){
                             <p>{ingrediente.detalles}</p>
                         </div>
                         </div>
-                    ))}
+                    )) : ""}
                 </div>
             </div>
         )

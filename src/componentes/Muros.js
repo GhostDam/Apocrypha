@@ -67,7 +67,7 @@ class Muros extends React.Component {
   render(){
         return(<React.Fragment>
                 <h1>Listado de muros</h1>
-                <div className='col-md-9 mx-auto'>
+                <div className='listado_muros'>
                 {this.listarMuros(this.state.muros)}
                 </div>
             </React.Fragment>

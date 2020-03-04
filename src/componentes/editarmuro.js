@@ -10,6 +10,7 @@ class EditWall extends React.Component{
         form:{
             nombre:'',
             grito:'',
+            ubicacion: '',
             l1dovah:'',
             l1español:'',
             l2dovah:'',
@@ -44,6 +45,7 @@ class EditWall extends React.Component{
                 form:{  
                         nombre:data.nombre,
                         grito:data.grito,
+                        ubicacion: data.ubicacion,
                         l1dovah:data.linea1.dovah,
                         l1español:data.linea1.español,
                         l2dovah:data.linea2.dovah,
@@ -106,6 +108,10 @@ class EditWall extends React.Component{
                <div className='form-group'>
                   <label>Grito</label>
                   <input onChange={this.onChange} className='form-control' type='text' name='grito' value={this.state.form.grito}/>
+               </div>
+               <div className='form-group'>
+                  <label>Ubicacion</label>
+                  <input onChange={this.onChange} className='form-control' type='text' name='ubicacion' value={this.state.form.ubicacion}/>
                </div>
                <div className='form-group'>
                   <label>l1 Dovah</label>

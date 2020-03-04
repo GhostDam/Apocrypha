@@ -62,7 +62,7 @@ const api = {
         body: JSON.stringify({
           "nombre": updates.nombre,
           "grito": updates.grito,
-          "ubicacion": "placeholder",
+          "ubicacion": updates.ubicacion,
           "linea1": {
                       "dovah": updates.l1dovah,
                       "español": updates.l1español
