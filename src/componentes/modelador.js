@@ -33,7 +33,7 @@ class Model extends React.Component {
     this.camera = new THREE.PerspectiveCamera(
       75, //fov (field of view)
       width/height, //aspect ratio 
-      0.1, //near plane
+      0.3, //near plane
       1000 //far plane
       )
     this.camera.position.z = 200;

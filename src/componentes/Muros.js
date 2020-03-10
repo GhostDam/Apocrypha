@@ -13,7 +13,7 @@ class Muros extends React.Component {
         }
     }
   componentDidMount(){
-        this.fetchData()
+        this.fetchData()            
     }
 
   fetchData = async () => {
@@ -65,6 +65,7 @@ class Muros extends React.Component {
   }
 
   render(){
+      console.log(this.state)
         return(<React.Fragment>
                 <h1>Listado de muros</h1>
                 <div className='listado_muros'>

@@ -91,6 +91,10 @@ function Navbar(){
                     <Link className='' to='/muros'>Muros</Link>                    
                 </li>
                 <li>
+                    <Link className='' to='/artesanias/modelos'>Modelos</Link>
+                </li>
+
+                <li>
                     <div className="dropdown">
                         <button className="dropbtn">Alfabetos</button>
                         <div className="dropdown-content">
@@ -115,7 +119,6 @@ function Navbar(){
                         <div className="dropdown-content">
                             <Link className='' to='/artesanias/fraduadelatronach'>Fragua del atronach</Link>
                             <Link className='' to='/artesanias/aranas'>Arañas "Dragonbron DLC"</Link>
-                            <Link className='' to='/artesanias/modelos'>modelos</Link>
                             <Link className='' to='/artesanias/modelosar'>modelos Ar</Link>
                             <Link className='' to='/nuevo_muro'>Agregar muros</Link>
                         </div>
