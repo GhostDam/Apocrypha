@@ -28,19 +28,19 @@
       "ubicacion": "https://vignette.wikia.nocookie.net/elderscrolls/images/9/9c/Guarida_marea_argentea.jpg/revision/latest?cb=20140308193722&path-prefix=es",
       "linea1": {
         "dovah": "Qethsegol Vahrukiv",
-        "español": ""
+        "español": "esta piedra conmemora"
       },
       "linea2": {
         "dovah": "Ahziid viik do briinahmaar",
-        "español": ""
+        "español": "la amarga derrota de Brinahmaar"
       },
       "linea3": {
         "dovah": "Do sot peyt naako wah fin",
-        "español": ""
+        "español": "de blanco peyt comido al poco frecuente"
       },
       "linea4": {
         "dovah": "Laat naal ufiik do korvag kol",
-        "español": ""
+        "español": "ultimo a través de ufiik korvag risco"
       },
       "id": 2
     },
@@ -3713,6 +3713,22 @@
       "ingrediente3": "betty de rio",
       "valor": "1165",
       "id": 20
+    },
+    {
+      "pocion": "El aguante aumenta en 75 pts durante 300 segundos, la salud aumenta 60 pts 300 segundos",
+      "ingrediente1": "Huevos de cauro",
+      "ingrediente2": "Colmillo de jabalí",
+      "ingrediente3": "Cualquiera de reforzar salud",
+      "valor": "2793",
+      "id": 21
+    },
+    {
+      "pocion": "aguante aumenta 75 pts 300 segundos, salud 60 pts 300 segundos, regeneración de aguante disminuye 100% 60 segundos",
+      "ingrediente1": "colmillo de jabalí",
+      "ingrediente2": "trigo",
+      "ingrediente3": "cualquiera de reforzar aguante, (especialmente cornamenta grande)",
+      "valor": "3134",
+      "id": 22
     }
   ]
 }

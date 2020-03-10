@@ -23,7 +23,7 @@ body{
   position: sticky;
 }
 .tgl{
-  display: none;
+  display: none!important;
 }
 .content{
   flex-grow: 2;
@@ -85,7 +85,7 @@ body{
 }
 @media (max-width: 720px){
   .menu .tgl{
-    display: block;
+    display: block!important;
   }
   .content ul li{
     display: block;
