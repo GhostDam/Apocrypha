@@ -22,105 +22,51 @@ function Navbar(){
 
     return (
         <React.Fragment>
-    {/* <nav className='navbar sticky-top navbar-expand-sm navbar-dark bg-dark'>
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul className="navbar-nav mr-auto">
-        <li className='nav-item'> 
-            <Link className='nav-link' to='/'>Home</Link>
-        </li>
-        <li className='nav-item'> 
-            <Link className="nav-link" to="/muros">Muros</Link>
-        </li>
-        <li className='nav-item dropdown'> 
-        <button className="btn btn-secondary dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Alfabetos
-        </button>
-            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link className='dropdown-item' to='/alfabeto/dragon'>Dragon</Link>
-                <Link className='dropdown-item' to='/alfabeto/daedra'>Daedra</Link>
-            </div>        
-        </li>
-        <li className='nav-item dropdown'> 
-        <button className="btn btn-secondary dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Alquimia
-        </button>
-            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <Link className='dropdown-item' to='/alquimia'>Ingredientes</Link>
-            <Link className='dropdown-item' to='/pociones'>Pociones</Link>
-            </div>        
-        </li>
-        <li className='nav-item dropdown'> 
-        <button className="btn btn-secondary dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Artesanias
-        </button>
-            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <Link className='dropdown-item' to='/artesanias/fraduadelatronach'>Fragua del atronach</Link>
-            <Link className='dropdown-item' to='/artesanias/aranas'>Arañas (Dragonbron DLC)</Link>
-            <Link className='dropdown-item' to='/artesanias/modelos'>modelos</Link>
-            <Link className='dropdown-item' to='/artesanias/modelosar'>modelos Ar</Link>
-            </div>        
-        </li>
-        <li className='nav-item dropdown'> 
-        <button className="btn btn-secondary dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Updates
-        </button>
-            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <Link className='dropdown-item' to='/lenguaje'>Agregar lenguaje</Link>
-            <Link className='dropdown-item' to='/nuevo_muro'>Agregar muros</Link>
-            </div>        
-        </li>
-    </ul>
-    </div>
-    <div className='form-inline'>
-        <span className='navbar-text' data-toggle="tooltip" data-placement="bottom" title={`${dayn} ${num} ${mntn}`}>{`${day} ${num} ${mnt}`}</span>
-    </div>
-</nav> */}
     <nav className='menu sticky-top'>
-        <button type="button" className="tgl btn btn-primary" onClick={()=>{setVisible(!visible)}}>
-            x
-        </button>
+        <div className={visible ? "hamburguer tgl colored": "hamburguer tgl"} onClick={()=>{setVisible(!visible)}}>
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+        </div>
         <div className={visible ? "content visible": "content"}>
-            <ul>
+            <ul onClick={()=>{setVisible(!visible)}}>
                 <li>
-                    <Link className='' to='/'>Home</Link>
+                    <Link className='' to='/' onClick={()=>{setVisible(!visible)}}>Home</Link>
                 </li>
                 <li>
-                    <Link className='' to='/muros'>Muros</Link>                    
+                    <Link className='' to='/muros' onClick={()=>{setVisible(!visible)}}>Muros</Link>                    
                 </li>
                 <li>
-                    <Link className='' to='/artesanias/modelos'>Modelos</Link>
+                    <Link className='' to='/artesanias/modelos' onClick={()=>{setVisible(!visible)}}>Modelos</Link>
                 </li>
 
                 <li>
-                    <div className="dropdown">
+                    <div className="dropdown" onClick={(e)=>{e.stopPropagation()}}>
                         <button className="dropbtn">Alfabetos</button>
                         <div className="dropdown-content">
-                            <Link className='' to='/alfabeto/dragon'>Dragon</Link>
-                            <Link className='' to='/alfabeto/daedra'>Daedra</Link>
+                            <Link className='' to='/alfabeto/dragon' onClick={()=>{setVisible(!visible)}}>Dragon</Link>
+                            <Link className='' to='/alfabeto/daedra' onClick={()=>{setVisible(!visible)}}>Daedra</Link>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div className="dropdown">
+                    <div className="dropdown" onClick={(e)=>{e.stopPropagation()}}>
                         <button className="dropbtn">Alquimia</button>
                         <div className="dropdown-content">
-                            <Link className='' to='/alquimia'>Información</Link>
-                            <Link className='' to='/ingredientes'>Ingredientes</Link>
-                            <Link className='' to='/pociones'>Pociones</Link>
+                            <Link className='' to='/alquimia' onClick={()=>{setVisible(!visible)}}>Información</Link>
+                            <Link className='' to='/ingredientes' onClick={()=>{setVisible(!visible)}}>Ingredientes</Link>
+                            <Link className='' to='/pociones' onClick={()=>{setVisible(!visible)}}>Pociones</Link>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div className="dropdown">
+                    <div className="dropdown" onClick={(e)=>{e.stopPropagation()}}>
                         <button className="dropbtn">Varios</button>
                         <div className="dropdown-content">
-                            <Link className='' to='/artesanias/fraduadelatronach'>Fragua del atronach</Link>
-                            <Link className='' to='/artesanias/aranas'>Arañas "Dragonbron DLC"</Link>
-                            <Link className='' to='/artesanias/modelosar'>modelos Ar</Link>
-                            <Link className='' to='/nuevo_muro'>Agregar muros</Link>
+                            <Link className='' to='/artesanias/fraduadelatronach' onClick={()=>{setVisible(!visible)}}>Fragua del atronach</Link>
+                            <Link className='' to='/artesanias/aranas' onClick={()=>{setVisible(!visible)}}>Arañas "Dragonbron DLC"</Link>
+                            <Link className='' to='/artesanias/modelosar' onClick={()=>{setVisible(!visible)}}>modelos Ar</Link>
+                            <Link className='' to='/nuevo_muro' onClick={()=>{setVisible(!visible)}}>Agregar muros</Link>
                         </div>
                     </div>
                 </li>

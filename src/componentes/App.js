@@ -22,7 +22,7 @@ import Aranhas from './aranhas'
 const App =() => (
   <BrowserRouter>
     <Navbar />
-    <div className='container overflow-auto '>
+    <div className='container'>
       <Switch>
       <Route exact path ='/' component={LenguajeDragon} />
       <Route exact path ='/muros' component={Muros} />

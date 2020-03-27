@@ -241,6 +241,28 @@
         "español": "venganza del mismísimo Sovngarde"
       },
       "id": 11
+    },
+    {
+      "nombre": "Cima del viento del norte",
+      "grito": "susurro del aura (cazar)",
+      "ubicacion": "placeholder",
+      "linea1": {
+        "dovah": "het mah saainu ronaan",
+        "español": ""
+      },
+      "linea2": {
+        "dovah": "undveld aar",
+        "español": ""
+      },
+      "linea3": {
+        "dovah": "kriid  grohiik ahrk drog",
+        "español": ""
+      },
+      "linea4": {
+        "dovah": "do lot nir",
+        "español": ""
+      },
+      "id": 12
     }
   ],
   "ingredients": [

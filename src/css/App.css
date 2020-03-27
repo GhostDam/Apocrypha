@@ -83,12 +83,31 @@ body{
   padding-right: 1rem;
   line-height: 2.5rem;
 }
-@media (max-width: 720px){
+
+.line{
+  width: 30px;
+  height: 3px;
+  background:white;
+  margin: 5px;
+}
+.hamburguer{
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 14%;
+}
+.colored{
+  background: black;
+}
+
+@media (max-width: 768px){
   .menu .tgl{
     display: block!important;
   }
   .content ul li{
     display: block;
+    float: left;
+    clear: both;
   }  
   .menu .content{
     display: grid;
@@ -115,7 +134,11 @@ body{
   display: flex;
   flex-wrap: wrap;
 }
-
+@media(max-width: 768px){
+  .listado_muros{
+    width: 100%;
+  }
+}
 .muro{  
   position: relative;
   display: inline-block;
