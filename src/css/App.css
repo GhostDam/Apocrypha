@@ -15,15 +15,14 @@ body{
     background-attachment: fixed;
   }
 }
+
+
 /*  NAVBAR  */
 .menu{
   background-color: #6d757d;
   height: 40px;
   display: flex;
   position: sticky;
-}
-.tgl{
-  display: none!important;
 }
 .content{
   flex-grow: 2;
@@ -40,6 +39,7 @@ body{
   list-style: none;
   display: inline-flex;
 }
+
 .dropbtn {
   background-color: #4CAF50;
   color: white;
@@ -84,28 +84,41 @@ body{
   line-height: 2.5rem;
 }
 
+/* Menu de hamburguesa */
 .line{
   width: 30px;
   height: 3px;
   background:white;
   margin: 5px;
+  transition: .3s;
+  border-radius: 5px;
 }
 .hamburguer{
+  display: none!important;
   cursor: pointer;
   position: absolute;
   left: 0;
   top: 14%;
 }
-.colored{
-  background: black;
+
+.colored .line:nth-of-type(2){
+  opacity: 0;
 }
+.colored .line:nth-of-type(1){
+  transform: rotate(45deg) translate(0, 10px);
+}
+.colored .line:nth-of-type(3){
+  transform: rotate(-45deg) translate(0, -10px);
+}
+/* Menu de hamburguesa */
 
 @media (max-width: 768px){
-  .menu .tgl{
+  .menu .hamburguer{
     display: block!important;
   }
   .content ul li{
     display: block;
+    /* not 100 width */
     float: left;
     clear: both;
   }  
@@ -141,7 +154,7 @@ body{
 }
 .muro{  
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   margin-bottom: 1rem;
   flex-basis: 100%;
 }
@@ -294,3 +307,46 @@ body{
 /*alquimia*/
 /*pociones*/
 /**/
+
+
+/*Formulario - fade in elements*/
+.left_in{
+  position: fixed;
+  left: -100vw;
+  width: 100vw;
+  height: 100vh;
+  transition: .3s;
+}
+.left_in.fade_in{
+  left: 0;
+  z-index: 1;
+}
+
+.right_in{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  right: -100vw;
+  transition: .3s;
+}
+.right_in.fade_in{
+  right: 0;
+}
+.button_fade_left{
+  border: none;
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  left: 0;
+  background-color: black;
+  border-bottom-right-radius: 100%;
+}
+.button_fade_right{
+  border: none;
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  right: 0;
+  background-color: black;
+  border-bottom-left-radius: 100%;
+}

@@ -16,8 +16,10 @@ class NewWall extends React.Component{
             l3español:'',
             l4dovah:'',
             l4español:'',
-        }
-    }
+        },
+        verAlfabeto:false,
+        verPrevio: false
+   }
 
     onChange = (e) =>{
         this.setState({
@@ -40,21 +42,47 @@ class NewWall extends React.Component{
          }
    } 
 
+   verAlfa = () =>{
+      this.setState({
+         verAlfabeto: !this.state.verAlfabeto
+      })
+   }
+
+   verPrev = () =>{
+      this.setState({
+         verPrevio: !this.state.verPrevio
+      })
+   }
+
     render(){
         return(
-      <div className='row'>
-         <div id="carouselExampleIndicators" class="carousel mx-auto col-md-9" data-interval="false" data-ride="carousel">
-            <ol class="carousel-indicators">
-               <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-               <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
-               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-               <div class="carousel-inner">
-                  <div class="carousel-item">
-                     <AlfabetoDragon />
-                  </div>
-                  <div class="carousel-item active">
-                    <form id='agregar_muro' className='info px-4' autoComplete='off'>
+      <React.Fragment>
+            <div className={this.state.verAlfabeto ? "left_in fade_in info" : "left_in" } onClick={this.verAlfa}>
+               <AlfabetoDragon />
+            </div>
+            <div className={this.state.verPrevio ? "right_in fade_in info" : "right_in" } onClick={this.verPrev}>
+               <Muro 
+                     nombre={this.state.form.nombre || "Nombre del muro"}
+                     grito={this.state.form.grito || "Grito"}
+                     español1={this.state.form.l1español}
+                     dovah1={this.state.form.l1dovah}
+                     español2={this.state.form.l2español}
+                     dovah2={this.state.form.l2dovah}
+                     español3={this.state.form.l3español}
+                     dovah3={this.state.form.l3dovah}
+                     español4={this.state.form.l4español}
+                     dovah4={this.state.form.l4dovah}
+               />
+            </div>
+                     <button className="button_fade_left" onClick={this.verAlfa}>
+                     </button>
+                     <button className="button_fade_right" onClick={this.verPrev}>                           
+                     </button>
+
+                    <form id='agregar_muro' autoComplete='off'>
+                     <div className="form-grioup">
+                        <h3>Nuevo muro</h3>
+                     </div>
                      <div className='form-group'>
                            <label>Nombre</label>
                            <input onChange={this.onChange} className='form-control' type='text' name='nombre' value={this.state.form.nombre}/> 
@@ -96,34 +124,11 @@ class NewWall extends React.Component{
                            <label>L4 Español</label>
                            <input onChange={this.onChange} className='form-control' type='text' name='l4español'value={this.state.form.l4español}/>
                         </div>
-                        <button  onClick={this.handleClick} className='btn btn-primary'>Guardar</button>
+                        <div className='form-group'>
+                           <button  onClick={this.handleClick} className='btn btn-primary float-right'>Guardar</button>
+                        </div>
                      </form>
-                  </div>
-                  <div class="carousel-item">
-                        <Muro 
-                              nombre={this.state.form.nombre || "Nombre del muro"}
-                              grito={this.state.form.grito || "Grito"}
-                              español1={this.state.form.l1español}
-                              dovah1={this.state.form.l1dovah}
-                              español2={this.state.form.l2español}
-                              dovah2={this.state.form.l2dovah}
-                              español3={this.state.form.l3español}
-                              dovah3={this.state.form.l3dovah}
-                              español4={this.state.form.l4español}
-                              dovah4={this.state.form.l4dovah}
-                        />
-                  </div>
-               </div>
-               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-               </a>
-               <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-               </a>
-         </div>
-        </div>//close component tag
+        </React.Fragment>//close component tag
         )
     }
 }

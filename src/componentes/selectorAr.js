@@ -1,6 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-
 import ModelAr from './modeladorAr'
 
 class Selector extends React.Component{

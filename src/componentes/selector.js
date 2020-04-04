@@ -1,11 +1,10 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-
 import Model from './modelador'
 
 class Selector extends React.Component{
     state = {isMounted: true, 
-             model:'spriggan'
+             model:'spriggan',
+             verAlfabeto: false
             }
 
 
@@ -14,64 +13,68 @@ class Selector extends React.Component{
             ({isMounted: false, model:model}), 
             ()=>this.renderAgain()
              )
-
     }
-     renderAgain = () =>{
+
+    renderAgain = () =>{
          this.setState({isMounted:true})
      }       
-    render(){
+
+     verAlfa = () =>{
+        this.setState({
+           verAlfabeto: !this.state.verAlfabeto
+        })
+     }
+  
+
+     render(){
         const {isMounted = true} = this.state;
         const {model = 'spriggan'} = this.state;
 
         return(
-            <div>
-            <div className='row'>
-                <div className='col-md-4 flex-column'>
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('valleysaber')}>
+            <React.Fragment>
+            <button className="button_fade_left" onClick={this.verAlfa}></button>
+            <div className={this.state.verAlfabeto ? "left_in fade_in info" : "left_in" } onClick={this.verAlfa}>
+                <ul>
+                    <li onClick={()=> this.getModel('valleysaber')}>
                         valleysaber
-                    </button>
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('esfera')}>
+                    </li>
+                    <li onClick={()=> this.getModel('esfera')}>
                         esfera
-                    </button>
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('bear')}>
+                    </li>
+                    <li onClick={()=> this.getModel('bear')}>
                         Oso de Cueva
-                    </button>
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('centurion')}>
+                    </li>
+                    <li onClick={()=> this.getModel('centurion')}>
                         Centurion Enano
-                    </button>
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('cauro')}>
+                    </li>
+                    <li onClick={()=> this.getModel('cauro')}>
                         Cauro
-                    </button>
-
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('aranaenana')}>
+                    </li>
+                    <li onClick={()=> this.getModel('aranaenana')}>
                         Araña enana
-                    </button>
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('spriggan')}>
+                    </li>
+                    <li onClick={()=> this.getModel('spriggan')}>
                         spriggan
-                    </button>
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('vaca')}>
+                    </li>
+                    <li onClick={()=> this.getModel('vaca')}>
                         Vaca
-                    </button>
-
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('atronachhielo')}>
+                    </li>
+                    <li onClick={()=> this.getModel('atronachhielo')}>
                         Atronach de hielo
-                    </button>
-
-
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('atronachtormenta')}>
+                    </li>
+                    <li onClick={()=> this.getModel('atronachtormenta')}>
                         Atronach de la tormenta
-                    </button>
-
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('bruja')}>
+                    </li>
+                    <li onClick={()=> this.getModel('bruja')}>
                         Bruja Cuervo
-                    </button>
-
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('aldwall')}>
+                    </li>
+                    <li onClick={()=> this.getModel('aldwall')}>
                         Muro de alduin
-                    </button>
+                    </li>
+                </ul>
 
-                </div>
-                <div className='col-md-8'>
+            </div>
+                <div>
                     {isMounted && 
                     <div> 
                         <Model 
@@ -82,8 +85,7 @@ class Selector extends React.Component{
                         </div>
                     }
                 </div>
-            </div>
-            </div>
+            </React.Fragment>
         )
     }
 }

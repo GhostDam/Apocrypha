@@ -263,6 +263,28 @@
         "español": ""
       },
       "id": 12
+    },
+    {
+      "nombre": "Respiro del muerto",
+      "grito": "Torbellino arrollador (tempestad)",
+      "ubicacion": "placeholder",
+      "linea1": {
+        "dovah": "Bekkhild wahlaan qethsegol",
+        "español": ""
+      },
+      "linea2": {
+        "dovah": "Ahmulii vahrukt eyolf wen",
+        "español": ""
+      },
+      "linea3": {
+        "dovah": "Veysun los sizaan ko vul",
+        "español": ""
+      },
+      "linea4": {
+        "dovah": "Kest ko okaaz do luv",
+        "español": ""
+      },
+      "id": 13
     }
   ],
   "ingredients": [
@@ -3751,6 +3773,14 @@
       "ingrediente3": "cualquiera de reforzar aguante, (especialmente cornamenta grande)",
       "valor": "3134",
       "id": 22
+    },
+    {
+      "pocion": "El objetivo es mas débil al veneno, daño por veneno concentrado, daño a la salud",
+      "ingrediente1": "campanilla de la muerte",
+      "ingrediente2": "cola de skeever",
+      "ingrediente3": "liquen gigante",
+      "valor": "280",
+      "id": 23
     }
   ]
 }

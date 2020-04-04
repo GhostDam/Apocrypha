@@ -47,8 +47,17 @@ class Model extends React.Component {
   }
 
   modelsLoader = ()=>{
+    //loading screen
+    const progress = new THREE.LoadingManager()
+    progress.onProgress = (item, loaded, total)=>{
+      console.log(item, loaded, total)
+    }
+    progress.onLoad= ()=>{
+      console.log("file loaded")
+    }
+
     //item loaders
-    const objLoader = new OBJLoader();  
+    const objLoader = new OBJLoader(progress);  
     const mtlLoader = new MTLLoader();
     //texture loader
     const textureLoader = new THREE.TextureLoader();

@@ -23,11 +23,15 @@ function Navbar(){
     return (
         <React.Fragment>
     <nav className='menu sticky-top'>
-        <div className={visible ? "hamburguer tgl colored": "hamburguer tgl"} onClick={()=>{setVisible(!visible)}}>
+        <div className={visible ? "hamburguer colored": "hamburguer"} onClick={()=>{setVisible(!visible)}}>
             <div className="line"></div>
             <div className="line"></div>
             <div className="line"></div>
         </div>
+
+
+
+
         <div className={visible ? "content visible": "content"}>
             <ul onClick={()=>{setVisible(!visible)}}>
                 <li>
