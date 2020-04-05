@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "npm-run-all -p client server",
-    "client": "set HTTPS=true && react-scripts start",
+    "client": "react-scripts start",
     "server": "json-server --host 192.168.0.4 --port 3001 --watch src/data/db.json",
     "build": "react-scripts build",
     "test": "react-scripts test",

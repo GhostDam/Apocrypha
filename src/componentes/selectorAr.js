@@ -17,7 +17,7 @@ class Selector extends React.Component{
     startStream = async () =>{
             let stream = null;
             const conf = {
-                video: true,
+                video: { facingMode: { exact: "environment" } },
                 audio: false
             }
             try {
