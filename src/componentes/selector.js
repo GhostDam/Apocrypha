@@ -32,48 +32,6 @@ class Selector extends React.Component{
 
         return(
             <React.Fragment>
-            <button className="button_fade_left" onClick={this.verAlfa}></button>
-            <div className={this.state.verAlfabeto ? "left_in fade_in info" : "left_in" } onClick={this.verAlfa}>
-                <ul>
-                    <li onClick={()=> this.getModel('valleysaber')}>
-                        valleysaber
-                    </li>
-                    <li onClick={()=> this.getModel('esfera')}>
-                        esfera
-                    </li>
-                    <li onClick={()=> this.getModel('bear')}>
-                        Oso de Cueva
-                    </li>
-                    <li onClick={()=> this.getModel('centurion')}>
-                        Centurion Enano
-                    </li>
-                    <li onClick={()=> this.getModel('cauro')}>
-                        Cauro
-                    </li>
-                    <li onClick={()=> this.getModel('aranaenana')}>
-                        Araña enana
-                    </li>
-                    <li onClick={()=> this.getModel('spriggan')}>
-                        spriggan
-                    </li>
-                    <li onClick={()=> this.getModel('vaca')}>
-                        Vaca
-                    </li>
-                    <li onClick={()=> this.getModel('atronachhielo')}>
-                        Atronach de hielo
-                    </li>
-                    <li onClick={()=> this.getModel('atronachtormenta')}>
-                        Atronach de la tormenta
-                    </li>
-                    <li onClick={()=> this.getModel('bruja')}>
-                        Bruja Cuervo
-                    </li>
-                    <li onClick={()=> this.getModel('aldwall')}>
-                        Muro de alduin
-                    </li>
-                </ul>
-
-            </div>
                 <div>
                     {isMounted && 
                     <div> 

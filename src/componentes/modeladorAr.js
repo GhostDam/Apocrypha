@@ -39,8 +39,8 @@ class Model extends React.Component {
     this.camera.position.z = 200;
       //renderer
     this.controls = new OrbitControls(this.camera, this.el);
-
-    this.renderer = new THREE.WebGLRenderer({antialias: true});
+                                                              //alpha da el background transparente
+    this.renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
           // renderer.setClearColor("#e5e5e5");
     this.renderer.setSize(width, height);//def full scr
     this.el.appendChild(this.renderer.domElement);  
@@ -56,9 +56,12 @@ class Model extends React.Component {
     const material = new THREE.MeshPhongMaterial({map: map});
     //var to acces model before callback
     this.parent = new THREE.Group();
-    this.scene.add( this.parent );    
+    this.scene.add( this.parent );
+    //escena de fondo
+    this.scene.background = new THREE.Texture(this.props.background)
 
-   mtlLoader.load(this.props.mtlfile, (materials) => {
+
+    mtlLoader.load(this.props.mtlfile, (materials) => {
       materials.preload()
       objLoader.setMaterials(materials)
       objLoader.load(this.props.objfile,(object) => {

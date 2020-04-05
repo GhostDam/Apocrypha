@@ -2,79 +2,127 @@ import React from 'react'
 import ModelAr from './modeladorAr'
 
 class Selector extends React.Component{
-    state = {isMounted: true, 
-             model:'spriggan'
-            }
-
+    constructor(props){
+        super(props)
+        this.state = {isMounted: true,model:'spriggan'}
+    }
 
     getModel = (model) =>{
         this.setState(state => 
             ({isMounted: false, model:model}), 
-            ()=>this.renderAgain()
+            ()=>{this.setState({isMounted:true})}
              )
-
     }
-     renderAgain = () =>{
-         this.setState({isMounted:true})
-     }       
-    render(){
+    
+    startStream = async () =>{
+            let stream = null;
+            const conf = {
+                video: true,
+                audio: false
+            }
+            try {
+              stream = await navigator.mediaDevices.getUserMedia(conf);
+              /* use the stream */
+                console.log(stream)
+                const video= document.querySelector('#video')
+                video.srcObject = stream;
+                video.play();
+
+            } catch(err) {
+              /* handle the error */
+              alert(err)
+
+            }
+
+        // navigator.getUserMedia = navigator.getUserMedia || navigator.webkitgetUserMedia
+        // const conf = {
+        //     video: true,
+        //     audio: false
+        // }
+        // navigator.getUserMedia(
+        //     conf,
+        //     (stream)=>{
+        //         const video= document.querySelector('#video')
+        //         video.srcObject = stream;
+        //         video.play();
+        //         this.setState({background: video})
+        //     }, 
+        //     (err)=>{
+        //         console.log(err)
+        //     }
+        // )
+    }
+
+    verAlfa = () =>{
+        this.setState({
+           verAlfabeto: !this.state.verAlfabeto
+        })
+     }
+
+    
+     render(){
         const {isMounted = true} = this.state;
         const {model = 'spriggan'} = this.state;
-
         return(
-            <div>
-            <div className='row'>
-                <div className='col-md-4 flex-column'>
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('valleysaber')}>
+            <React.Fragment>
+                <h3>Selector AR</h3>
+                <button className="button_fade_left" onClick={this.verAlfa}></button>
+            <div className={this.state.verAlfabeto ? "left_in fade_in info" : "left_in" } onClick={this.verAlfa}>
+                <ul>
+                    <li onClick={()=> this.getModel('valleysaber')}>
                         valleysaber
-                    </button>
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('esfera')}>
+                    </li>
+                    <li onClick={()=> this.getModel('esfera')}>
                         esfera
-                    </button>
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('bear')}>
+                    </li>
+                    <li onClick={()=> this.getModel('bear')}>
                         Oso de Cueva
-                    </button>
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('centurion')}>
+                    </li>
+                    <li onClick={()=> this.getModel('centurion')}>
                         Centurion Enano
-                    </button>
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('cauro')}>
+                    </li>
+                    <li onClick={()=> this.getModel('cauro')}>
                         Cauro
-                    </button>
-
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('aranaenana')}>
+                    </li>
+                    <li onClick={()=> this.getModel('aranaenana')}>
                         Araña enana
-                    </button>
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('spriggan')}>
+                    </li>
+                    <li onClick={()=> this.getModel('spriggan')}>
                         spriggan
-                    </button>
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('vaca')}>
+                    </li>
+                    <li onClick={()=> this.getModel('vaca')}>
                         Vaca
-                    </button>
-
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('atronachhielo')}>
+                    </li>
+                    <li onClick={()=> this.getModel('atronachhielo')}>
                         Atronach de hielo
-                    </button>
-
-
-                    <button className='btn btn-secondary' onClick={()=> this.getModel('atronachtormenta')}>
+                    </li>
+                    <li onClick={()=> this.getModel('atronachtormenta')}>
                         Atronach de la tormenta
+                    </li>
+                    <li onClick={()=> this.getModel('bruja')}>
+                        Bruja Cuervo
+                    </li>
+                    <li onClick={()=> this.getModel('aldwall')}>
+                        Muro de alduin
+                    </li>
+                </ul>
+            </div>
+            <h5>video abajo</h5>
+                    <button className='btn btn-danger' onClick={this.startStream}>
+                        stream
                     </button>
-
-
-                </div>
-                <div className='col-md-8'>
+            <div className="escena">
+                <video id="video">
+                </video>
                     {isMounted && 
-                    <div> 
                         <ModelAr
                             mtlfile={require(`./models/${model}.mtl`)} 
                             objfile={require(`./models/${model}.obj`)} 
                             pngfile={require(`./models/${model}.png`)}
                         />
-                        </div>
                     }
-                </div>
             </div>
-            </div>
+            </React.Fragment>
         )
     }
 }
