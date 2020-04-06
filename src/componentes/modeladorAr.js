@@ -39,9 +39,23 @@ class Model extends React.Component {
     this.camera.position.z = 200;
       //renderer
     this.controls = new OrbitControls(this.camera, this.el);
-                                                              //alpha da el background transparente
-    this.renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
+
+
+    //setup video as texture to background
+    this.texture = new THREE.VideoTexture(this.props.video)
+    this.texture.minFilter = THREE.LinearFilter;
+    this.texture.magFilter = THREE.LinearFilter;
+    this.texture.format = THREE.RGBFormat;
+
+    
+    //alpha da el background transparente
+    this.renderer = new THREE.WebGLRenderer({antialias: true, alpha: this.props.background});
           // renderer.setClearColor("#e5e5e5");
+    //escena de fondo
+    this.scene.background = (this.props.background ? this.texture : false)
+
+
+
     this.renderer.setSize(width, height);//def full scr
     this.el.appendChild(this.renderer.domElement);  
   }
@@ -57,8 +71,6 @@ class Model extends React.Component {
     //var to acces model before callback
     this.parent = new THREE.Group();
     this.scene.add( this.parent );
-    //escena de fondo
-    this.scene.background = new THREE.Texture(this.props.background)
 
 
     mtlLoader.load(this.props.mtlfile, (materials) => {
@@ -131,7 +143,7 @@ class Model extends React.Component {
 
 render(){
   return(
-    <div className='renderer' style={style} ref={ref => (this.el = ref)}/>
+    <div className='renderer' id="renderer" style={style} ref={ref => (this.el = ref)}/>
   )
 }
 }

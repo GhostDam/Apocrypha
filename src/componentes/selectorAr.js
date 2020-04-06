@@ -4,53 +4,54 @@ import ModelAr from './modeladorAr'
 class Selector extends React.Component{
     constructor(props){
         super(props)
-        this.state = {isMounted: true,model:'spriggan'}
+        this.state = {
+            isMounted: true,
+            model:'spriggan', 
+            background:false,
+            stream:false,
+            video:true
+        }
     }
 
     getModel = (model) =>{
         this.setState(state => 
             ({isMounted: false, model:model}), 
             ()=>{this.setState({isMounted:true})}
-             )
+        )
     }
     
     startStream = async () =>{
-            let stream = null;
             const conf = {
-                video: { facingMode: { exact: "environment" } },
+                video: true, //{ facingMode: { exact: "environment" } }
                 audio: false
             }
             try {
-              stream = await navigator.mediaDevices.getUserMedia(conf);
+                const stream = await navigator.mediaDevices.getUserMedia(conf);
+                this.state.stream = stream
               /* use the stream */
-                console.log(stream)
-                const video= document.querySelector('#video')
-                video.srcObject = stream;
-                video.play();
-
+                this.state.video = document.querySelector('#video')
+                this.state.video.srcObject = stream;
+                this.state.video.play();
+                this.setState({background:true})
+                this.getModel()
             } catch(err) {
-              /* handle the error */
-              alert(err)
-
+                /* handle the error */
+                alert(err)
             }
+        }
 
-        // navigator.getUserMedia = navigator.getUserMedia || navigator.webkitgetUserMedia
-        // const conf = {
-        //     video: true,
-        //     audio: false
-        // }
-        // navigator.getUserMedia(
-        //     conf,
-        //     (stream)=>{
-        //         const video= document.querySelector('#video')
-        //         video.srcObject = stream;
-        //         video.play();
-        //         this.setState({background: video})
-        //     }, 
-        //     (err)=>{
-        //         console.log(err)
-        //     }
-        // )
+        stopStream = () =>{
+            if (this.state.stream) {
+                this.state.stream.getTracks().forEach(track => track.stop())
+            }
+        }
+
+
+    foto = () =>{
+        var download = document.getElementById("foto");
+        var image = document.getElementsByTagName("canvas")[0].toDataURL("image/octet-stream");
+        // download.setAttribute("href", image);
+        console.log(image)
     }
 
     verAlfa = () =>{
@@ -59,15 +60,17 @@ class Selector extends React.Component{
         })
      }
 
+    componentWillUnmount(){
+        this.stopStream()
+    }
     
      render(){
         const {isMounted = true} = this.state;
         const {model = 'spriggan'} = this.state;
         return(
             <React.Fragment>
-                <h3>Selector AR</h3>
-                <button className="button_fade_left" onClick={this.verAlfa}></button>
             <div className={this.state.verAlfabeto ? "left_in fade_in info" : "left_in" } onClick={this.verAlfa}>
+                <button className="button_fade_left" onClick={this.verAlfa}></button>
                 <ul>
                     <li onClick={()=> this.getModel('valleysaber')}>
                         valleysaber
@@ -105,23 +108,33 @@ class Selector extends React.Component{
                     <li onClick={()=> this.getModel('aldwall')}>
                         Muro de alduin
                     </li>
+                    <li onClick={()=> this.getModel('nocturnal')}>
+                        Nocturnal
+                    </li>
                 </ul>
             </div>
-            <h5>video abajo</h5>
-                    <button className='btn btn-danger' onClick={this.startStream}>
-                        stream
-                    </button>
-            <div className="escena">
-                <video id="video">
-                </video>
-                    {isMounted && 
-                        <ModelAr
-                            mtlfile={require(`./models/${model}.mtl`)} 
-                            objfile={require(`./models/${model}.obj`)} 
-                            pngfile={require(`./models/${model}.png`)}
-                        />
-                    }
-            </div>
+
+            <button className='btn btn-danger' onClick={this.startStream}>
+                VR
+            </button>
+            <button className='btn btn-danger' onClick={this.stopStream}>
+                stop VR
+            </button>
+
+                <div className="escena">
+                    <video id="video">
+                    </video>
+                        {isMounted && 
+                            <ModelAr
+                                video={this.state.video}
+                                background={this.state.background}
+                                mtlfile={require(`./models/${model}.mtl`)} 
+                                objfile={require(`./models/${model}.obj`)} 
+                                pngfile={require(`./models/${model}.png`)}
+                            />
+                        }
+                </div>
+            <a className="btn btn-secondary" onClick={this.foto} id="foto" download="sky.png">foto</a>
             </React.Fragment>
         )
     }

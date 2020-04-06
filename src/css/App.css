@@ -350,6 +350,9 @@ body{
 /**ESCENAA*/
 .escena{
   position: relative;
+  padding: 1px;
+  border: 1px solid black;
+
 }
 .escena #video{
   position: absolute;
