@@ -49,9 +49,9 @@ class Selector extends React.Component{
 
 
     foto = () =>{
-        var download = document.getElementById("foto");
-        var image = document.getElementsByTagName("canvas")[0]
-        image.toDataURL("image/octet-stream");
+        const download = document.getElementById("foto");
+        const image = document.getElementsByTagName("canvas")[0].toDataURL();
+
         download.setAttribute("href", image);
         console.log(image)
     }
@@ -67,13 +67,11 @@ class Selector extends React.Component{
         })
      }
   
-     toggleCamera = async () =>{
-        if (this.props.stream) {
-            await this.setState({frontCamera:!this.state.frontCamera})
-            await this.stopStream()
-            await this.getModel(this.state.model)
-            await this.startStream()            
-        }
+     toggleCamera =  () =>{
+            this.setState({frontCamera:!this.state.frontCamera})
+            this.stopStream()
+            this.startStream()
+            this.getModel(this.state.model)
      }
 
     componentWillUnmount(){
@@ -129,16 +127,17 @@ class Selector extends React.Component{
                 </ul>
             </div>
             <div className={this.state.verPrevio ? "right_in fade_in info" : "right_in" } onClick={this.verPrev}>
-            <a className="btn btn-secondary" onClick={this.foto} id="foto" download="sky.png">foto</a>
-            <button className='btn btn-danger' onClick={this.startStream}>
-                VR
-            </button>
-            <button className='btn btn-danger' onClick={this.stopStream}>
-                stop VR
-            </button>
-            {/* <button className='btn btn-danger' onClick={this.toggleCamera}>
-                Camera {this.state.frontCamera ? "frontal" : "trasera"}
-            </button> */}
+
+                <a className="btn btn-secondary" onClick={this.foto} id="foto" download="sky.png">foto</a>
+                <button className='btn btn-danger' onClick={this.startStream}>
+                    VR
+                </button>
+                <button className='btn btn-danger' onClick={this.stopStream}>
+                    stop VR
+                </button>
+                <button className='btn btn-danger' onClick={this.toggleCamera}>
+                    Camara {this.state.frontCamera ? "frontal" : "trasera"}
+                </button>
 
             </div>
 

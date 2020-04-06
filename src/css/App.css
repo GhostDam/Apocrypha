@@ -24,9 +24,9 @@ body{
   display: flex;
   position: sticky;
 }
-.content{
+/* .content{
   flex-grow: 2;
-}
+} */
 .content a{
   text-decoration: none;
   color: white;
@@ -317,6 +317,22 @@ body{
   left: 0;
   z-index: 1;
 }
+.left_in.fade_in ul{
+  /* padding: 0; */
+}
+.left_in.fade_in ul li{
+  padding: .5rem;
+  list-style: none;
+  display: block;
+  text-decoration: none;
+  color: white;
+  /*not 100 width*/
+  float: left;
+  clear: both;
+}
+
+
+
 .right_in{
   position: fixed;
   height: 100vh;
@@ -326,6 +342,9 @@ body{
 }
 .right_in.fade_in{
   right: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 .button_fade_left{
   border: none;
@@ -348,6 +367,8 @@ body{
   border-bottom-left-radius: 100%;
   color: white;
 }
+
+
 
 /**ESCENAA*/
 /* .escena{

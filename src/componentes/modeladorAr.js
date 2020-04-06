@@ -36,7 +36,6 @@ class Model extends React.Component {
       //renderer
     this.controls = new OrbitControls(this.camera, this.el);
 
-
     //setup video as texture to background
     this.texture = new THREE.VideoTexture(this.props.video)
     this.texture.minFilter = THREE.LinearFilter;
@@ -45,10 +44,15 @@ class Model extends React.Component {
 
     
     //alpha da el background transparente
-    this.renderer = new THREE.WebGLRenderer({antialias: true, alpha: this.props.background});
-          // renderer.setClearColor("#e5e5e5");
+    this.renderer = new THREE.WebGLRenderer({
+                                              antialias: true, 
+                                              alpha: this.props.background,
+                                              preserveDrawingBuffer: true, //requerido para capturas
+                                              // antialias: true
+                                            });
     //escena de fondo
     this.scene.background = (this.props.background ? this.texture : false)
+    // this.scene.fog = new THREE.Fog('white', 40, 900)
 
 
 
