@@ -5,10 +5,6 @@ import * as THREE from 'three'  //npm three
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import {MTLLoader, OBJLoader} from 'three-obj-mtl-loader' //npm mtl-obj
 
-const style = {
-  height: 600, // we can control scene size by setting container dimensions
-};
-
 //function component
 class Model extends React.Component {
   componentDidMount(){
@@ -143,7 +139,7 @@ class Model extends React.Component {
 
 render(){
   return(
-    <div className='renderer' id="renderer" style={style} ref={ref => (this.el = ref)}/>
+    <div className='renderer' id="renderer" ref={ref => (this.el = ref)}/>
   )
 }
 }

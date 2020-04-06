@@ -9,7 +9,8 @@ class Selector extends React.Component{
             model:'spriggan', 
             background:false,
             stream:false,
-            video:true
+            video:true,
+            frontCamera:false
         }
     }
 
@@ -22,7 +23,7 @@ class Selector extends React.Component{
     
     startStream = async () =>{
             const conf = {
-                video: true, //{ facingMode: { exact: "environment" } }
+                video: { facingMode: { exact: this.state.frontCamera ? "user": "environment" } }, //
                 audio: false
             }
             try {
@@ -33,7 +34,7 @@ class Selector extends React.Component{
                 this.state.video.srcObject = stream;
                 this.state.video.play();
                 this.setState({background:true})
-                this.getModel()
+                this.getModel(this.state.model)
             } catch(err) {
                 /* handle the error */
                 alert(err)
@@ -49,8 +50,9 @@ class Selector extends React.Component{
 
     foto = () =>{
         var download = document.getElementById("foto");
-        var image = document.getElementsByTagName("canvas")[0].toDataURL("image/octet-stream");
-        // download.setAttribute("href", image);
+        var image = document.getElementsByTagName("canvas")[0]
+        image.toDataURL("image/octet-stream");
+        download.setAttribute("href", image);
         console.log(image)
     }
 
@@ -59,18 +61,31 @@ class Selector extends React.Component{
            verAlfabeto: !this.state.verAlfabeto
         })
      }
+     verPrev = () =>{
+        this.setState({
+           verPrevio: !this.state.verPrevio
+        })
+     }
+  
+     toggleCamera = async () =>{
+        if (this.props.stream) {
+            await this.setState({frontCamera:!this.state.frontCamera})
+            await this.stopStream()
+            await this.getModel(this.state.model)
+            await this.startStream()            
+        }
+     }
 
     componentWillUnmount(){
         this.stopStream()
     }
     
      render(){
-        const {isMounted = true} = this.state;
-        const {model = 'spriggan'} = this.state;
         return(
             <React.Fragment>
+                <button className="button_fade_left" onClick={this.verAlfa}>+</button>
+                <button className="button_fade_right" onClick={this.verPrev}>-</button>
             <div className={this.state.verAlfabeto ? "left_in fade_in info" : "left_in" } onClick={this.verAlfa}>
-                <button className="button_fade_left" onClick={this.verAlfa}></button>
                 <ul>
                     <li onClick={()=> this.getModel('valleysaber')}>
                         valleysaber
@@ -113,28 +128,33 @@ class Selector extends React.Component{
                     </li>
                 </ul>
             </div>
-
+            <div className={this.state.verPrevio ? "right_in fade_in info" : "right_in" } onClick={this.verPrev}>
+            <a className="btn btn-secondary" onClick={this.foto} id="foto" download="sky.png">foto</a>
             <button className='btn btn-danger' onClick={this.startStream}>
                 VR
             </button>
             <button className='btn btn-danger' onClick={this.stopStream}>
                 stop VR
             </button>
+            {/* <button className='btn btn-danger' onClick={this.toggleCamera}>
+                Camera {this.state.frontCamera ? "frontal" : "trasera"}
+            </button> */}
+
+            </div>
 
                 <div className="escena">
                     <video id="video">
                     </video>
-                        {isMounted && 
+                        {this.state.isMounted && 
                             <ModelAr
                                 video={this.state.video}
                                 background={this.state.background}
-                                mtlfile={require(`./models/${model}.mtl`)} 
-                                objfile={require(`./models/${model}.obj`)} 
-                                pngfile={require(`./models/${model}.png`)}
+                                mtlfile={require(`./models/${this.state.model}.mtl`)} 
+                                objfile={require(`./models/${this.state.model}.obj`)} 
+                                pngfile={require(`./models/${this.state.model}.png`)}
                             />
                         }
                 </div>
-            <a className="btn btn-secondary" onClick={this.foto} id="foto" download="sky.png">foto</a>
             </React.Fragment>
         )
     }
