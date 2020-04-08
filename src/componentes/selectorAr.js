@@ -41,19 +41,18 @@ class Selector extends React.Component{
             }
         }
 
-        stopStream = () =>{
-            if (this.state.stream) {
-                this.state.stream.getTracks().forEach(track => track.stop())
-            }
+    stopStream = () =>{
+        if (this.state.stream) {
+            this.state.stream.getTracks().forEach(track => track.stop())
+            this.setState({stream:false})
         }
+    }
 
 
     foto = () =>{
         const download = document.getElementById("foto");
         const image = document.getElementsByTagName("canvas")[0].toDataURL();
-
         download.setAttribute("href", image);
-        console.log(image)
     }
 
     verAlfa = () =>{
@@ -67,9 +66,9 @@ class Selector extends React.Component{
         })
      }
   
-     toggleCamera =  () =>{
-            this.setState({frontCamera:!this.state.frontCamera})
+     toggleCamera = async () =>{
             this.stopStream()
+            this.setState({ frontCamera: !this.state.frontCamera })
             this.startStream()
             this.getModel(this.state.model)
      }
@@ -81,8 +80,8 @@ class Selector extends React.Component{
      render(){
         return(
             <React.Fragment>
-                <button className="button_fade_left" onClick={this.verAlfa}>+</button>
-                <button className="button_fade_right" onClick={this.verPrev}>-</button>
+                <button className="button_fade_left" onClick={this.verAlfa}>Modelos</button>
+                <button className="button_fade_right" onClick={this.verPrev}>Opciones</button>
             <div className={this.state.verAlfabeto ? "left_in fade_in info" : "left_in" } onClick={this.verAlfa}>
                 <ul>
                     <li onClick={()=> this.getModel('valleysaber')}>
@@ -127,17 +126,19 @@ class Selector extends React.Component{
                 </ul>
             </div>
             <div className={this.state.verPrevio ? "right_in fade_in info" : "right_in" } onClick={this.verPrev}>
-
-                <a className="btn btn-secondary" onClick={this.foto} id="foto" download="sky.png">foto</a>
                 <button className='btn btn-danger' onClick={this.startStream}>
                     VR
                 </button>
                 <button className='btn btn-danger' onClick={this.stopStream}>
                     stop VR
                 </button>
-                <button className='btn btn-danger' onClick={this.toggleCamera}>
-                    Camara {this.state.frontCamera ? "frontal" : "trasera"}
-                </button>
+
+                { this.state.stream && 
+                    <button className='btn btn-danger' onClick={this.toggleCamera}>
+                        Camara {this.state.frontCamera ? "Trasera" : "Frontal"}
+                    </button>
+                }
+
 
             </div>
 
@@ -153,7 +154,14 @@ class Selector extends React.Component{
                                 pngfile={require(`./models/${this.state.model}.png`)}
                             />
                         }
+                        { this.state.stream && 
+                            <a className="foto" onClick={this.foto} id="foto" download="sky.png">
+                                {this.state.frontCamera ? "si": "no"}
+                            </a>
+                        }
+
                 </div>
+ 
             </React.Fragment>
         )
     }

@@ -317,9 +317,6 @@ body{
   left: 0;
   z-index: 1;
 }
-.left_in.fade_in ul{
-  /* padding: 0; */
-}
 .left_in.fade_in ul li{
   padding: .5rem;
   list-style: none;
@@ -345,6 +342,8 @@ body{
   display: flex;
   flex-flow: column;
   align-items: center;
+  z-index: 1;
+
 }
 .button_fade_left{
   border: none;
@@ -352,7 +351,7 @@ body{
   height: 45px;
   position: fixed;
   left: 0;
-  background-color: black;
+  background-color: salmon;
   border-bottom-right-radius: 100%;
   color: white;
   z-index: 2;
@@ -363,34 +362,38 @@ body{
   height: 45px;
   position: fixed;
   right: 0;
-  background-color: black;
+  background-color: salmon;
   border-bottom-left-radius: 100%;
   color: white;
+  z-index: 2;
 }
 
 
 
 /**ESCENAA*/
 /* .escena{
-  position: relative;
-  padding: 1px;
-  border: 1px solid black;
 } */
 .escena #video{
   display: none;
-  /* position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 600px; */
 }
 .escena .renderer{
   position: fixed;
   width: 100vw;
   height: 100vh;
   left: 0;
-  margin: 0 auto;
   z-index: -1;
 }
-canvas{
-  position: relative;
+.escena a#foto{
+  position: fixed;
+  left: 45vw;
+  top: 80vh;
+  width: 50px;
+  height: 50px;
+  border: 5px solid black;
+  border-radius: 50%;
+  background-color: blanchedalmond;
 }
+
+/* canvas{
+  position: relative;
+} */
