@@ -8,17 +8,18 @@ import NewWall from './nuevomuro'
 import EditWall from './editarmuro'
 
 import LenguajeDragon from './Dragon'
-import AlfabetoDaedra from './alfabetoDaedra'
-import AlfabetoDragon from './alfabetoDragon'
+import AlfabetoDaedra from './alfabetos/alfabetoDaedra'
+import AlfabetoDragon from './alfabetos/alfabetoDragon'
 
 import Info from './alquimiaInfo'
 import ListaIngredientes from './listaIngredientes'
 import ListaPociones from './listaPociones'
 
-import Selector from './selector'
-import SelectorAr from './selectorAr'
+import SelectorAr from './visorModelos/selectorAr'
 
-import Aranhas from './aranhas'
+import Fragua from './Fragua'
+import Aranhas from './aranas/aranhas'
+
 const App =() => (
   <BrowserRouter>
     <Navbar />
@@ -36,8 +37,8 @@ const App =() => (
       <Route exact path ='/pociones' component={ListaPociones} />
 
       <Route exact path ='/artesanias/aranas' component={Aranhas} />
-      <Route exact path ='/artesanias/modelos/' component={Selector} />
-      <Route exact path ='/artesanias/modelosar/' component={SelectorAr} />
+      <Route exact path ='/artesanias/modelos/' component={SelectorAr} />
+      <Route exact path ='/artesanias/fragua/' component={Fragua} />
       <Route component={NotFound}/>  
       </Switch>
     </div>

@@ -1,0 +1,50 @@
+/*Alfabeto*/
+.headerAlfabeto{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: black;
+}
+.headerAlfabeto h1{
+  text-align: center;
+  color: white; 
+  margin: 0px;
+  line-height: 50px;
+}
+.headerAlfabeto img{
+  width: 100%;
+  height: 100%;
+}  
+.espejo img{
+  -moz-transform: scaleX(-1); /* Firefox */
+  -o-transform: scaleX(-1); /* Opera */
+  -webkit-transform: scaleX(-1); /* Chrome y Safari */
+  transform: scaleX(-1); /* w3org */
+  filter: FlipH; /* Internet Explorer */
+}
+.alfabeto{
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+    .alfabeto{
+      grid-template-columns: repeat(7, 1fr);
+      margin: 0 auto;
+    }
+}
+
+.alfabeto p{
+  color: #909090;
+  font-size: 12px;
+}
+.alfabeto p, img{
+  margin: 0;
+  transition: .5s;
+}
+.alfabeto > div{
+  border: 1px solid #8e8383;
+}

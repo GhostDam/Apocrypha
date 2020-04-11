@@ -1,5 +1,6 @@
 import React from 'react'
 import ModelAr from './modeladorAr'
+import {LeftMenu, RightMenu} from '../menus/AsideMenus'
 
 class Selector extends React.Component{
     constructor(props){
@@ -10,7 +11,7 @@ class Selector extends React.Component{
             background:false,
             stream:false,
             video:true,
-            frontCamera:false
+            frontCamera:true
         }
     }
 
@@ -54,17 +55,6 @@ class Selector extends React.Component{
         const image = document.getElementsByTagName("canvas")[0].toDataURL();
         download.setAttribute("href", image);
     }
-
-    verAlfa = () =>{
-        this.setState({
-           verAlfabeto: !this.state.verAlfabeto
-        })
-     }
-     verPrev = () =>{
-        this.setState({
-           verPrevio: !this.state.verPrevio
-        })
-     }
   
      toggleCamera = async () =>{
             this.stopStream()
@@ -80,12 +70,10 @@ class Selector extends React.Component{
      render(){
         return(
             <React.Fragment>
-                <button className="button_fade_left" onClick={this.verAlfa}>Modelos</button>
-                <button className="button_fade_right" onClick={this.verPrev}>Opciones</button>
-            <div className={this.state.verAlfabeto ? "left_in fade_in info" : "left_in" } onClick={this.verAlfa}>
+                <LeftMenu header="modelos">
                 <ul>
-                    <li onClick={()=> this.getModel('valleysaber')}>
-                        valleysaber
+                    <li onClick={()=> this.getModel('valesabrecat')}>
+                        Gato sable del valle
                     </li>
                     <li onClick={()=> this.getModel('esfera')}>
                         esfera
@@ -111,6 +99,18 @@ class Selector extends React.Component{
                     <li onClick={()=> this.getModel('atronachhielo')}>
                         Atronach de hielo
                     </li>
+                    <li onClick={()=> this.getModel('nocturnal')}>
+                        Nocturnal
+                    </li>
+                    <li onClick={()=> this.getModel('namirastatue')}>
+                        Estatua de Namira
+                    </li>
+                    <li onClick={()=> this.getModel('dragon1')}>
+                        Dragon
+                    </li>
+                    <li onClick={()=> this.getModel('capillaazura')}>
+                        Estatua de Azura
+                    </li>
                     <li onClick={()=> this.getModel('atronachtormenta')}>
                         Atronach de la tormenta
                     </li>
@@ -120,28 +120,21 @@ class Selector extends React.Component{
                     <li onClick={()=> this.getModel('aldwall')}>
                         Muro de alduin
                     </li>
-                    <li onClick={()=> this.getModel('nocturnal')}>
-                        Nocturnal
-                    </li>
                 </ul>
-            </div>
-            <div className={this.state.verPrevio ? "right_in fade_in info" : "right_in" } onClick={this.verPrev}>
-                <button className='btn btn-danger' onClick={this.startStream}>
-                    VR
-                </button>
-                <button className='btn btn-danger' onClick={this.stopStream}>
-                    stop VR
-                </button>
-
-                { this.state.stream && 
-                    <button className='btn btn-danger' onClick={this.toggleCamera}>
-                        Camara {this.state.frontCamera ? "Trasera" : "Frontal"}
+                </LeftMenu>
+                <RightMenu header="opciones">
+                    <button className='btn btn-danger' onClick={this.startStream}>
+                        VR
                     </button>
-                }
-
-
-            </div>
-
+                    <button className='btn btn-danger' onClick={this.stopStream}>
+                        stop VR
+                    </button>
+                    { this.state.stream && 
+                        <button className='btn btn-danger' onClick={this.toggleCamera}>
+                            Camara {this.state.frontCamera ? "Trasera" : "Frontal"}
+                        </button>
+                    }
+                </RightMenu>
                 <div className="escena">
                     <video id="video">
                     </video>
@@ -149,9 +142,9 @@ class Selector extends React.Component{
                             <ModelAr
                                 video={this.state.video}
                                 background={this.state.background}
-                                mtlfile={require(`./models/${this.state.model}.mtl`)} 
-                                objfile={require(`./models/${this.state.model}.obj`)} 
-                                pngfile={require(`./models/${this.state.model}.png`)}
+                                mtlfile={require(`../models/${this.state.model}/${this.state.model}.mtl`)} 
+                                objfile={require(`../models/${this.state.model}/${this.state.model}.obj`)} 
+                                pngfile={require(`../models/${this.state.model}/${this.state.model}.png`)}
                             />
                         }
                         { this.state.stream && 
@@ -159,9 +152,8 @@ class Selector extends React.Component{
                                 {this.state.frontCamera ? "si": "no"}
                             </a>
                         }
-
-                </div>
- 
+                    <div id="loading"></div>
+                </div> 
             </React.Fragment>
         )
     }

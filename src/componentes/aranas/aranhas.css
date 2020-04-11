@@ -1,0 +1,29 @@
+  /* arañas */
+  .ver {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 600px){
+    .ver{
+      width: 100%;
+    }
+  }
+  .ver > div{
+      border: 1px solid #8e8383;
+  }
+  .ver div{
+    position: relative;
+    overflow: hidden;
+  }
+  .hide{
+    position: absolute;
+    transition: .5s;
+    bottom: 0;
+  }
+  .hide img{
+    max-width: 30%;
+  }

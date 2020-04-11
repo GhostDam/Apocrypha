@@ -1,16 +1,18 @@
 import React from 'react'
 import image from './media/dael.png'
+import './alfabeto.css'
+
 
 function AlfabetoDaedra (){
       return(<React.Fragment>
           <div className='headerAlfabeto mx-auto'>
-          <div>
-            <img src={image} alt='daedra'/>
-          </div>
-          <h1>Daedra</h1>
-          <div className='espejo'>
-            <img src={image} alt='daedra' />
-          </div>
+            <div>
+              <img src={image} alt='daedra'/>
+            </div>
+            <h1>Daedra</h1>
+            <div className='espejo'>
+              <img src={image} alt='daedra' />
+            </div>
         </div>
         <div className="alfabeto">
             <div>
@@ -18,6 +20,9 @@ function AlfabetoDaedra (){
             </div>
             <div>
             <p>B</p><img src={require("./daedra/b.svg")} alt="" />
+            </div>
+            <div>
+            <p>C</p><img src={require("./daedra/c.svg")} alt="" />
             </div>
             <div>
             <p>D</p><img src={require("./daedra/d.svg")} alt="" />

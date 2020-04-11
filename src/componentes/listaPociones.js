@@ -1,7 +1,6 @@
 import React from 'react'
 import api from '../api'
 
-import Modalpotions from './modalPotion'
 import ModalPotions from './modalPotion'
 
 var potions = []

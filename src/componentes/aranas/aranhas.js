@@ -17,6 +17,8 @@ import amatista from './media/amatista.png'
 import rubi from './media/ruby.png'
 import esmeralda from './media/esmeralda.png'
 
+import './aranhas.css'
+
 const Aranhas = ()=>{
     return(
         <div className="ver info">

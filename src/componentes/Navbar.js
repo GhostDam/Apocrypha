@@ -57,9 +57,9 @@ function Navbar(){
                     <div className="dropdown" onClick={(e)=>{e.stopPropagation()}}>
                         <button className="dropbtn">Alquimia</button>
                         <div className="dropdown-content">
-                            <Link className='' to='/alquimia' onClick={()=>{setVisible(!visible)}}>Información</Link>
-                            <Link className='' to='/ingredientes' onClick={()=>{setVisible(!visible)}}>Ingredientes</Link>
-                            <Link className='' to='/pociones' onClick={()=>{setVisible(!visible)}}>Pociones</Link>
+                            <Link to='/alquimia' onClick={()=>{setVisible(!visible)}}>Información</Link>
+                            <Link to='/ingredientes' onClick={()=>{setVisible(!visible)}}>Ingredientes</Link>
+                            <Link to='/pociones' onClick={()=>{setVisible(!visible)}}>Pociones</Link>
                         </div>
                     </div>
                 </li>
@@ -67,9 +67,8 @@ function Navbar(){
                     <div className="dropdown" onClick={(e)=>{e.stopPropagation()}}>
                         <button className="dropbtn">Varios</button>
                         <div className="dropdown-content">
-                            <Link className='' to='/artesanias/fraduadelatronach' onClick={()=>{setVisible(!visible)}}>Fragua del atronach</Link>
+                            <Link className='' to='/artesanias/fragua' onClick={()=>{setVisible(!visible)}}>Fragua del atronach</Link>
                             <Link className='' to='/artesanias/aranas' onClick={()=>{setVisible(!visible)}}>Arañas "Dragonbron DLC"</Link>
-                            <Link className='' to='/artesanias/modelosar' onClick={()=>{setVisible(!visible)}}>modelos Ar</Link>
                             <Link className='' to='/nuevo_muro' onClick={()=>{setVisible(!visible)}}>Agregar muros</Link>
                         </div>
                     </div>

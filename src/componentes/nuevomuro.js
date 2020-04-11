@@ -1,7 +1,8 @@
 import React from 'react'
 import Muro from './muro'
-import AlfabetoDragon from './alfabetoDragon'
+import AlfabetoDragon from './alfabetos/alfabetoDragon'
 import api from '../api' 
+import {LeftMenu, RightMenu } from './menus/AsideMenus'
 
 class NewWall extends React.Component{
     state={
@@ -16,9 +17,7 @@ class NewWall extends React.Component{
             l3español:'',
             l4dovah:'',
             l4español:'',
-        },
-        verAlfabeto:false,
-        verPrevio: false
+        }
    }
 
     onChange = (e) =>{
@@ -42,25 +41,13 @@ class NewWall extends React.Component{
          }
    } 
 
-   verAlfa = () =>{
-      this.setState({
-         verAlfabeto: !this.state.verAlfabeto
-      })
-   }
-
-   verPrev = () =>{
-      this.setState({
-         verPrevio: !this.state.verPrevio
-      })
-   }
-
     render(){
         return(
       <React.Fragment>
-            <div className={this.state.verAlfabeto ? "left_in fade_in info" : "left_in" } onClick={this.verAlfa}>
+            <LeftMenu header="Alfabeto">
                <AlfabetoDragon />
-            </div>
-            <div className={this.state.verPrevio ? "right_in fade_in info" : "right_in" } onClick={this.verPrev}>
+            </LeftMenu>
+            <RightMenu header="Muro">
                <Muro 
                      nombre={this.state.form.nombre || "Nombre del muro"}
                      grito={this.state.form.grito || "Grito"}
@@ -73,11 +60,7 @@ class NewWall extends React.Component{
                      español4={this.state.form.l4español}
                      dovah4={this.state.form.l4dovah}
                />
-            </div>
-                     <button className="button_fade_left" onClick={this.verAlfa}>
-                     </button>
-                     <button className="button_fade_right" onClick={this.verPrev}>                           
-                     </button>
+            </RightMenu>
 
                     <form id='agregar_muro' autoComplete='off'>
                      <div className="form-grioup">
