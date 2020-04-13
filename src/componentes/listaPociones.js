@@ -37,32 +37,32 @@ function ListaPociones () {
     return(
             <div>
                 <h1>Lista de Pociones</h1>
-                <div className='form-group'>
-                    <div className='d-flex justify-content-between'>
-                        <label>Busqueda</label> <ModalPotions />
-                    </div> 
+                <div className='searcher'>
+                    <div className='search_label'>
+                        <label>Busqueda</label> 
+                        <ModalPotions />
                     <input className='form-control'
                     value={query}
                     onChange={(e)=>{setQuery(e.target.value)}}
                     />
+                    </div> 
+                <div className='search_result'>                    
+                    {pocionFiltrada.sort((a,b)=>a.valor-b.valor).map(pocion =>(
+                        <div key={pocion.id} className='info'>
+                            <div className='col-md-6'>
+                                <p><strong>Descripcion de pocion</strong></p>
+                                <p>{pocion.pocion} </p>
+                                <p><strong>valor: {pocion.valor}</strong></p>
+                            </div>
+                            <div className='col-md-6'>
+                                <p><strong>ingredientes usados</strong></p>
+                                <p>{pocion.ingrediente1}</p>
+                                <p>{pocion.ingrediente2}</p>
+                                <p>{pocion.ingrediente3}</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-                <div className='row'>
-                    
-                {pocionFiltrada.sort((a,b)=>a.valor-b.valor).map(pocion =>(
-                    <div key={pocion.id} className='row col-md-6 border border-secondary info'>
-                        <div className='col-md-6'>
-                            <p><strong>Descripcion de pocion</strong></p>
-                            <p>{pocion.pocion} </p>
-                            <p><strong>valor: {pocion.valor}</strong></p>
-                        </div>
-                        <div className='col-md-6'>
-                            <p><strong>ingredientes usados</strong></p>
-                            <p>{pocion.ingrediente1}</p>
-                            <p>{pocion.ingrediente2}</p>
-                            <p>{pocion.ingrediente3}</p>
-                        </div>
-                    </div>
-                ))}
                 </div>
             </div>
         )

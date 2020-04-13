@@ -38,18 +38,23 @@ fetchWords()
 function LenguajeDragon(props){    
     const [value, setValue, palabrasBuscadas] = useSearchWords(words)
     return (
-        <div>
-            <div className='d-flex justify-content-between'>
-                <label>Busqueda</label> <Modal />
-            </div> 
-                <input className='form-control' value={value}  onChange={(e)=>{setValue(e.target.value)}}/>
-                {palabrasBuscadas.map((palabra, index) => (
-                <div key={index} className='d-flex justify-content-around info'>
-                    <p>{palabra.dovah}</p>
-                    <p>{palabra.español}</p>
+        <React.Fragment>
+            <div className="searcher">
+                <div className='search_label'>
+                    <label>Diccionario</label> 
+                    <Modal />
+                    <input className='form-control' value={value}  onChange={(e)=>{setValue(e.target.value)}}/>
+                </div> 
+                <div className="search_result">
+                    {value !== "" ? palabrasBuscadas.map((palabra, index) => (
+                        <div key={index} className='info'>
+                        <p>{palabra.dovah}</p>
+                        <p>{palabra.español}</p>
+                    </div>
+                    )) : ""}
                 </div>
-            ))}
-        </div>
+            </div>
+        </React.Fragment>
     )    
 }
 

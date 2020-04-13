@@ -16,6 +16,12 @@
     color: white;
     height: 10vh;
 }
+.left_menu_content{
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+}
 .left_menu.opened{
     width: 100vw;
     height: 100vh;
@@ -46,6 +52,7 @@
     position: absolute;
     overflow: hidden;
     left: 0;
+    width: 100%;
 }
 .right_menu.opened{
     width: 100vw;

@@ -28,19 +28,19 @@
       "ubicacion": "https://vignette.wikia.nocookie.net/elderscrolls/images/9/9c/Guarida_marea_argentea.jpg/revision/latest?cb=20140308193722&path-prefix=es",
       "linea1": {
         "dovah": "Qethsegol Vahrukiv",
-        "español": "esta piedra conmemora"
+        "español": "Esta piedra conmemora"
       },
       "linea2": {
         "dovah": "Ahziid viik do briinahmaar",
-        "español": "la amarga derrota de Brinahmaar"
+        "español": "la amarga derrota de la hermandad"
       },
       "linea3": {
         "dovah": "Do sot peyt naako wah fin",
-        "español": "de blanco peyt comido al poco frecuente"
+        "español": "de la rosa blanca, comida hasta el"
       },
       "linea4": {
         "dovah": "Laat naal ufiik do korvag kol",
-        "español": "ultimo a través de ufiik korvag risco"
+        "español": "final por los trolls del risco Korvag"
       },
       "id": 2
     },
@@ -72,19 +72,19 @@
       "ubicacion": "https://vignette.wikia.nocookie.net/elderscrolls/images/d/d0/T%C3%BAmulo_Cuaderna_Map.jpg/revision/latest?cb=20160113194254&path-prefix=es",
       "linea1": {
         "dovah": "Het nok bein nahgahdinok",
-        "español": ""
+        "español": "Aquí yace el asqueroso nigromante"
       },
       "linea2": {
         "dovah": "Azaran faal munax wo unt",
-        "español": ""
+        "español": "Azaran el cruel, quien intentó"
       },
       "linea3": {
         "dovah": "Wah gron krilot dilon do",
-        "español": ""
+        "español": "enlazar a los valientes muertos de"
       },
       "linea4": {
-        "dovah": "Sovngarde Wah leyn do Jul ahrk funt",
-        "español": ""
+        "dovah": "Sovngarde Wah lein do Jul ahrk funt",
+        "español": "Sovngarde a el mundo del hombre, y fracasó"
       },
       "id": 4
     },
@@ -137,20 +137,20 @@
       "grito": "Furia elemental (gracia)",
       "ubicacion": "https://vignette.wikia.nocookie.net/elderscrolls/images/4/41/Cr%C3%A1ter_Diente_Drag%C3%B3n_Mapa.jpg/revision/latest?cb=20161107214025&path-prefix=es",
       "linea1": {
-        "dovah": "Qethsegol vahrukiv paas",
-        "español": ""
+        "dovah": "Qethsegol vahrukiv paaz",
+        "español": "Esta piedra conmemora "
       },
       "linea2": {
-        "dovah": "Kulaas yrsa wah ensosin",
-        "español": ""
+        "dovah": "Kulaas Yrsa wo ensosin",
+        "español": "a la princesa Yrsa, quien hechizó"
       },
       "linea3": {
-        "dovah": "Pah do taazonaan voth",
-        "español": ""
+        "dovah": "Pah do taazokaan voth",
+        "español": "todo Tamriel con"
       },
       "linea4": {
         "dovah": "Ek dun ahrk brii",
-        "español": ""
+        "español": "su gracia y belleza"
       },
       "id": 7
     },
@@ -1518,7 +1518,7 @@
     {
       "id": 27,
       "dovah": "Bein",
-      "español": "Falta"
+      "español": "Falta / Asqueroso"
     },
     {
       "id": 28,
@@ -1908,7 +1908,7 @@
     {
       "id": 105,
       "dovah": "Fin",
-      "español": "El (poco frecuente)"
+      "español": "El"
     },
     {
       "id": 106,
@@ -2533,7 +2533,7 @@
     {
       "id": 230,
       "dovah": "Laat",
-      "español": "Último"
+      "español": "Último / Final"
     },
     {
       "id": 231,
@@ -3353,7 +3353,7 @@
     {
       "id": 394,
       "dovah": "Wah",
-      "español": "A / Al"
+      "español": "A / Al / Hasta"
     },
     {
       "id": 395,
@@ -3619,6 +3619,41 @@
       "dovah": "Heimverlund",
       "español": "Nombre propio",
       "id": 447
+    },
+    {
+      "dovah": "Briinahmaar",
+      "español": "Hermandad",
+      "id": 448
+    },
+    {
+      "dovah": "Peyt",
+      "español": "Rosa",
+      "id": 449
+    },
+    {
+      "dovah": "Ufiik",
+      "español": "Troll",
+      "id": 450
+    },
+    {
+      "dovah": "Korvag",
+      "español": "Nombre propio",
+      "id": 451
+    },
+    {
+      "dovah": "Paaz",
+      "español": "Justo",
+      "id": 452
+    },
+    {
+      "dovah": "Pah",
+      "español": "Todo / totalmente / completamente",
+      "id": 453
+    },
+    {
+      "dovah": "Taazokaan",
+      "español": "Tamriel",
+      "id": 454
     }
   ],
   "potions": [

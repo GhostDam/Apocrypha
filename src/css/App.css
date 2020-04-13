@@ -4,11 +4,10 @@
 }
 body{
   background-image: url('../media/skyrim.jpg');
-    /* Full height */
+  /* Full height */
   /* Center and scale the image nicely */
   background-repeat: no-repeat;
   background-size: cover;
-  /*  */
 }
 @media (min-width :600px){
   body{
@@ -19,14 +18,12 @@ body{
 
 /*  NAVBAR  */
 .menu{
-  background-color: #6d757d;
+  background-color: rgba(0,0,0,0.2);
+  /* background-color: #6d757d; */
   height: 40px;
   display: flex;
   position: sticky;
 }
-/* .content{
-  flex-grow: 2;
-} */
 .content a{
   text-decoration: none;
   color: white;
@@ -39,7 +36,6 @@ body{
   list-style: none;
   display: inline-flex;
 }
-
 .dropbtn {
   background-color: #4CAF50;
   color: white;
@@ -58,7 +54,6 @@ body{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
   color: black;
   text-decoration: none;
@@ -140,6 +135,19 @@ body{
   }
 }
 
+/*buscadores*/
+/* .searcher {
+} */
+.searcher .search_label{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.searcher .search_result{
+  height: 80vh;
+  overflow: auto;
+}
+
 /*  muros  */
 .listado_muros{
   width: 80%;
@@ -154,15 +162,13 @@ body{
 }
 .muro{  
   position: relative;
-  /* display: inline-block; */
   margin-bottom: 1rem;
-  flex-basis: 100%;
+  width: 100%;
 }
-.info{
+/* .info{
   position: relative;
   overflow: hidden;
-}
-
+} */
 .ubicacion img{
   position: absolute;
   left: -100vw;
@@ -175,7 +181,6 @@ body{
 .ubicacion img{
   max-width: 100%;
 }
-
 .muro .info{
   text-align: center;
   background: rgba(0, 0, 0, 0.9);

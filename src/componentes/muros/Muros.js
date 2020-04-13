@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 import Muro from './muro'
-import api from '../api'
+import api from '../../api'
 
 
 class Muros extends React.Component {
@@ -23,14 +23,13 @@ class Muros extends React.Component {
      } catch(error){
         console.log(error)
         if(error){
-            var data = require('../data/db.json')
+            var data = require('../../data/db.json')
             this.setState({muros:data.walls})
         }
     }
   } 
 
   deleteWall = async (idtoDelete) => {
-            console.log(idtoDelete)
         try{
             await api.walls.remove(idtoDelete);  
                 alert('borrado')

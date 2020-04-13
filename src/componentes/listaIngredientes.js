@@ -13,25 +13,15 @@ function ListaIngredientes (){
     return(
             <div>
                 <h1>Lista de ingredientes</h1>
-                <div className="form-group">
+                <div className="searcher">
+                <div className="search_label">
                     <label>Busqueda de efectos</label>
                     <input className='form-control'
                     value={value}
                     onChange={(e)=>{setValue(e.target.value)}}
                     />
                 </div>
-                <div className='row text-center bg-primary'>
-                    <div className="col-4">
-                        ingrediente
-                    </div>
-                    <div className="col-4">
-                        efectos
-                    </div>
-                    <div className="col-4">
-                        detalles
-                    </div>
-                </div>
-                <div className='ingredientes text-center'>
+                <div className='search_result'>
                     {value !== "" ? respuestaFiltrada.map((ingrediente)=>(
                        <div key={ingrediente.ingrediente} className="row bg-secondary mb-2"> 
                         <div className="col-4">
@@ -50,6 +40,7 @@ function ListaIngredientes (){
                         </div>
                         </div>
                     )) : ""}
+                </div>
                 </div>
             </div>
         )

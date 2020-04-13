@@ -34,53 +34,55 @@ class Model extends React.Component {
       75, //fov (field of view)
       width/height, //aspect ratio 
       0.1, //near plane
-      2500 //far plane  
+      10000 //far plane  
       )
-    this.camera.position.set(0,100,100);
-
+    this.camera.position.set(0,200,200);
+    
     //////=======================testing===================/////  
+      // this.camera.lookAt()
+
     //sfere reference
-      //cero 
-      const geometry0 = new THREE.SphereGeometry( 5, 32, 32 );
-      const material0 = new THREE.MeshBasicMaterial( {color: "red"} );
-      const sphere0 = new THREE.Mesh(geometry0, material0 );
-      sphere0.position.set(0, 0 ,0)
-      //minus x
-      const geometry1 = new THREE.SphereGeometry( 5, 32, 32 );
-      const material1 = new THREE.MeshBasicMaterial( {color: "green"} );
-      const sphere1 = new THREE.Mesh(geometry1,material1 );
-      sphere1.position.set(-100, 0 ,0)
-      //mayus x
-      const geometry2 = new THREE.SphereGeometry( 5, 32, 32 );
-      const material2 = new THREE.MeshBasicMaterial( {color: "pink"} );
-      const sphere2 = new THREE.Mesh(geometry2,material2 );
-      sphere2.position.set(100, 0 ,0)
-      //mayus y
-      const geometry3 = new THREE.SphereGeometry( 5, 32, 32 );
-      const material3 = new THREE.MeshBasicMaterial( {color: "yellow"} );
-      const sphere3 = new THREE.Mesh( geometry3, material3 );
-      sphere3.position.set(0, 0 ,100)
+    //   //cero 
+    //   const geometry0 = new THREE.SphereGeometry( 5, 32, 32 );
+    //   const material0 = new THREE.MeshBasicMaterial( {color: "red"} );
+    //   const sphere0 = new THREE.Mesh(geometry0, material0 );
+    //   sphere0.position.set(0, 0 ,0)
+    //   //minus x
+    //   const geometry1 = new THREE.SphereGeometry( 5, 32, 32 );
+    //   const material1 = new THREE.MeshBasicMaterial( {color: "green"} );
+    //   const sphere1 = new THREE.Mesh(geometry1,material1 );
+    //   sphere1.position.set(-100, 0 ,0)
+    //   //mayus x
+    //   const geometry2 = new THREE.SphereGeometry( 5, 32, 32 );
+    //   const material2 = new THREE.MeshBasicMaterial( {color: "pink"} );
+    //   const sphere2 = new THREE.Mesh(geometry2,material2 );
+    //   sphere2.position.set(100, 0 ,0)
+    //   //mayus y
+    //   const geometry3 = new THREE.SphereGeometry( 5, 32, 32 );
+    //   const material3 = new THREE.MeshBasicMaterial( {color: "yellow"} );
+    //   const sphere3 = new THREE.Mesh( geometry3, material3 );
+    //   sphere3.position.set(0, 0 ,100)
 
-      const geometry4 = new THREE.SphereGeometry( 5, 32, 32 );
-      const material4 = new THREE.MeshBasicMaterial( {color: "blue"} );
-      const sphere4 = new THREE.Mesh(geometry4,material4 );
-      sphere4.position.set(0, 0 ,-100)
+    //   const geometry4 = new THREE.SphereGeometry( 5, 32, 32 );
+    //   const material4 = new THREE.MeshBasicMaterial( {color: "blue"} );
+    //   const sphere4 = new THREE.Mesh(geometry4,material4 );
+    //   sphere4.position.set(0, 0 ,-100)
 
-      const geometry5 = new THREE.SphereGeometry( 5, 32, 32 );
-      const material5 = new THREE.MeshBasicMaterial( {color: "white"} );
-      const sphere5 = new THREE.Mesh(geometry5,material5 );
-      sphere5.position.set(0, 100 ,0)
+    //   const geometry5 = new THREE.SphereGeometry( 5, 32, 32 );
+    //   const material5 = new THREE.MeshBasicMaterial( {color: "white"} );
+    //   const sphere5 = new THREE.Mesh(geometry5,material5 );
+    //   sphere5.position.set(0, 100 ,0)
 
-      this.scene.add( sphere0, sphere1, sphere2, sphere3, sphere4, sphere5 );
+    //   this.scene.add( sphere0, sphere1, sphere2, sphere3, sphere4, sphere5 );
 
-    //floor
-    this.meshFloor = new THREE.Mesh(
-      new THREE.PlaneGeometry(200,200, 10,10),
-      new THREE.MeshBasicMaterial({color:0xffffff, wireframe: true})
-    );
+    // //floor
+    // this.meshFloor = new THREE.Mesh(
+    //   new THREE.PlaneGeometry(200,200, 10,10),
+    //   new THREE.MeshBasicMaterial({color:0xffffff, wireframe: true})
+    // );
 
-    this.meshFloor.rotateX( - Math.PI / 2);
-    this.scene.add(this.meshFloor);
+    // this.meshFloor.rotateX( - Math.PI / 2);
+    // this.scene.add(this.meshFloor);
 
     //////======================= close testing===================/////
 
@@ -98,7 +100,6 @@ class Model extends React.Component {
                                               antialias: true, 
                                               alpha: this.props.background,
                                               preserveDrawingBuffer: true, //requerido para capturas
-                                              // antialias: true
                                             });
     //escena de fondo
     this.scene.background = (this.props.background ? this.texture : false)
@@ -108,13 +109,10 @@ class Model extends React.Component {
     //vR
     // this.el.appendChild( VRButton.createButton( this.renderer ) );
     window.document.body.appendChild( VRButton.createButton( this.renderer ) );
-
     this.renderer.xr.enabled = true;
 
     this.renderer.setSize(width, height);//def full scr
     this.el.appendChild(this.renderer.domElement);  
-    // document.body.appendChild(this.renderer.domElement);  
-
   }
 
   modelsLoader = ()=>{    
@@ -146,6 +144,10 @@ class Model extends React.Component {
         this.parent.add(object)
         const box = new THREE.Box3().setFromObject( object );
         console.log(box)
+        console.log(box.min.y, box.max.y, box.max.y/2)
+
+        // this.camera.lookAt(0, 100, box.max.y/2)
+        this.camera.lookAt(new THREE.Vector3(0,0,0))
       })
     })
 

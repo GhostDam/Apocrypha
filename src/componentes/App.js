@@ -2,10 +2,10 @@ import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
 import NotFound from './notfound'
-import Muros from './Muros'
+import Muros from './muros/Muros'
 import Navbar from './Navbar'
-import NewWall from './nuevomuro'
-import EditWall from './editarmuro'
+import NewWall from './muros/nuevomuro'
+import EditWall from './muros/editarmuro'
 
 import LenguajeDragon from './Dragon'
 import AlfabetoDaedra from './alfabetos/alfabetoDaedra'

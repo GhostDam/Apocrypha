@@ -1,8 +1,8 @@
 import React from 'react'
 import Muro from './muro'
-import AlfabetoDragon from './alfabetos/alfabetoDragon'
-import api from '../api' 
-import {LeftMenu, RightMenu } from './menus/AsideMenus'
+import AlfabetoDragon from '../alfabetos/alfabetoDragon'
+import api from '../../api' 
+import {LeftMenu, RightMenu } from '../menus/AsideMenus'
 
 class NewWall extends React.Component{
     state={
