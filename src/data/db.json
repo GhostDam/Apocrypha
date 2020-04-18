@@ -291,7 +291,7 @@
     {
       "ingrediente": "Abeja",
       "efecto1": "Restaurar Aguante",
-      "efecto2": "Disminuir Aguante",
+      "efecto2": "Dañar Aguante",
       "efecto3": "Regenerar Aguante",
       "efecto4": "Debilidad a la Descarga",
       "peso": ".1",
@@ -337,9 +337,9 @@
     {
       "ingrediente": "Ala de dardo naranja",
       "efecto1": "Restaurar Aguante",
-      "efecto2": "Disminuir Magia",
+      "efecto2": "Dañar Magia",
       "efecto3": "Reforzar Robo",
-      "efecto4": "Daño Persistente a la Salud",
+      "efecto4": "Daño a la Salud Duradero",
       "peso": ".1",
       "valor": 1
     },
@@ -347,7 +347,7 @@
       "ingrediente": "Ala de Mariposa",
       "efecto1": "Restaurar Salud",
       "efecto2": "Reforzar Elocuencia",
-      "efecto3": "Daño Persistente al Aguante",
+      "efecto3": "Daño al Aguante Duradero",
       "efecto4": "Dañar Magia",
       "peso": ".1",
       "valor": 3,
@@ -396,7 +396,7 @@
       "ingrediente": "Belladama",
       "efecto1": "Dañar Salud",
       "efecto2": "Dañar Regeneración Magica",
-      "efecto3": "Daño Persistente al Aguante",
+      "efecto3": "Daño al Aguante Duradero",
       "efecto4": "Reforzar Destrucción",
       "peso": ".1",
       "valor": 8,
@@ -415,7 +415,7 @@
     {
       "ingrediente": "Campanilla de Muerte",
       "efecto1": "Dañar Salud",
-      "efecto2": "Disminuir Aguante",
+      "efecto2": "Dañar Aguante",
       "efecto3": "Ralentizar",
       "efecto4": "Debilidad al Veneno",
       "peso": ".1",
@@ -456,7 +456,7 @@
       "efecto1": "Dañar Aguante",
       "efecto2": "Resistencia a la Escarcha",
       "efecto3": "Reforzar Conjuración",
-      "efecto4": "Disminuir Aguante",
+      "efecto4": "Dañar Aguante",
       "peso": ".5",
       "valor": 5
     },
@@ -465,7 +465,7 @@
       "efecto1": "Debilidad a la Escarcha",
       "efecto2": "Reforzar Armadura Pesada",
       "efecto3": "Restaurar Magia",
-      "efecto4": "Disminuir Magia",
+      "efecto4": "Dañar Magia",
       "peso": ".3",
       "valor": 0,
       "detalles": "cultivable"
@@ -475,7 +475,7 @@
       "efecto1": "Dañar Aguante",
       "efecto2": "Reforzar Restauración",
       "efecto3": "Miedo",
-      "efecto4": "Disminuir Salud",
+      "efecto4": "Dañar Salud",
       "peso": ".3",
       "valor": 15,
       "detalles": "vivero"
@@ -483,7 +483,7 @@
     {
       "ingrediente": "Cola de Skeever",
       "efecto1": "Dañar Regeneración de Aguante",
-      "efecto2": "Disminuir Salud",
+      "efecto2": "Dañar Salud",
       "efecto3": "Dañar Salud",
       "efecto4": "Reforzar Armadura Ligera",
       "peso": ".2",
@@ -538,7 +538,7 @@
       "ingrediente": "Cornamenta Pequeña",
       "efecto1": "Debilidad al Veneno",
       "efecto2": "Reforzar Restauración",
-      "efecto3": "Daño Persistente al Aguante",
+      "efecto3": "Daño al Aguante Duradero",
       "efecto4": "Dañar Salud",
       "peso": ".1",
       "valor": 2
@@ -611,7 +611,7 @@
     {
       "ingrediente": "Escamas de Pez Asesino",
       "efecto1": "Resistencia a la Escarcha",
-      "efecto2": "Daño Persistente a la Salud",
+      "efecto2": "Daño a la Salud Duradero",
       "efecto3": "Reforzar Armadura Pesada",
       "efecto4": "Reforzar Bloqueo",
       "peso": ".1",
@@ -631,7 +631,7 @@
       "ingrediente": "Flor púrpura de montaña",
       "efecto1": "Restaurar Aguante",
       "efecto2": "Reforzar Discreción",
-      "efecto3": "Daño Persistente a la Magia",
+      "efecto3": "Daño a la Magia Duradero",
       "efecto4": "Resistencia a la Escarcha",
       "peso": ".1",
       "valor": 2,
@@ -640,7 +640,7 @@
     {
       "ingrediente": "Flor roja de montaña",
       "efecto1": "Restaurar Magia",
-      "efecto2": "Disminuir Magia",
+      "efecto2": "Dañar Magia",
       "efecto3": "Reforzar Magia",
       "efecto4": "Dañar Salud",
       "peso": ".1",
@@ -670,7 +670,7 @@
     {
       "ingrediente": "Garra de Bruja Cuervo",
       "efecto1": "Resistencia a la Magia",
-      "efecto2": "Daño Persistente a la Magia",
+      "efecto2": "Daño a la Magia Duradero",
       "efecto3": "Reforzar Encantamiento",
       "efecto4": "Reforzar Elocuencia",
       "peso": ".3",
@@ -697,7 +697,7 @@
     {
       "ingrediente": "Heces de diablillo",
       "efecto1": "Dañar Salud",
-      "efecto2": "Daño Persistente a la Salud",
+      "efecto2": "Daño a la Salud Duradero",
       "efecto3": "Paralisis",
       "efecto4": "Restaurar Salud",
       "peso": ".3",
@@ -727,7 +727,7 @@
       "efecto1": "Resistencia a la Magia",
       "efecto2": "Dañar Regeneración Magica",
       "efecto3": "Respiración Acuatica",
-      "efecto4": "Daño Persistente al Aguante",
+      "efecto4": "Daño al Aguante Duradero",
       "peso": ".5",
       "valor": 2
     },
@@ -735,7 +735,7 @@
       "ingrediente": "Huevo de Pez Asesino",
       "efecto1": "Resistencia al Veneno",
       "efecto2": "Reforzar Robo",
-      "efecto3": "Daño Persistente a la Salud",
+      "efecto3": "Daño a la Salud Duradero",
       "efecto4": "Reforzar Aguante",
       "peso": ".2",
       "valor": 3,
@@ -764,7 +764,7 @@
       "ingrediente": "Lavanda",
       "efecto1": "Resistencia a la Magia",
       "efecto2": "Reforzar Aguante",
-      "efecto3": "Disminuir Magia",
+      "efecto3": "Dañar Magia",
       "efecto4": "Reforzar Conjuración",
       "peso": ".1",
       "valor": 1,
@@ -783,7 +783,7 @@
     {
       "ingrediente": "Liquen Gigante",
       "efecto1": "Debilidad a la Descarga",
-      "efecto2": "Disminuir Salud",
+      "efecto2": "Dañar Salud",
       "efecto3": "Debilidad al Veneno",
       "efecto4": "Restaurar Magia",
       "peso": ".3",
@@ -794,7 +794,7 @@
       "ingrediente": "Mirriam de escarcha",
       "efecto1": "Resistencia a la Escarcha",
       "efecto2": "Reforzar Discreción",
-      "efecto3": "Disminuir Magia",
+      "efecto3": "Dañar Magia",
       "efecto4": "Dañar Regeneración de Aguante",
       "peso": ".1",
       "valor": 1
@@ -811,7 +811,7 @@
     {
       "ingrediente": "Mora Tapinella",
       "efecto1": "Restaurar Magia",
-      "efecto2": "Daño Persistente a la Salud",
+      "efecto2": "Daño a la Salud Duradero",
       "efecto3": "Regenerar Aguante",
       "efecto4": "Reforzar Ilusión",
       "peso": ".3",
@@ -831,7 +831,7 @@
     {
       "ingrediente": "Ojo de Gato Sable",
       "efecto1": "Restaurar Aguante",
-      "efecto2": "Disminuir Salud",
+      "efecto2": "Dañar Salud",
       "efecto3": "Dañar Magia",
       "efecto4": "Restaurar Salud",
       "peso": ".1",
@@ -860,7 +860,7 @@
       "efecto1": "Restaurar Aguante",
       "efecto2": "Reforzar Bloqueo",
       "efecto3": "Reforzar Armadura Ligera",
-      "efecto4": "Disminuir Aguante",
+      "efecto4": "Dañar Aguante",
       "peso": 1,
       "valor": 5,
       "detalles": "invernadero"
@@ -869,7 +869,7 @@
       "ingrediente": "Perca de Lomo Plateado",
       "efecto1": "Restaurar Aguante",
       "efecto2": "Dañar Regeneración de aguante",
-      "efecto3": "Disminuir Salud",
+      "efecto3": "Dañar Salud",
       "efecto4": "Resistencia a la Escarcha",
       "peso": ".3",
       "valor": 15,
@@ -952,7 +952,7 @@
       "efecto1": "Dañar Aguante",
       "efecto2": "Resistencia al Fuego",
       "efecto3": "Reforzar Conjuración",
-      "efecto4": "Disminuir Aguante",
+      "efecto4": "Dañar Aguante",
       "peso": ".5",
       "valor": 5
     },
@@ -987,7 +987,7 @@
     {
       "ingrediente": "Ramita de Cardo",
       "efecto1": "Resistencia a la Escarcha",
-      "efecto2": "Disminuir Aguante",
+      "efecto2": "Dañar Aguante",
       "efecto3": "Resistencia al Veneno",
       "efecto4": "Reforzar Armadura Pesada",
       "peso": ".1",
@@ -1099,7 +1099,7 @@
     {
       "ingrediente": "Semilla de hierba",
       "efecto1": "Resistencia al Veneno",
-      "efecto2": "Disminuir Magia",
+      "efecto2": "Dañar Magia",
       "efecto3": "Reforzar Alteración",
       "efecto4": "Restaurar Magia",
       "peso": ".1",
@@ -1131,7 +1131,7 @@
       "efecto1": "Restaurar Salud",
       "efecto2": "Reforzar Salud",
       "efecto3": "Dañar Regeneración de Aguante",
-      "efecto4": "Daño Persistente a la Magia",
+      "efecto4": "Daño a la Magia Duradero",
       "peso": ".1",
       "valor": 5,
       "detalles": "cultivable"
@@ -1139,7 +1139,7 @@
     {
       "ingrediente": "Tórax de Luciérnaga",
       "efecto1": "Restaurar Aguante",
-      "efecto2": "Daño Persistente a la Magia",
+      "efecto2": "Daño a la Magia Duradero",
       "efecto3": "Debilidad a la Magia",
       "efecto4": "Reforzar Aguante",
       "peso": ".1",
@@ -1151,7 +1151,7 @@
       "efecto1": "Debilidad a la Magia",
       "efecto2": "Reforzar Magia",
       "efecto3": "Regenerar Magia",
-      "efecto4": "Disminuir Salud",
+      "efecto4": "Dañar Salud",
       "peso": ".1",
       "valor": 1,
       "detalles": "cultivable"
@@ -1159,7 +1159,7 @@
     {
       "ingrediente": "Vaina Fúngica del Pantano",
       "efecto1": "Resistencia a la Descarga",
-      "efecto2": "Daño Persistente a la Magia",
+      "efecto2": "Daño a la Magia Duradero",
       "efecto3": "Paralisis",
       "efecto4": "Restaurar Salud",
       "peso": ".5",
@@ -1262,7 +1262,7 @@
       "efecto1": "Dañar salud",
       "efecto2": "Dañar Aguante",
       "efecto3": "Dañar Magia",
-      "efecto4": "Daño Persistente a la salud",
+      "efecto4": "Daño a la salud Duradero",
       "peso": ".1",
       "valor": 1
     },
@@ -2573,7 +2573,7 @@
     {
       "id": 238,
       "dovah": "Liivrah",
-      "español": "Disminuir"
+      "español": "Dañar"
     },
     {
       "id": 239,
@@ -3667,10 +3667,10 @@
     },
     {
       "id": 2,
-      "pocion": "Au salud, rf carga, d reg mag",
-      "ingrediente1": "Dedo gigante",
+      "pocion": "Salud aumenta 60 pts, capacidad de carga aumenta 60 pts, regenaración de aguante disminuye 100%",
+      "ingrediente1": "Dedo del gigante",
       "ingrediente2": "Trigo",
-      "ingrediente3": "Raíz trepadora",
+      "ingrediente3": "Cualquiera con Reforzar Cargar Peso",
       "valor": 2245
     },
     {
@@ -3682,16 +3682,8 @@
       "valor": 2907
     },
     {
-      "id": 4,
-      "pocion": "Au salud, rf carga, d reg mag",
-      "ingrediente1": "Dedo gigante",
-      "ingrediente2": "Trigo",
-      "ingrediente3": "Foliota",
-      "valor": 2245
-    },
-    {
       "id": 5,
-      "pocion": "Dañar salud ++",
+      "pocion": "75 puntos de daño por veneno, inflige puntos de daño por veneno durante 10 segundos",
       "ingrediente1": "Betty de rio",
       "ingrediente2": "Heces diablillo",
       "ingrediente3": "Cualquiera de daño prolongado",
@@ -3736,14 +3728,6 @@
       "ingrediente2": "Mora tapinela",
       "ingrediente3": "Raíz trepadora",
       "valor": 1516
-    },
-    {
-      "id": 14,
-      "pocion": "Ref salud",
-      "ingrediente1": "Garras oso",
-      "ingrediente2": "Dedo gigante",
-      "ingrediente3": "Raíz trepadora",
-      "valor": 2245
     },
     {
       "id": 15,
@@ -3810,7 +3794,7 @@
       "id": 22
     },
     {
-      "pocion": "El objetivo es mas débil al veneno, daño por veneno concentrado, daño a la salud",
+      "pocion": "El objetivo es 30% mas débil al veneno, 30  pts de daño por veneno concentrado, 45 pts daño a la salud",
       "ingrediente1": "campanilla de la muerte",
       "ingrediente2": "cola de skeever",
       "ingrediente3": "liquen gigante",

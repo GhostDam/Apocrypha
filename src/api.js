@@ -1,5 +1,5 @@
 // const BASE_URL = 'http://localhost:3001';
-const BASE_URL = 'http://192.168.0.7:3001';
+const BASE_URL = 'http://192.168.0.6:3001';
 
 async function callApi(endpoint, options = {}) {
     options.headers = {

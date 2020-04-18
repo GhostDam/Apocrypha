@@ -1,7 +1,7 @@
 import React from 'react'
-import api from '../api'
+import api from '../../api'
 
-import ModalPotions from './modalPotion'
+import ModalPotions from '../modalPotion'
 
 var potions = []
 const getPotions = async () =>{
@@ -10,7 +10,7 @@ const getPotions = async () =>{
         potions = await data
     } catch (error) {
         if (error) {
-            const data = require('../data/db.json')
+            const data = require('../../data/db.json')
             potions = data.potions;
         }
     }
@@ -48,13 +48,13 @@ function ListaPociones () {
                     </div> 
                 <div className='search_result'>                    
                     {pocionFiltrada.sort((a,b)=>a.valor-b.valor).map(pocion =>(
-                        <div key={pocion.id} className='info'>
-                            <div className='col-md-6'>
-                                <p><strong>Descripcion de pocion</strong></p>
+                        <div key={pocion.id} className='potion info'>
+                            <div className="descripcion">
+                                <p><strong>Descripcion</strong></p>
                                 <p>{pocion.pocion} </p>
                                 <p><strong>valor: {pocion.valor}</strong></p>
                             </div>
-                            <div className='col-md-6'>
+                            <div className="ingredientes">
                                 <p><strong>ingredientes usados</strong></p>
                                 <p>{pocion.ingrediente1}</p>
                                 <p>{pocion.ingrediente2}</p>

@@ -19,7 +19,6 @@ body{
 /*  NAVBAR  */
 .menu{
   background-color: rgba(0,0,0,0.2);
-  /* background-color: #6d757d; */
   height: 40px;
   display: flex;
   position: sticky;
@@ -59,19 +58,15 @@ body{
   text-decoration: none;
   display: block;
 }
-
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
-
 .date{
   flex-grow: 1;
   text-align: right;
@@ -165,10 +160,6 @@ body{
   margin-bottom: 1rem;
   width: 100%;
 }
-/* .info{
-  position: relative;
-  overflow: hidden;
-} */
 .ubicacion img{
   position: absolute;
   left: -100vw;
@@ -193,11 +184,6 @@ body{
   color: white;
   margin: 0;
 }
-/* .muro:hover .info{
-  position: relative;
-  bottom: -80px;
-  opacity: 0;
-} */
 .muro h1, h2{
   color: cornsilk;
 }
@@ -254,6 +240,46 @@ body{
   background-color: blanchedalmond;
 }
 
-/* canvas{
-  position: relative;
-} */
+/*Alquimia*/
+.potion{
+  display: flex;
+  padding: 5px;
+}
+.potion .descripcion{
+  padding: 5px;
+  flex: 2;
+}
+.potion .ingredientes{
+  padding: 5px;
+  flex: 3;
+}
+
+.ingredient{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.ingredient .nombre{
+  padding: 5px;
+  flex: 1;
+}
+.ingredient .efectos{
+  padding: 5px;
+  flex: 3;
+}.ingredient .extra{
+  padding: 5px;
+  flex: 1;
+}
+@media(max-width: 720px){
+  .ingredient{
+   flex-flow: column;
+  }
+  .ingredient div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .ingredient .efectos p{
+    flex: 50%;
+  }
+}

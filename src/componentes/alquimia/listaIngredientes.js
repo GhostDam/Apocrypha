@@ -1,6 +1,6 @@
 import React from 'react'
 
-const data = require("../data/db.json")
+const data = require("../../data/db.json")
 
 function ListaIngredientes (){
     const ingredientes = data.ingredients
@@ -10,6 +10,12 @@ function ListaIngredientes (){
     const respuestaFiltrada= ingredientes.filter(ingrediente => {
             return `${ingrediente.ingrediente}${ingrediente.efecto1}${ingrediente.efecto2}${ingrediente.efecto3}${ingrediente.efecto4}${ingrediente.detalles}`.toLowerCase().includes(value.toLowerCase())   
     })
+
+    const totalEfectos = ingredientes.reduce((acum, ingredient)=>{
+            return acum + ingredient.efecto1
+    }, [])
+    console.log(totalEfectos)
+
     return(
             <div>
                 <h1>Lista de ingredientes</h1>
@@ -23,19 +29,19 @@ function ListaIngredientes (){
                 </div>
                 <div className='search_result'>
                     {value !== "" ? respuestaFiltrada.map((ingrediente)=>(
-                       <div key={ingrediente.ingrediente} className="row bg-secondary mb-2"> 
-                        <div className="col-4">
-                            {ingrediente.ingrediente}<br/>
-                            Valor: {ingrediente.valor}<br/>
-                            Peso: {ingrediente.peso}<br/>
+                       <div key={ingrediente.ingrediente} className="ingredient info"> 
+                        <div className="nombre">
+                            <p>{ingrediente.ingrediente}</p>
+                            <p>Valor: {ingrediente.valor}</p>
+                            <p>Peso: {ingrediente.peso}</p>
                         </div>
-                        <div className="col-4 row">
-                            <div className="col-md-6">{ingrediente.efecto1}</div>
-                            <div className="col-md-6">{ingrediente.efecto2}</div>
-                            <div className="col-md-6">{ingrediente.efecto3}</div>
-                            <div className="col-md-6">{ingrediente.efecto4}</div>
+                        <div className="efectos">
+                            <p>{ingrediente.efecto1}</p>
+                            <p>{ingrediente.efecto2}</p>
+                            <p>{ingrediente.efecto3}</p>
+                            <p>{ingrediente.efecto4}</p>
                         </div>
-                        <div className="col-4">
+                        <div className="extra">
                             <p>{ingrediente.detalles}</p>
                         </div>
                         </div>

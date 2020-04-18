@@ -11,9 +11,9 @@ import LenguajeDragon from './Dragon'
 import AlfabetoDaedra from './alfabetos/alfabetoDaedra'
 import AlfabetoDragon from './alfabetos/alfabetoDragon'
 
-import Info from './alquimiaInfo'
-import ListaIngredientes from './listaIngredientes'
-import ListaPociones from './listaPociones'
+import Info from './alquimia/alquimiaInfo'
+import ListaIngredientes from './alquimia/listaIngredientes'
+import ListaPociones from './alquimia/listaPociones'
 
 import SelectorAr from './visorModelos/selectorAr'
 
