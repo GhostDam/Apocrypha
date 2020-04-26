@@ -130,25 +130,27 @@ class Model extends React.Component {
     this.scene.add( this.parent );
 
       mtlLoader.load(mtlfile, (materials) => {
-      materials.preload()
-      objLoader.setMaterials(materials)
-      objLoader.load(objfile,(object) => {
-        object.traverse( function ( node ) {
-          if ( node.isMesh ) node.material = material;    
-        });
-        object.rotation.x = -1.5;
-        object.rotation.z = 3.15;
+        materials.preload()
+        objLoader.setMaterials(materials)
+        objLoader.load(objfile,(object) => {
+            object.traverse(node=> {
+                if (node.isMesh) {
+                  node.material = material
+                }
+            });
+          object.rotation.x = -1.5;
+          object.rotation.z = 3.15;
 
-        // add result callback to scene and var
-        this.scene.add(object)
-        this.parent.add(object)
-        const box = new THREE.Box3().setFromObject( object );
-        console.log(box)
-        console.log(box.min.y, box.max.y, box.max.y/2)
+          // add result callback to scene and var
+          this.scene.add(object)
+          this.parent.add(object)
+          const box = new THREE.Box3().setFromObject( object );
+          console.log(box)
+          console.log(box.min.y, box.max.y, box.max.y/2)
 
-        // this.camera.lookAt(0, 100, box.max.y/2)
-        this.camera.lookAt(new THREE.Vector3(0,0,0))
-      })
+          // this.camera.lookAt(0, 100, box.max.y/2)
+          this.camera.lookAt(new THREE.Vector3(0,0,0))
+        })
     })
 
   }

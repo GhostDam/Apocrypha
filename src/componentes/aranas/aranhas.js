@@ -25,12 +25,12 @@ const Aranhas = ()=>{
           <div>
               <p>Araña de escarcha explosiva</p>
               <img src={xesc} alt="spider" />
-              <div className="hide">
-              <p>Abdomen dañado </p>
-              <img src={abdn} alt="spider"/>
-              <p>Zafiro</p>
-              <img src={zafiro} alt="spider"/>
-              </div>
+                <div className="hide">
+                <p>Abdomen dañado </p>
+                <img src={abdn} alt="spider"/>
+                <p>Zafiro</p>
+                <img src={zafiro} alt="spider"/>
+                </div>
             </div>
           <div>
               <p>Araña de escarcha oculta</p>
@@ -52,8 +52,6 @@ const Aranhas = ()=>{
               <img src={abal} alt="spider"/>
               <p>Zafiro</p>
               <img src={zafiro} alt="spider"/>
-              <p></p>
-              <p></p>
               </div>
              </div>
           <div>

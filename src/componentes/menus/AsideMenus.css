@@ -1,65 +1,47 @@
-/*Menu Izquiero*/
-.left_menu{
-    background-color: cadetblue;
-    position: fixed;
-    left: 0;
-    border-bottom-right-radius: 50%;
-    width: 10vw;
-    height: 10vh;
-    overflow: hidden;    
-    transition: 1s;
-}
-.left_menu_header{
-    text-align: center;
-    line-height: 10vh;
-    background-color: black;
-    color: white;
-    height: 10vh;
-}
-.left_menu_content{
-    position: absolute;
-    overflow: hidden;
-    left: 0;
-    width: 100%;
-}
-.left_menu.opened{
-    width: 100vw;
-    height: 100vh;
-}
-.left_menu.opened .left_menu_header{
-    text-align: center;
+:root{
+    --menu-header: black;
+    --menu-body: white; 
 }
 
-/*Menu Derecho*/
-.right_menu{
-    background-color: cadetblue;
+/*bases*/
+.left_menu, .right_menu{
+    background-color: var(--menu-body);
     position: fixed;
-    right: 0;
-    border-bottom-left-radius: 50%;
     width: 10vw;
     height: 10vh;
     overflow: hidden;    
+    cursor: pointer;
     transition: 1s;
 }
-.right_menu_header{
+
+.left_menu{
+    left: 0;
+    border-bottom-right-radius: 50%;
+}
+.right_menu{
+    right: 0;
+    border-bottom-left-radius: 50%;
+}
+
+
+/* headers */
+.menu_header{
     text-align: center;
-    background-color: black;
+    background-color: var(--menu-header);
     line-height: 10vh;
     color: white;
     height: 10vh;
 }
-.right_menu_content{
+/* content */
+.menu_content{
     position: absolute;
     overflow: hidden;
-    left: 0;
     width: 100%;
 }
-.right_menu.opened{
+/* aperture */
+.left_menu.opened ,.right_menu.opened {
     width: 100vw;
     height: 100vh;
-}
-.right_menu.opened .right_menu_header{
-    text-align: center;
 }
 
 /** Aside Lists**/
