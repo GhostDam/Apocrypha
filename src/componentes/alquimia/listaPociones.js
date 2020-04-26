@@ -1,7 +1,7 @@
 import React from 'react'
 import api from '../../api'
 
-import ModalPotions from '../modalPotion'
+import ModalPotions from './modalPotion'
 
 var potions = []
 const getPotions = async () =>{
@@ -35,7 +35,7 @@ function ListaPociones () {
     const [query, setQuery, pocionFiltrada] = useSearchList(potions)
 
     return(
-            <div>
+            <React.Fragment>
                 <h1>Lista de Pociones</h1>
                 <div className='searcher'>
                     <div className='search_label'>
@@ -59,12 +59,13 @@ function ListaPociones () {
                                 <p>{pocion.ingrediente1}</p>
                                 <p>{pocion.ingrediente2}</p>
                                 <p>{pocion.ingrediente3}</p>
+                                <div className={`efecto-${pocion.efecto}`}></div>
                             </div>
                         </div>
                     ))}
                 </div>
                 </div>
-            </div>
+            </React.Fragment>
         )
 }
 

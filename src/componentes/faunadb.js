@@ -85,7 +85,7 @@ const Fauna = {
               )
           },
           delete(ref){
-              return    cliente.query(
+              return cliente.query(
                   q.Delete(
                       q.Ref(
                           q.Collection('walls'), ref)

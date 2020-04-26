@@ -38,7 +38,8 @@ fetchWords()
 function LenguajeDragon(props){    
     const [value, setValue, palabrasBuscadas] = useSearchWords(words)
     return (
-        <React.Fragment>
+        <div>
+            <h1>Lista de palabras</h1>
             <div className="searcher">
                 <div className='search_label'>
                     <label>Diccionario</label> 
@@ -54,7 +55,7 @@ function LenguajeDragon(props){
                     )) : ""}
                 </div>
             </div>
-        </React.Fragment>
+        </div>
     )    
 }
 
