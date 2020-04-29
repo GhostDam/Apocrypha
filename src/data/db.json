@@ -3654,6 +3654,11 @@
       "dovah": "Taazokaan",
       "español": "Tamriel",
       "id": 454
+    },
+    {
+      "dovah": "Qahnaarin",
+      "español": "Vencedor",
+      "id": 455
     }
   ],
   "potions": [
@@ -3663,7 +3668,7 @@
       "ingrediente1": "Colmillo",
       "ingrediente2": "Trigo",
       "ingrediente3": "Torax",
-      "efecto":"salud",
+      "efecto": "salud",
       "valor": 2947
     },
     {
@@ -3672,7 +3677,7 @@
       "ingrediente1": "Dedo del gigante",
       "ingrediente2": "Trigo",
       "ingrediente3": "Cualquiera con Reforzar Cargar Peso",
-      "efecto":"salud",
+      "efecto": "salud",
       "valor": 2245
     },
     {
@@ -3681,7 +3686,7 @@
       "ingrediente1": "Colmillo",
       "ingrediente2": "Huevo cauro",
       "ingrediente3": "Musgo",
-      "efecto":"salud",
+      "efecto": "salud",
       "valor": 2907
     },
     {
@@ -3690,7 +3695,7 @@
       "ingrediente1": "Betty de rio",
       "ingrediente2": "Heces diablillo",
       "ingrediente3": "Cualquiera de daño prolongado",
-      "efecto":"daño",
+      "efecto": "daño",
       "valor": 582
     },
     {
@@ -3708,7 +3713,7 @@
       "ingrediente1": "Huevos de salmon",
       "ingrediente2": "Percebe Nordico",
       "ingrediente3": "Ajo",
-      "efecto":"precio",
+      "efecto": "precio",
       "valor": 5208
     },
     {
@@ -3717,7 +3722,7 @@
       "ingrediente1": "Huevos de salmon",
       "ingrediente2": "Colmillo jabalí",
       "ingrediente3": "Uvas ",
-      "efecto":"magia",
+      "efecto": "magia",
       "valor": 690
     },
     {
@@ -3726,7 +3731,7 @@
       "ingrediente1": "Huevos de salmon",
       "ingrediente2": "Carpa de hist",
       "ingrediente3": "",
-      "efecto":"precio",
+      "efecto": "precio",
       "valor": 4526
     },
     {
@@ -3735,7 +3740,7 @@
       "ingrediente1": "Foliota",
       "ingrediente2": "Mora tapinela",
       "ingrediente3": "Raíz trepadora",
-      "efecto":"salud",
+      "efecto": "salud",
       "valor": 1516
     },
     {
@@ -3744,7 +3749,7 @@
       "ingrediente1": "Colmillo",
       "ingrediente2": "Trigo",
       "ingrediente3": "Ajo",
-      "efecto":"salud",
+      "efecto": "salud",
       "valor": 2793
     },
     {
@@ -3753,7 +3758,7 @@
       "ingrediente1": "Flor roja montaña",
       "ingrediente2": "Sales de fuego",
       "ingrediente3": "Uvas de jazbay",
-      "efecto":"magia",
+      "efecto": "magia",
       "valor": 770
     },
     {
@@ -3762,7 +3767,7 @@
       "ingrediente1": "Foliota",
       "ingrediente2": "Lengua de dragón",
       "ingrediente3": "Mora tapinela",
-      "efecto":"magia",
+      "efecto": "magia",
       "valor": 746
     },
     {
@@ -3771,7 +3776,7 @@
       "ingrediente1": "Huevos de salmon",
       "ingrediente2": "Colmillo jabalí",
       "ingrediente3": "Sales vacío",
-      "efecto":"magia",
+      "efecto": "magia",
       "valor": 203
     },
     {
@@ -3779,7 +3784,7 @@
       "ingrediente1": "Carpa de Hist",
       "ingrediente2": "Huevas de salmón",
       "ingrediente3": "Cualquiera con efecto regenerar magia",
-      "efecto":"magia",
+      "efecto": "magia",
       "valor": "5013",
       "id": 19
     },
@@ -3789,7 +3794,7 @@
       "ingrediente2": "cornamenta pequeña",
       "ingrediente3": "betty de rio",
       "valor": "1165",
-      "efecto":"daño",
+      "efecto": "daño",
       "id": 20
     },
     {
@@ -3797,7 +3802,7 @@
       "ingrediente1": "Huevos de cauro",
       "ingrediente2": "Colmillo de jabalí",
       "ingrediente3": "Cualquiera de reforzar salud",
-      "efecto":"salud",
+      "efecto": "salud",
       "valor": "2793",
       "id": 21
     },
@@ -3806,7 +3811,7 @@
       "ingrediente1": "colmillo de jabalí",
       "ingrediente2": "trigo",
       "ingrediente3": "cualquiera de reforzar aguante, (especialmente cornamenta grande)",
-      "efecto":"salud",
+      "efecto": "salud",
       "valor": "3134",
       "id": 22
     },
@@ -3816,7 +3821,7 @@
       "ingrediente2": "cola de skeever",
       "ingrediente3": "liquen gigante",
       "valor": "280",
-      "efecto":"daño",
+      "efecto": "daño",
       "id": 23
     }
   ]

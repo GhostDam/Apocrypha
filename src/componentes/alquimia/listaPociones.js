@@ -48,7 +48,7 @@ function ListaPociones () {
                     </div> 
                 <div className='search_result'>                    
                     {pocionFiltrada.sort((a,b)=>a.valor-b.valor).map(pocion =>(
-                        <div key={pocion.id} className='potion info'>
+                        <div key={pocion.id} className={`potion efecto-${pocion.efecto}`}>
                             <div className="descripcion">
                                 <p><strong>Descripcion</strong></p>
                                 <p>{pocion.pocion} </p>
@@ -59,7 +59,6 @@ function ListaPociones () {
                                 <p>{pocion.ingrediente1}</p>
                                 <p>{pocion.ingrediente2}</p>
                                 <p>{pocion.ingrediente3}</p>
-                                <div className={`efecto-${pocion.efecto}`}></div>
                             </div>
                         </div>
                     ))}

@@ -7,15 +7,9 @@
 }
 body{
   background-image: url('../media/skyrim.jpg');
-  /* Full height */
-  /* Center and scale the image nicely */
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (min-width :600px){
-  body{
-    background-attachment: fixed;
-  }
+  background-attachment: fixed;
 }
 
 /*  NAVBAR  */
@@ -135,10 +129,13 @@ body{
 }
 
 /*buscadores*/
+/* .searcher{
+  height: 100%;
+} */
 .searcher .search_label{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .searcher .search_result{
   height: calc(100vh - 172px);
@@ -245,37 +242,48 @@ body{
 
 /*Alquimia*/
 .potion{
-  display: flex;
-  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 40px;
 }
+
 .potion .descripcion{
-  padding: 5px;
-  flex: 2;
+  border-radius: 50px 50px 0 0;
+  padding: 10px;
 }
+
 .potion .ingredientes{
-  position: relative;
-  padding: 5px;
-  flex: 3;
+  border-radius: 0 0 50px 50px;
+  padding: 10px;
 }
-[class^="efecto-"]{
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-.efecto-daño{
+
+.efecto-daño .ingredientes{
   background-color: #205611;
 }
-.efecto-salud{
-  background-color: #fb7375;
+.efecto-daño .descripcion{
+  background-color: rgba(32,86,17,.5);
 }
-.efecto-magia{
+
+.efecto-magia .ingredientes{
   background-color: #7a8be5;
 }
-.efecto-precio{
-  background-color: yellow;
+.efecto-magia .descripcion{
+  background-color: rgba(122,139,229,.5);
+}
+
+.efecto-salud .ingredientes{
+  background-color: #fb7375;
+}
+.efecto-salud .descripcion{
+  background-color: rgba(251,115,117,.5);
+}
+
+.efecto-precio .ingredientes{
+  background-color: gold;
+} 
+.efecto-precio .descripcion{
+  background-color: rgba(255,215,0,.5);
 }
 
 
