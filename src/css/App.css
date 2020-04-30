@@ -139,10 +139,26 @@ body{
 }
 .searcher .search_result{
   height: calc(100vh - 172px);
-  height: -webkit-calc(100%-172px);
+  /* height: -webkit-calc(100%-172px); */
   overflow: auto;
 }
-
+/*barra general*/
+.search_result::-webkit-scrollbar{
+  width: 5px;
+}
+/*fondo de barra*/
+.search_result::-webkit-scrollbar-track{
+background: rgba(0, 0, 0, .5);
+}
+/*posicion en la barra*/
+.search_result::-webkit-scrollbar-thumb{
+background: rgba(255, 255, 255, .5);
+border-radius: 10px;
+}
+/*hover posicion de barra*/
+.search_result::-webkit-scrollbar-thumb:hover{
+background: steelblue;
+}
 /*  muros  */
 .listado_muros{
   width: 80%;
@@ -217,7 +233,7 @@ body{
   position: fixed;
   width: 100vw;
   height: calc(100vh-40px);
-  height: -webkit-calc(100% - 40px); /* google, safari no soporta vh*/
+  /* height: -webkit-calc(100% - 40px); google, safari no soporta vh */
   left: 0;
   z-index: -1;
 }
