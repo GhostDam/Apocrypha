@@ -50,7 +50,6 @@ function ListaPociones () {
                     {pocionFiltrada.sort((a,b)=>a.valor-b.valor).map(pocion =>(
                         <div key={pocion.id} className={`potion efecto-${pocion.efecto}`}>
                             <div className="descripcion">
-                                <p><strong>Descripcion</strong></p>
                                 <p>{pocion.pocion} </p>
                                 <p><strong>valor: {pocion.valor}</strong></p>
                             </div>

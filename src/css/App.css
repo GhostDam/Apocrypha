@@ -1,7 +1,8 @@
 @font-face {
-  font-family: 'Dovahkiin';
+  font-family: 'Dovahkiin'; /*nombre de la fuent*/
   src: url(../fuente/dovahkiin.ttf) format('truetype');
 }
+
 *{
   box-sizing: border-box;
 }
@@ -232,7 +233,7 @@ background: steelblue;
 .escena .renderer{
   position: fixed;
   width: 100vw;
-  height: calc(100vh-40px);
+  height: calc(100vh - 40px);
   /* height: -webkit-calc(100% - 40px); google, safari no soporta vh */
   left: 0;
   z-index: -1;
@@ -260,15 +261,14 @@ background: steelblue;
 .potion{
   margin: 10px;
   text-align: center;
-  color: white;
   border-radius: 40px;
+  color: white;
 }
-
 .potion .descripcion{
+  font-weight: bolder;
   border-radius: 50px 50px 0 0;
   padding: 10px;
 }
-
 .potion .ingredientes{
   border-radius: 0 0 50px 50px;
   padding: 10px;
@@ -307,18 +307,41 @@ background: steelblue;
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
+  margin: 5px;
 }
 .ingredient .nombre{
   padding: 5px;
   flex: 1;
 }
 .ingredient .efectos{
+  display: flex;
   padding: 5px;
+  flex-wrap: wrap;
   flex: 3;
-}.ingredient .extra{
-  padding: 5px;
-  flex: 1;
 }
+.efectos p{
+  flex: 50%;
+}
+
+.extra-cultivable::after{
+  font-size: .5em;
+  content: "cultivable";
+  font-weight: bolder;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  background-color: green;
+}
+.extra-vivero::after{
+  font-size: .5em;
+  font-weight: bolder;
+  content: "vivero";
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  background-color: lightskyblue;
+}
+
+
+
 @media(max-width: 720px){
   .ingredient{
    flex-flow: column;
@@ -330,5 +353,9 @@ background: steelblue;
   }
   .ingredient .efectos p{
     flex: 50%;
+  }
+  .extra-vivero::after, .extra-cultivable::after{
+    font-size: 1em;
+    writing-mode: unset;
   }
 }

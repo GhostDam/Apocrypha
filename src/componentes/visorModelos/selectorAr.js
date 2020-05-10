@@ -11,13 +11,13 @@ class Selector extends React.Component{
             background:false,
             stream:false,
             video:true,
-            frontCamera:true
+            camera:"environment" //environment
         }
     }
     
     startStream = async () =>{
             const conf = {
-                video: { facingMode: { exact: this.state.frontCamera ? "user": "environment" } }, //
+                video: { facingMode: { exact: "environment" } },
                 audio: false
             }
             try {
@@ -50,7 +50,7 @@ class Selector extends React.Component{
     
     toggleCamera = async () =>{
            this.stopStream()
-           this.setState({ frontCamera: !this.state.frontCamera })
+           await this.setState({ frontCamera: !this.state.frontCamera })
            this.startStream()
            this.setState(() => 
            ({
@@ -134,7 +134,7 @@ class Selector extends React.Component{
                         </li>
                     </ul>
                 </LeftMenu>
-                <RightMenu header="opciones">
+                <RightMenu header="Opciones">
                     <ul>
                         <li onClick={this.startStream}>Usar camara</li>
                         <li onClick={this.stopStream}>Detener Camara</li>
@@ -157,11 +157,11 @@ class Selector extends React.Component{
                         />
                     }
                     { this.state.stream && 
-                        <a className="foto" onClick={this.foto} id="foto" download="sky.png">
-                            {this.state.frontCamera ? "si": "no"}
-                        </a>
+                        <a className="foto" 
+                           onClick={this.foto} 
+                           id="foto" 
+                           download="sky.png"></a>
                     }
-                    <div id="loading"></div>
                 </div> 
             </React.Fragment>
         )

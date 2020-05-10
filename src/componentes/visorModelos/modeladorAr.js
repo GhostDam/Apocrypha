@@ -13,7 +13,7 @@ class Model extends React.Component {
   componentDidMount(){
       this.setup()
       this.modelsLoader()
-      this.viewerAnimate()
+      this.viewAnimation()
       window.addEventListener('resize', this.windowResizer)
       window.addEventListener('keydown', this.onKeyDown)
     }
@@ -186,11 +186,11 @@ class Model extends React.Component {
   //   }
   // }
   //render function
-  viewerAnimate = () =>{
+  viewAnimation = () =>{
     this.renderer.render(this.scene, this.camera);
-    this.renderer.setAnimationLoop(this.viewerAnimate)
+    this.renderer.setAnimationLoop(this.viewAnimation)
 
-    // this.requestID = window.requestAnimationFrame(this.viewerAnimate);
+    // this.requestID = window.requestAnimationFrame(this.viewAnimation);
   }
 
   //resizer

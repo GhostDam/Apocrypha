@@ -11,10 +11,10 @@ function ListaIngredientes (){
             return `${ingrediente.ingrediente}${ingrediente.efecto1}${ingrediente.efecto2}${ingrediente.efecto3}${ingrediente.efecto4}${ingrediente.detalles}`.toLowerCase().includes(value.toLowerCase())   
     })
 
-    const totalEfectos = ingredientes.reduce((acum, ingredient)=>{
-            return acum + ingredient.efecto1
-    }, [])
-    console.log(totalEfectos)
+    // const totalEfectos = ingredientes.reduce((acum, ingredient)=>{
+    //         return acum + ingredient.efecto1
+    // }, [])
+    // console.log(totalEfectos)
 
     return(
             <div>
@@ -29,21 +29,18 @@ function ListaIngredientes (){
                 </div>
                 <div className='search_result'>
                     {value !== "" ? respuestaFiltrada.map((ingrediente)=>(
-                       <div key={ingrediente.ingrediente} className="ingredient info"> 
-                        <div className="nombre">
-                            <p>{ingrediente.ingrediente}</p>
-                            <p>Valor: {ingrediente.valor}</p>
-                            <p>Peso: {ingrediente.peso}</p>
-                        </div>
-                        <div className="efectos">
-                            <p>{ingrediente.efecto1}</p>
-                            <p>{ingrediente.efecto2}</p>
-                            <p>{ingrediente.efecto3}</p>
-                            <p>{ingrediente.efecto4}</p>
-                        </div>
-                        <div className="extra">
-                            <p>{ingrediente.detalles}</p>
-                        </div>
+                       <div key={ingrediente.ingrediente} className={`ingredient info extra-${ingrediente.detalles}`}> 
+                            <div className="nombre">
+                                <p>{ingrediente.ingrediente}</p>
+                                <p>Valor: {ingrediente.valor}</p>
+                                <p>Peso: {ingrediente.peso}</p>
+                            </div>
+                            <div className="efectos">
+                                <p>{ingrediente.efecto1}</p>
+                                <p>{ingrediente.efecto2}</p>
+                                <p>{ingrediente.efecto3}</p>
+                                <p>{ingrediente.efecto4}</p>
+                            </div>
                         </div>
                     )) : ""}
                 </div>
